@@ -1,0 +1,15 @@
+title: "AtCoder と Rust で始める！競技プログラミング入門（Rust 版 APG4b）"
+summary: "APG4b ( https://atcoder.jp/contests/APG4b ) の Rust 版が欲しかったので書き始めました．少しずつ書き進めていきたいと思います．"
+topics: ["rust", "atcoder"]
+published: true
+price: 0
+chapters:
+  - ch01
+  - ch02
+  - ch03
+  - ch04
+  - ch05
+  - ch06
+  - ch07
+  - ch08
+  - ch09
