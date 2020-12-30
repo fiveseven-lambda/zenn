@@ -40,12 +40,12 @@ assert!(0 <= r && r < 10);
 ```rust
 assert!(0 <= r && r < 10, "割った余りが想定の範囲を超えています");
 ```
-と書くと，失敗したときの文面が
+と書くと，失敗したときの文面を
 ```
 thread 'main' panicked at '割った余りが想定の範囲を超えています', src/main.rs:8:5
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
-のようになります． `println!` マクロと同じように
+のように変えられます． `println!` マクロと同じように
 ```rust
 assert!(0 <= r && r < 10, "割った余りが {} で，想定の範囲を超えています", r);
 ```
