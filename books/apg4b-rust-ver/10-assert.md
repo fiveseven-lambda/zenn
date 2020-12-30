@@ -61,7 +61,7 @@ fn main() {
         y: i32
     }
     let rounded = x / y * y;
-    assert_eq!(rounded % y, 0);
+    assert_eq!(rounded % y, 0); // rounded % y == 0 をチェック
 }
 ```
 同様に， `assert!(a != b)` の代わりに `assert_ne!(a, b)` と書くことができます．
