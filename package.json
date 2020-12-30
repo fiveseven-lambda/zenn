@@ -1,7 +1,7 @@
 {
   "name": "zenn",
   "version": "1.0.0",
-  "description": "",
+  "description": "* [📘 How to use](https://zenn.dev/zenn/articles/zenn-cli-guide) * [📘 Markdown guide](https://zenn.dev/zenn/articles/markdown-guide)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "zenn-cli": "^0.1.62"
-  }
+    "zenn-cli": "^0.1.66"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiveseven-lambda/zenn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fiveseven-lambda/zenn/issues"
+  },
+  "homepage": "https://github.com/fiveseven-lambda/zenn#readme"
 }

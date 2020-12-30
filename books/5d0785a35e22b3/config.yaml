@@ -4,12 +4,14 @@ topics: ["rust", "atcoder"]
 published: true
 price: 0
 chapters:
-  - ch01
-  - ch02
-  - ch03
-  - ch04
-  - ch05
-  - ch06
-  - ch07
-  - ch08
-  - ch09
+  - 01-intro
+  - 02-output
+  - 03-error
+  - 04-integer
+  - 05-variable
+  - 06-literal
+  - 07-input
+  - 08-if
+  - 09-block
+  - 10-assert
+  - 11-tuple
