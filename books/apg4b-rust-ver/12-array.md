@@ -40,11 +40,11 @@ fn main() {
 fn main() {
     let array: [i32; 5];
     array = [3, 7, 31, 127, 8191];
-    assert_eq!(array[0], 3);
-    assert_eq!(array[1], 7);
-    assert_eq!(array[2], 31);
-    assert_eq!(array[3], 127);
-    assert_eq!(array[4], 8191);
+    assert_eq!(array[0], 3_i32);
+    assert_eq!(array[1], 7_i32);
+    assert_eq!(array[2], 31_i32);
+    assert_eq!(array[3], 127_i32);
+    assert_eq!(array[4], 8191_i32);
 }
 ```
 `array` という変数があり，型は `[i32; 5]` ，代入された値は `[3, 7, 31, 127, 8191]` となっています．
@@ -84,7 +84,7 @@ fn main() {
       input! {
           index: usize,
       }
-      let ans = tuple.index;
+      let ans = tuple.index; // tuple.0 や tuple.1 にはならない
       println!("{}", ans);
   }
   ```
