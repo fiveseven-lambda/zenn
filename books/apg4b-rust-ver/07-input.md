@@ -63,4 +63,21 @@ fn main() {
 ```
 とすると `f64` 型の値が変数 `value` として読み込まれ，それを 2. で割った値が出力されます．
 
-[コードテスト](https://atcoder.jp/contests/practice/custom_test)で「標準入力」の欄に適当な小数を入れて実行し，結果が正しく出力されることを確認してください．
+このとき，たとえ標準入力が整数であっても `value` は小数として読み込まれます．よって，標準入力が `10` であれば `value` は 10.0 となります．
+
+[コードテスト](https://atcoder.jp/contests/practice/custom_test)で「標準入力」の欄に適当な整数や小数を入れて実行し，結果が正しく出力されることを確認してください．
+# 練習問題
+ここまでの内容を使って解ける問題です．
+- [ABC161 A - ABC Swap](https://atcoder.jp/contests/abc161/tasks/abc161_a)
+- [ABC180 A - box](https://atcoder.jp/contests/abc180/tasks/abc180_a)
+- [ABC184 A - Determinant](https://atcoder.jp/contests/abc184/tasks/abc184_a)
+- [ABC172 A - Calc](https://atcoder.jp/contests/abc172/tasks/abc172_a)
+- [ABC182 A - twiblr](https://atcoder.jp/contests/abc182/tasks/abc182_a)
+- [ABC186 A - Brick](https://atcoder.jp/contests/abc186/tasks/abc186_a)
+- [ABC176 A - Takoyaki](https://atcoder.jp/contests/abc176/tasks/abc176_a)
+  切り上げ割り算に注意します．[解答例](https://atcoder.jp/contests/abc176/submissions/19108814)．
+- [ABC163 A - Circle Pond](https://atcoder.jp/contests/abc163/tasks/abc163_a)
+  円周率は， 3.14……と書く代わりに `std::f64::consts::PI` と書くことができます．[解答例](https://atcoder.jp/contests/abc163/submissions/19108930)．
+- [ABC168 C - : (Colon)](https://atcoder.jp/contests/abc168/tasks/abc168_c) （余弦定理を知っていることが前提になります）
+  `f64` 型変数 $x$ があったとき， `x.sqrt()` は $\sqrt x$， `x.cos()` は $\cos x$ になります．
+  複雑な計算は適宜変数をおくのが大事です．[解答例](https://atcoder.jp/contests/abc168/submissions/19109334)．

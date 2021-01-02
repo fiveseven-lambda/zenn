@@ -246,3 +246,6 @@ error[E0308]: `if` and `else` have incompatible types
   |                         expected because of this
 ```
 `` `if` and `else` have incompatible types `` は「`if` と `else` の型が相容れない」という意味です．後者の `10.` を指して `expected integer, found floating-point number` （「整数が来るはずだったが，浮動小数点数が来た」）と書かれ，さらに整数が来るはずだった理由として前者の `10` が示されています．
+# 練習問題
+- [ABC170 A - Five Variables](https://atcoder.jp/contests/abc170/tasks/abc170_a)
+  [解答例 1](https://atcoder.jp/contests/abc170/submissions/19109885) と[解答例 2](https://atcoder.jp/contests/abc170/submissions/19109908)．どちらが見やすいと感じるかは人によるでしょう．
