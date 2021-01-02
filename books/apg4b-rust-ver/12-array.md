@@ -110,4 +110,4 @@ fn main() {
 thread 'main' panicked at 'index out of bounds: the len is 6 but the index is 10', src/main.rs:8:15
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
-`index out of bounds: the len is 6 but the index is 10` は，「長さ 6 の配列に `[10]` でアクセスしようとしており，配列の範囲を超えている」という意味です．これを「範囲外アクセス」といいます．
+`index out of bounds: the len is 6 but the index is 10` は，「長さ 6 の配列に `[10]` でアクセスしようとしており，配列の範囲を超えている」という意味です（len は length の略）．これを「範囲外アクセス」といいます．
