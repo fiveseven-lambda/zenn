@@ -79,7 +79,7 @@ fn main() {
 「複数の変数をまとめる」という意味ではタプルと配列は同じですが，次のような違いがあります．
 
 - タプルは各要素の型が異なってもよいのに対し，配列は全ての要素が同じ型をもちます．
-- 配列の要素にアクセスするときは，`[ ]` の中が変数でもかまいません．
+- 配列の要素にアクセスするとき，インデックスは変数でもかまいません．
   ```rust
   use proconio::input;
   
@@ -128,4 +128,4 @@ fn main() {
 thread 'main' panicked at 'index out of bounds: the len is 6 but the index is 10', src/main.rs:8:15
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
-`index out of bounds: the len is 6 but the index is 10` は，「長さ 6 の配列に `[10]` でアクセスしようとしており，配列の範囲を超えている」という意味です（len は length の略）．これを「範囲外アクセス」といいます．
+`index out of bounds: the len is 6 but the index is 10` は，「配列の長さは 6 だがインデックスは 10 であり，配列の範囲を超えている」という意味です（len は length の略）．これを「範囲外アクセス」といいます．
