@@ -86,6 +86,16 @@ error[E0308]: mismatched types
              found tuple `(_, _, _)`
 ```
 `mismatched types` は，「型が合っていない」という意味です． `` this expression has type `i32` `` は「この式は `i32` 型である」， ``expected `i32`, found tuple`` は「`i32` が来るはずだったが，実際にはタプルがあった」という意味です．`expected a tuple with 2 elements, found one with 3 elements` は，「要素が 2 つのタプルが来るはずだったが，実際には要素が 3 つのタプルだった」という意味です．
+
+型注釈を付けるときは次のようになります．
+```rust
+fn main() {
+    let (c, g): (i32, f64) = (299792458, 6.67430e-11);
+    assert_eq!(c, 299792458_i32);
+    assert_eq!(g, 6.67430e-11_f64);
+}
+```
+
 # タプルを返すブロック
 次のコードを見てみましょう．
 ```rust
