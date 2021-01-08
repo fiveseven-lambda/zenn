@@ -126,6 +126,21 @@ fn main() {
 :::message
 これは，自動的な参照外しではありません． `{:p}` が `i32` や `f64` の出力に対応していない一方， `{}` が `&i32` や `&f64` の出力にも対応しているということです．
 :::
+# パターンマッチ
+参照もパターンマッチが可能です．
+```rust
+fn main() {
+    let hoge = 10;
+    let reference = &hoge;
+    let &copied = reference;
+    assert_eq!(copied, 10);
+    println!("hoge:   {:p}", &hoge);
+    println!("copied: {:p}", &copied);
+}
+```
+`let &copied = reference;` の行で，参照形式のパターンを使っています．`=` の右辺が `&i32` 型なので， `copied` は `i32` 型になり，そこには `*reference` の値が代入されます．
+
+`copied` の値は `hoge` と同じ 10 ですが， `hoge` と `copied` のアドレスをそれぞれ出力してみると異なる値になっていることが分かるはずです．
 # ライフタイム
 あるブロックの中で宣言された変数のスコープは，そのブロックが終わるまででした．
 ```rust
@@ -206,7 +221,7 @@ fn main() {
     }
 }
 ```
-:::details 答え
+:::details クリックで答えを表示
 エラーにはなりません．
 ```rust
 fn main() {
