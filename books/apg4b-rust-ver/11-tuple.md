@@ -48,6 +48,8 @@ fn main() {
 ```
 `let` の後に，タプルと同じ形式で `(x, y)` と書かれています．こう書くと， `=` の右辺のタプルの要素が，それぞれ `x`，`y` に代入されます．これを**パターンマッチ**といいます．
 
+![](https://storage.googleapis.com/zenn-user-upload/t8q8am5x7i9nnyjr49fpudamm9ei)
+
 今回は 1 つめの 10 が `x` に， 2 つめの 2.5 が `y` にそれぞれ代入されるので，続く 2 つの `assert_eq!` は両方成功して，プログラムは正常終了します．
 
 :::message

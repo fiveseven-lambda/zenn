@@ -90,6 +90,7 @@ fn main() {
     assert_eq!(z, 3);
 }
 ```
+![](https://storage.googleapis.com/zenn-user-upload/jcy4hyvl70e03wwtg3cieienqjqo)
 `x` には 1， `y` には 2， `z` には 3 がそれぞれ代入されます．
 # 配列とタプルの違い
 

@@ -138,7 +138,9 @@ fn main() {
     println!("copied: {:p}", &copied);
 }
 ```
-`let &copied = reference;` の行で，参照形式のパターンを使っています．`=` の右辺が `&i32` 型なので， `copied` は `i32` 型になり，そこには `*reference` の値が代入されます．
+`let &copied = reference;` の行で，参照形式のパターンを使っています．`=` の右辺が `&i32` 型なので， `copied` は `i32` 型になり，そこには `hoge` の値が代入されます．
+
+![](https://storage.googleapis.com/zenn-user-upload/xcg5yxri0d7rzu9hjfthrd5a87rd)
 
 `copied` の値は `hoge` と同じ 10 ですが， `hoge` と `copied` のアドレスをそれぞれ出力してみると異なる値になっていることが分かるはずです．
 # ライフタイム
