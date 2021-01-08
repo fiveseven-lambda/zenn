@@ -9,7 +9,7 @@ Rust は 2010 年に登場した言語ですが， C++ や python など他の�
 
 この記事では AtCoder のジャッジシステムを利用するため，まず AtCoder にログインすることが必要になります．アカウントを持っていない人は，[ここ](https://atcoder.jp/register)からアカウント作成を行ってください．
 # AtCoder を利用したコードの実行
-APG4b に倣い， AtCoder のジャッジシステムの挙動とコードテストを使用した Rust の実行について説明します．
+APG4b （AtCoder の提供する C++ 入門教材）に倣い， AtCoder のジャッジシステムの挙動とコードテストを使用した Rust の実行について説明します．
 ## 提出
 AtCoder へのコードの提出は以下のように行います．
 1. 次のコードをコピーして，[ここ](https://atcoder.jp/contests/apg4b/tasks/APG4b_a)のページ下部のコード入力欄に貼り付けます．
