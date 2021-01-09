@@ -24,9 +24,9 @@ fn main() {
 
 ![](https://storage.googleapis.com/zenn-user-upload/8vgf3wta6i35lup25s4gh70eyi6h)
 
-`number` に 6 ， `weight` に 12.0 がそれぞれ代入され，出力は `6: 12.0` となります．
+`number` に 6 ， `weight` に 12.0 がそれぞれ代入されます． `number` ， `weight` の型はそれぞれ `i32` ， `f64` です．
 
-`number` の型は `i32` ， `weight` の型は `f64` です．
+よって 1 回目のループの出力は `6: 12.0` となります．
 
 これが `elements` の各要素について繰り返されるので，プログラム全体の出力は
 ```-:標準出力
