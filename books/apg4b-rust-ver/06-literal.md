@@ -7,7 +7,7 @@ title: "リテラルと浮動小数点数同士の四則演算"
 
 ```rust
 fn main() {
-    println!("\"Fool\", said I, \"you do not know\"");
+    println!("\"Fool,\" said I, \"you do not know\"");
 }
 ```
 文字列リテラル中に`\"`が登場すると，これは文字列の終わりではなく`"`という文字として扱われます．すなわち上のコードを実行すると `"Fool," said I, "you do not know"` と出力されます．
@@ -39,7 +39,7 @@ fn main() {
 生文字列リテラルを用いて `"` を出力するときには， `r" "` の代わりに `r#" "#` で囲います．
 ```rust
 fn main() {
-    println!(r#""Fool", said I, "you do not know""#);
+    println!(r#""Fool," said I, "you do not know""#);
 }
 ```
 `"#` が来るまで文字列は終わりません．出力は `"Fool," said I, "you do not know"` となります．
