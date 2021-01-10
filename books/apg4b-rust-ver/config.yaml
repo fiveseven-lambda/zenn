@@ -20,3 +20,5 @@ chapters:
   - 14-reference
   - 15-for
   - 16-pattern
+  - 17-mutable
+  - 18-mutable-reference

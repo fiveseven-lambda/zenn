@@ -13,7 +13,7 @@ fn main() {
 ```
 `elements` の型は `[(i32, f64); 5]` （タプル `(i32, f64)` が 5 個並んだ配列）です．よって， `elements[0]` `elements[1]` …… `elements[4]` の型は全て `(i32, f64)` です．
 
-`for` 文では， `elements` の各要素への参照を，パターン `&(number, weight)` で受け取っています．このうち 1 回目のループに着目すると，
+`for` 式では， `elements` の各要素への参照を，パターン `&(number, weight)` で受け取っています．このうち 1 回目のループに着目すると，
 ```rust
 {
     let &(number, weight) = &elements[0];
