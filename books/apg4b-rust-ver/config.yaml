@@ -1,5 +1,5 @@
 title: "AtCoder と Rust で始める！競技プログラミング入門（Rust 版 APG4b）"
-summary: "APG4b ( https://atcoder.jp/contests/APG4b ) の Rust 版が欲しかったので書き始めました．少しずつ書き進めていきたいと思います．"
+summary: "APG4b ( https://atcoder.jp/contests/APG4b ) の Rust 版が欲しかったので書き始めました．少しずつ書き進めていきたいと思います． 2021/01/10：自動的な参照外しについて内容に間違いがあったため， 14 章， 17 章を修正しました．"
 topics: ["rust", "atcoder"]
 published: true
 price: 0

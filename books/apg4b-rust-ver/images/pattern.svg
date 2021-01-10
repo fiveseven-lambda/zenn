@@ -184,6 +184,34 @@
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path864-9-9-2-0" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-2-7-9-6-6-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path864-9-9-2-1-3-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-2-7-9-6-6-27"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path864-9-9-2-1-3-0" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -192,9 +220,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.061871843"
-     inkscape:cx="7701.8061"
-     inkscape:cy="13108.696"
+     inkscape:zoom="0.04375"
+     inkscape:cx="5475.8567"
+     inkscape:cy="16538.83"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -212,7 +240,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -639,5 +667,105 @@
          x="3385.8472"
          y="4558.7769"
          style="stroke-width:0.264583">参照</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:176.389px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-1010.5513"
+       y="5651.7378"
+       id="text1251"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan1249"
+         x="-1010.5513"
+         y="5651.7378"
+         style="stroke-width:0.264583">let &amp;mut (ref mut x, ref mut y) = &amp;mut tuple;</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:40,40;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 3127.511,5707.4329 528.6548,-0.055"
+       id="path855-75-6-6"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 898.85275,5708.0357 99.1716,-0.3014"
+       id="path855-5-6-0-6-2-3-5"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 2063.0653,5707.7343 99.1716,-0.3014"
+       id="path855-5-6-0-6-2-3-5-3"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:176.389px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="3188.1577"
+       y="5877.8604"
+       id="text1312"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan1310"
+         x="3188.1577"
+         y="5877.8604"
+         style="stroke-width:0.264583">= (3, 10)</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 3512.3249,5921.0733 99.1716,-0.3014"
+       id="path855-5-6-0-6-2-3-5-3-5"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 3818.9337,5920.7719 218.1528,-0.2934"
+       id="path855-5-6-0-6-2-3-5-3-6"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-2-7-9-6-6-2)"
+       d="m 3929.2738,5924.3052 1.2595,218.2955 -1809.5784,0.437 -3.559,-412.1963"
+       id="path859-1-2-8-2-5-1"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-2-7-9-6-6-27)"
+       d="m 3563.0722,5923.1959 1.16,148.026 -2612.33486,2.3148 -3.57807,-347.3627"
+       id="path859-1-2-8-2-5-9"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:176.389px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="2373.5034"
+       y="6314.269"
+       id="text2505-6-3"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2503-5-6"
+         x="2373.5034"
+         y="6314.269"
+         style="stroke-width:0.264583">可変参照</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:176.389px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="1162.7064"
+       y="6243.8853"
+       id="text2505-6-3-0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2503-5-6-6"
+         x="1162.7064"
+         y="6243.8853"
+         style="stroke-width:0.264583">可変参照</tspan></text>
   </g>
 </svg>
