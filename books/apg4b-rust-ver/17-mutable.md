@@ -172,3 +172,17 @@ fn main() {
 ```
 後々説明します．
 :::
+
+# `proconio::input!` マクロと可変性
+`proconio::input!` マクロの中でも，変数名の前に `mut` を付けることで可変にすることができます．
+```
+use proconio::input;
+
+fn main() {
+    input! {
+        mut a: i32,
+    }
+    a += 20;
+    println!("{}", a);
+}
+```
