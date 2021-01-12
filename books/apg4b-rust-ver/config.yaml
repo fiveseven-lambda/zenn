@@ -22,3 +22,4 @@ chapters:
   - 16-pattern
   - 17-mutable
   - 18-mutable-reference
+  - 19-vector
