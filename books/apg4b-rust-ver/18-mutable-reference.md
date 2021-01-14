@@ -84,6 +84,46 @@ fn main() {
 }
 ```
 `hoge` に対する代入が可能になるのは，*全ての*参照のライフタイムが終了してからです．
+# 参照型の可変変数
+次のコード中に現れる `reference` は `&i32` 型の変数です．
+```rust
+fn main() {
+    let hoge = 10;
+    let reference = &hoge;
+}
+```
+この `reference` 自体を可変にすることもできます．
+```rust
+fn main() {
+    let hoge = 10;
+    let mut reference = &hoge;
+}
+```
+この場合， `reference` に参照を複数回代入することができるようになります．
+```rust
+fn main() {
+    let hoge = 10;
+    let fuga = 20;
+    let mut reference = &hoge;
+    reference = &fuga;
+    reference = &hoge;
+    reference = &10;
+}
+```
+`reference` に新しい参照が代入されたら，前の参照はもう使えなくなります．よって，前の参照のライフタイムは，代入前の最後の使用で終了します．
+```rust
+fn main() {
+    let mut reference;
+    {
+        let hoge = 10;
+        reference = &hoge; // &hoge のライフタイムの開始
+        assert_eq!(*reference, 10); // &hoge のライフタイムの終了
+        reference = &20; // &hoge はもう使えない
+    }
+    assert_eq!(*reference, 20); // &20 は静的
+}
+```
+この例では， `reference = &20;` という代入によって `&hoge` の値が失われるので， `&hoge` のライフタイムはその前の `assert_eq!` までとなります．
 # 可変参照
 可変変数は，普通の参照の他に**可変参照**をとることができます．可変参照は，参照を外して中身を書き換えることが可能です．
 ```rust
