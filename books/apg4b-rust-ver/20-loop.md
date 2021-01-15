@@ -372,6 +372,6 @@ fn main() {
 なら，このうち `7 11 5 9` までを読み込んで `3` と出力します．
 # 練習問題
 - [ABC186 B - Blocks on Grid](https://atcoder.jp/contests/abc186/tasks/abc186_b)
-  [解答例](https://atcoder.jp/contests/abc186/submissions/19442876)
+  `as` を使うと，型を変換できます．[解答例](https://atcoder.jp/contests/abc186/submissions/19443273)
 - [ABC187 B - Gentle Pairs](https://atcoder.jp/contests/abc187/tasks/abc187_b)
   [解答例](https://atcoder.jp/contests/abc187/submissions/19442785)
