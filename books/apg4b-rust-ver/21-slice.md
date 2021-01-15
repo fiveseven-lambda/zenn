@@ -161,3 +161,6 @@ fn main() {
     assert_eq!(array, [-3, -2, 2, 5, 7, 9]);
 }
 ```
+# 練習問題
+- [ABC175 B - Making Triangle](https://atcoder.jp/contests/abc175/tasks/abc175_b)
+  [解答例](https://atcoder.jp/contests/abc175/submissions/19443184)
