@@ -258,6 +258,27 @@ fn main() {
     assert_eq!(fuga, 60);
 }
 ```
+## 型強制
+`&T` 型の値を， `&mut T` 型の変数に代入することはできません．
+```rust
+fn main() {
+    let mut hoge: i32 = 10;
+    let immutable_reference = &hoge;
+    let mutable_reference: &mut i32 = immutable_reference; // エラー
+}
+```
+左辺は `&mut i32` ，右辺は `&i32` であり，これらは異なる型だからです．
+
+一方， `&mut T` 型の値を `&T` 型の変数に代入することは可能です．
+```rust
+fn main() {
+    let mut hoge: i32 = 10;
+    let mutable_reference = &mut hoge;
+    let immutable_reference: &i32 = mutable_reference;
+    assert_eq!(*immutable_reference, 10);
+}
+```
+左辺の `immutable_reference` が `&i32` であるため， `&mut i32` 型の `mutable_reference` は強制的に `&i32` へと変換されます．これを**型強制**といいます．
 # パターンマッチ
 ## `&mut` パターン
 可変参照のパターンマッチには `&mut` を使います．

@@ -24,3 +24,4 @@ chapters:
   - 18-mutable-reference
   - 19-vector
   - 20-loop
+  - 21-slice
