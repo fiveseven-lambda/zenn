@@ -245,6 +245,26 @@ error: `..` can only be used once per slice pattern
   |                 previously used here
 ```
 `` `..` can only be used once per slice pattern `` は，「`..` はスライスパターン一つにつき一回しか使えない」という意味です．
+# `while let` 式
+`if let` 式は「マッチしたらブロックの中身が実行される」ものでした．一方， `while let` 式は「マッチしている間ブロックの中身が実行され続ける」ものです．
+```rust
+fn main() {
+    let array = [0, 0, 0, 1, 2];
+    let mut ref_slice = &array[..];
+    while let [0, ..] = *ref_slice {
+        ref_slice = &ref_slice[1..];
+    }
+    assert_eq!(ref_slice, [1, 2]);
+}
+```
+1. はじめ `ref_slice` は `array` の全体 `[0, 0, 0, 1, 2]` のスライスへの参照です．
+1. `[0, 0, 0, 1, 2]` は `[0, ..]` にマッチするので，ブロックが実行されます．
+   1. `ref_slice[1..]` は `array` の `[0, 0, 1, 2]` の範囲を指すスライスです．これが `ref_slice` に代入されます．
+1. `[0, 0, 1, 2]` は `[0, ..]` にマッチするので，ブロックが実行されます．
+   1. `ref_slice[1..]` は `array` の `[0, 1, 2]` の範囲を指すスライスです．これが `ref_slice` に代入されます．
+1. `[0, 1, 2]` は `[0, ..]` にマッチするので，ブロックが実行されます．
+   1. `ref_slice[1..]` は `array` の `[1, 2]` の範囲を指すスライスです．これが `ref_slice` に代入されます．
+1. `[1, 2]` は `[0, ..]` にマッチしないので，ブロックが実行されずにループが終了します．
 
 # `match` 式
 これは，上で登場したコードです．
