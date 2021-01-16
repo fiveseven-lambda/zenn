@@ -353,7 +353,7 @@ fn main() {
         0 => 1,
         1 => 0,
         _ => {
-            println!("neither 0 or 1");
+            println!("neither 0 nor 1");
             0
         }
     };
