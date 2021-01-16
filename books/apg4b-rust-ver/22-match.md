@@ -488,9 +488,7 @@ fn main() {
 fn main() {
     let tuple = (1, 3);
     match tuple {
-        (1, x) if x % 2 == 0 => {
-            println!("{}", x);
-        }
+        (1, x) if x % 2 == 0 => println!("{}", x),
         _ => {}
     }
 }
@@ -502,18 +500,10 @@ fn main() {
 fn main() {
     let tuple = (1, 50);
     match tuple {
-        (1, 0..=9) => {
-            println!("1 桁");
-        }
-        (1, 10..=99) => {
-            println!("2 桁");
-        }
-        (1, 100..=std::i32::MAX) => {
-            println!("3 桁以上");
-        }
-        (1, _) => {
-            println!("負");
-        }
+        (1, 0..=9) => println!("1 桁"),
+        (1, 10..=99) => println!(" 2 桁"),
+        (1, 100..=std::i32::MAX) => println!("3 桁以上"),
+        (1, _) => println!("負"),
         _ => {}
     }
 }
@@ -525,18 +515,10 @@ fn main() {
 fn main() {
     let tuple = (1, 50);
     match tuple {
-        (1, value @ 1..=9) => {
-            println!("{} は 1 桁", value);
-        }
-        (1, value @ 10..=99) => {
-            println!("{} は 2 桁", value);
-        }
-        (1, value @ 100..=std::i32::MAX) => {
-            println!("{} は 3 桁以上", value);
-        }
-        (1, _) => {
-            println!("負");
-        }
+        (1, value @ 0..=9) => println!("{} は 1 桁", value),
+        (1, value @ 10..=99) => println!("{} は 2 桁", value),
+        (1, value @ 100..=std::i32::MAX) => println!("{} は 3 桁以上", value),
+        (1, _) => println!("負"),
         _ => {}
     }
 }
