@@ -163,5 +163,5 @@ fn main() {
 }
 ```
 # 練習問題
-- [ABC175 B - Making Triangle](https://atcoder.jp/contests/abc175/tasks/abc175_b)
-  [解答例](https://atcoder.jp/contests/abc175/submissions/19443184)
+- [ABC171 B - Mix Juice](https://atcoder.jp/contests/abc171/tasks/abc171_b) / [解答例](https://atcoder.jp/contests/abc171/submissions/19519770)
+- [ABC175 B - Making Triangle](https://atcoder.jp/contests/abc175/tasks/abc175_b) / [解答例](https://atcoder.jp/contests/abc175/submissions/19443184)

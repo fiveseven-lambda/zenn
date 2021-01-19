@@ -248,9 +248,7 @@ input! {
 ## ABC180 B - Various distances
 次は [ABC180 B - Various distances](https://atcoder.jp/contests/abc180/tasks/abc180_b) を解いてみましょう．
 
-整数が与えられるとはいえ，途中で小数の計算が登場するので，入力を `f64` 型として受け取るのが良いでしょう．
-
-あとは `for` 式を使って計算を行うことで答えが得られます． `x.abs()` は `x` の絶対値， `x.sqrt()` は `x` の正の平方根です．
+`x.abs()` は `x` の絶対値， `x.sqrt()` は `x` の正の平方根です．
 
 [解答例 1](https://atcoder.jp/contests/abc180/submissions/19396952) です．
 

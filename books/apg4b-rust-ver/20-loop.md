@@ -371,7 +371,11 @@ fn main() {
 ```
 なら，このうち `7 11 5 9` までを読み込んで `3` と出力します．
 # 練習問題
-- [ABC186 B - Blocks on Grid](https://atcoder.jp/contests/abc186/tasks/abc186_b)
-  `as` を使うと，型を変換できます．[解答例](https://atcoder.jp/contests/abc186/submissions/19443273)
-- [ABC187 B - Gentle Pairs](https://atcoder.jp/contests/abc187/tasks/abc187_b)
-  [解答例](https://atcoder.jp/contests/abc187/submissions/19442785)
+- [ABC188 B - Orthogonality](https://atcoder.jp/contests/abc188/tasks/abc188_b) / [解答例](https://atcoder.jp/contests/abc188/submissions/19519084)
+- [ABC182 B - Almost GCD](https://atcoder.jp/contests/abc182/tasks/abc182_b) / [解答例](https://atcoder.jp/contests/abc182/submissions/19519689)
+- [ABC185 B - Smartphone Addiction](https://atcoder.jp/contests/abc185/tasks/abc185_b) / [解答例](https://atcoder.jp/contests/abc185/submissions/19519397)
+- [ABC187 B - Gentle Pairs](https://atcoder.jp/contests/abc187/tasks/abc187_b) / [解答例](https://atcoder.jp/contests/abc187/submissions/19442785)
+- [ABC186 B - Blocks on Grid](https://atcoder.jp/contests/abc186/tasks/abc186_b) / `as` を使うと，型を変換できます．[解答例](https://atcoder.jp/contests/abc186/submissions/19443273)
+- [ABC176 C - Step](https://atcoder.jp/contests/abc176/tasks/abc176_c) / [解答例](https://atcoder.jp/contests/abc176/submissions/19520294)
+- [ABC179 C - A x B + C](https://atcoder.jp/contests/abc179/tasks/abc179_c) / [解答例](https://atcoder.jp/contests/abc179/submissions/19520186)
+- [ABC188 C - ABC Tournament](https://atcoder.jp/contests/abc188/tasks/abc188_c) / [解答例](https://atcoder.jp/contests/abc188/submissions/19520070)

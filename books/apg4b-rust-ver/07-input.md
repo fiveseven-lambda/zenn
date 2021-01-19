@@ -77,7 +77,8 @@ fn main() {
 - [ABC176 A - Takoyaki](https://atcoder.jp/contests/abc176/tasks/abc176_a)
   切り上げ割り算に注意します．[解答例](https://atcoder.jp/contests/abc176/submissions/19108814)．
 - [ABC163 A - Circle Pond](https://atcoder.jp/contests/abc163/tasks/abc163_a)
-  円周率は， 3.14……と書く代わりに `std::f64::consts::PI` と書くことができます．[解答例](https://atcoder.jp/contests/abc163/submissions/19108930)．
+  入力が整数として与えられるとはいえ，途中で小数の計算が登場するので，かまわず `f64` 型として受け取るのが良いでしょう．また，円周率は， 3.14……と書く代わりに `std::f64::consts::PI` と書くことができます．[解答例](https://atcoder.jp/contests/abc163/submissions/19108930)．
+- [ABC183 B - Billiards](https://atcoder.jp/contests/abc183/tasks/abc183_b) / [解答例](https://atcoder.jp/contests/abc183/submissions/19519502)
 - [ABC168 C - : (Colon)](https://atcoder.jp/contests/abc168/tasks/abc168_c) （余弦定理を知っていることが前提になります）
   `f64` 型変数 $x$ があったとき， `x.sqrt()` は $\sqrt x$， `x.cos()` は $\cos x$ になります．
   複雑な計算は適宜変数をおくのが大事です．[解答例](https://atcoder.jp/contests/abc168/submissions/19109334)．
