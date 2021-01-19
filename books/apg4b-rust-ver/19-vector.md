@@ -245,6 +245,13 @@ input! {
 
 イテレータを使った[解答例 3](https://atcoder.jp/contests/abc181/submissions/19396582) です．
 
+## ABC176 C - Step
+次は [ABC176 C - Step](https://atcoder.jp/contests/abc176/tasks/abc176_c) を解いてみましょう．
+
+[解答例 1](https://atcoder.jp/contests/abc176/submissions/19520294) です．
+
+イテレータを使った[解答例 2](https://atcoder.jp/contests/abc176/submissions/19520517) です．
+
 ## ABC180 B - Various distances
 次は [ABC180 B - Various distances](https://atcoder.jp/contests/abc180/tasks/abc180_b) を解いてみましょう．
 
