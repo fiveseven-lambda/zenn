@@ -26,3 +26,4 @@ chapters:
   - 20-loop
   - 21-slice
   - 22-match
+  - 23-ownership

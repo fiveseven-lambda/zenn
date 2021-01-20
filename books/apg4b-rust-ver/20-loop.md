@@ -376,6 +376,5 @@ fn main() {
 - [ABC182 B - Almost GCD](https://atcoder.jp/contests/abc182/tasks/abc182_b) / [解答例](https://atcoder.jp/contests/abc182/submissions/19519689)
 - [ABC185 B - Smartphone Addiction](https://atcoder.jp/contests/abc185/tasks/abc185_b) / [解答例](https://atcoder.jp/contests/abc185/submissions/19519397)
 - [ABC187 B - Gentle Pairs](https://atcoder.jp/contests/abc187/tasks/abc187_b) / [解答例](https://atcoder.jp/contests/abc187/submissions/19442785)
-- [ABC186 B - Blocks on Grid](https://atcoder.jp/contests/abc186/tasks/abc186_b) / `as` を使うと，型を変換できます．[解答例](https://atcoder.jp/contests/abc186/submissions/19443273)
 - [ABC179 C - A x B + C](https://atcoder.jp/contests/abc179/tasks/abc179_c) / [解答例](https://atcoder.jp/contests/abc179/submissions/19520186)
 - [ABC188 C - ABC Tournament](https://atcoder.jp/contests/abc188/tasks/abc188_c) / [解答例](https://atcoder.jp/contests/abc188/submissions/19529729)
