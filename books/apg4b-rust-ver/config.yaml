@@ -1,5 +1,5 @@
 title: "AtCoder と Rust で始める！競技プログラミング入門（Rust 版 APG4b）"
-summary: "APG4b ( https://atcoder.jp/contests/APG4b ) の Rust 版が欲しかったので書き始めました．少しずつ書き進めていきたいと思います．更新履歴は github ( https://github.com/fiveseven-lambda/zenn/commits/main/books/apg4b-rust-ver ) から見られます．内容に関する意見や指摘などは[スクラップ](https://zenn.dev/toga/scraps/29283c8c5f3d16)に残していただくか， [twitter](https://twitter.com/57tggx) あるいは [misskey](https://misskey.io/@five_seven) までお願いします．"
+summary: "APG4b ( https://atcoder.jp/contests/APG4b ) の Rust 版が欲しかったので書き始めました．少しずつ書き進めていきたいと思います．更新履歴は github ( https://github.com/fiveseven-lambda/zenn/commits/main/books/apg4b-rust-ver ) から見られます．内容に関する意見や指摘などはスクラップ ( https://zenn.dev/toga/scraps/29283c8c5f3d16 ) に残していただくか， twitter ( https://twitter.com/57tggx ) あるいは misskey ( https://misskey.io/@five_seven ) までお願いします．"
 topics: ["rust", "atcoder"]
 published: true
 price: 0
