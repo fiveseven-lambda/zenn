@@ -27,3 +27,4 @@ chapters:
   - 21-slice
   - 22-match
   - 23-ownership
+  - 24-string

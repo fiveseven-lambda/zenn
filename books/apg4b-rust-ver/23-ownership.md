@@ -283,7 +283,7 @@ fn main() {
 ```rust
 fn main() {
     let tuple: (Vec<i32>, Vec<i32>) = (vec![1, 2, 3], vec![4, 5, 6]);
-    let (former, _) = tuple;
+    let (former, _) = tuple; // tuple.1 はムーブされない
     let (_, latter) = tuple;
 }
 ```
