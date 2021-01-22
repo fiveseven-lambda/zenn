@@ -158,7 +158,25 @@ fn main() {
 ```
 文字列 `𠮷野家で𩸽` を表す 17 バイトが， 1 バイトずつ出力されます．
 
-# `format!` マクロ
+# 文字列以外から `String` への変換
+## `to_string` 関数
+`x` が `i32`， `f64` のような整数型や `char` のとき， `x.to_string()` はその値を `String` 値に変換したものになります．
+
+```rust
+fn main() {
+    let x: i32 = 10;
+    assert_eq!(x.to_string(), "10".to_string());
+
+    let x: f64 = 120.0;
+    assert_eq!(x.to_string(), "120".to_string());
+
+    let x: char = 'A';
+    assert_eq!(x.to_string(), "A".to_string());
+}
+```
+3 つとも， `x.to_string()` の型は `String` です．
+
+## `format!` マクロ
 `println!` マクロを使うと，フォーマット文字列に従って値をフォーマットした結果が出力されます．
 ```rust
 fn main() {
