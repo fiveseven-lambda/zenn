@@ -87,7 +87,7 @@ let hoge: i32;
 
 他には[このような型](https://doc.rust-lang.org/std/index.html#primitives)があります．
 ## 代入
-異なる型の間で代入を行おうとすると，エラーになります．たとえば，
+異なる型の間で代入や計算を行おうとすると，エラーになります．たとえば，
 ```rust
 fn main() {
     let hoge: f64;
