@@ -38,7 +38,7 @@ $$
 $$
 \begin{aligned}
 1 &= 1 \times 13 &&+ (-4) \times 3 \\
-&= 1 \times 13 &&+ (-4) \times (29 - 13 \times 2) \\
+&= 1 \times 13 &&+ (-4) \times (29 - 2 \times 13) \\
 &= (-4) \times 29 &&+ (1 - (-4) \times 2) \times 13 \\
 &= (-4) \times 29 &&+ 9 \times 13 \\
 &= (-4) \times 29 &&+ 9 \times (100 - 3 \times 29) \\
