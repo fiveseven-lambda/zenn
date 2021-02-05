@@ -377,110 +377,103 @@ fn main() {
 毎ループの終わりで `moved` のスコープが終了しますが，このとき `moved` は所有権を持っていないのでドロップは起こりません．
 
 # 確認問題
-## 1.
-次のコードは正常に動くでしょうか．
-```rust
-fn main() {
-    let vector = vec![1, 2, 3];
-    let moved = vector;
-    let moved_2 = vector;
-}
-```
-:::details 答え
-`let moved_2 = vector;` で**エラー**になります．ムーブされた後の `vector` を使用しようとしているためです．
-:::
-## 2.
-次のコードは正常に動くでしょうか．
-```rust
-fn main() {
-    let vector = vec![1, 2, 3];
-    let moved = vector;
-    let reference = &vector;
-}
-```
-:::details 答え
-`&vector` で**エラー**になります．ムーブ後は，使用も借用もできません．
-:::
-## 3.
-次のコードは正常に動くでしょうか．
-```rust
-fn main() {
-    let vector = vec![1, 2, 3];
-    let moved = vector;
-    let _ = vector;
-}
-```
-:::details 答え
-**動きます**． `vector` がムーブされた後でも，ワイルドカードパターン `_` への代入は可能です．
-:::
-## 4.
-次のコードは正常に動くでしょうか．
-```rust
-fn main() {
-    let tuple = (vec![1, 2, 3], vec![4, 5, 6]);
-    let (former, _) = tuple;
-    let (_, latter) = tuple;
-}
-```
-:::details 答え
-**動きます**．
-
-`let (former, _) = tuple;` では， `tuple.0` が `former` にムーブされます．このときタプルパターンの中の 2 つめはワイルドカードパターンなので， `tuple.1` はムーブされずに残ります．
-
-`let (_, latter) = tuple;` では， `tuple.1` が `latter` にムーブされます． `tuple.0` は既にムーブされていますが，対応する左辺がワイルドカードパターンなので大丈夫です．
-:::
-## 5.
-次のコードは正常に動くでしょうか．
-```rust
-fn main() {
-    let reference;
-    let vector = {
-        let v = vec![10, 20, 30];
-        reference = &v;
-        v
-    };
-}
-```
-:::details 答え
-**動きます**．
-
-`v` から `vector` へムーブが起こりますが，*このとき既に `reference` のライフタイムは終了しています*．
-
-ブロックの後に `println!("{:?}", reference);` などを付け加えるとエラーになります．
-:::
-## 6.
-次のコードは正常に動くでしょうか．
-```rust
-fn main() {
-    let reference;
-    let vector = {
-        let v = vec![10, 20, 30];
-        reference = &v;
-        *reference
-    };
-}
-```
-:::details 答え
-**エラー**になります． `reference` のライフタイムが， `v` のスコープをはみ出そうとしています．
-:::
-## 7.
-次のコードは正常に動くでしょうか．
-```rust
-fn main() {
-    let vector = vec![
-        (vec![5, 2], 3.5),
-        (vec![1, 4, 3, 3], 2.75),
-        (vec![4, 6], 5.),
-    ];
-    for &(v, mean) in &vector {
-        println!("{:?}: {}", v, mean);
-    }
-}
-```
-:::details 答え
-**エラー**になります．
-
-`vector[0].0` / `vector[1].0` / `vector[2].0` から `vec` へベクタをムーブしようとしているためです．パターンを `&(ref v, mean)` あるいは `(v, mean)` に変えると動きます．
-:::
+1. 次のコードは正常に動くでしょうか．
+   ```rust
+   fn main() {
+       let vector = vec![1, 2, 3];
+       let moved = vector;
+       let moved_2 = vector;
+   }
+   ```
+   :::details 答え
+   `let moved_2 = vector;` で**エラー**になります．ムーブされた後の `vector` を使用しようとしているためです．
+   :::
+1. 次のコードは正常に動くでしょうか．
+   ```rust
+   fn main() {
+       let vector = vec![1, 2, 3];
+       let moved = vector;
+       let reference = &vector;
+   }
+   ```
+   :::details 答え
+   `&vector` で**エラー**になります．ムーブ後は，使用も借用もできません．
+   :::
+1. 次のコードは正常に動くでしょうか．
+   ```rust
+   fn main() {
+       let vector = vec![1, 2, 3];
+       let moved = vector;
+       let _ = vector;
+   }
+   ```
+   :::details 答え
+   **動きます**． `vector` がムーブされた後でも，ワイルドカードパターン `_` への代入は可能です．
+   :::
+1. 次のコードは正常に動くでしょうか．
+   ```rust
+   fn main() {
+       let tuple = (vec![1, 2, 3], vec![4, 5, 6]);
+       let (former, _) = tuple;
+       let (_, latter) = tuple;
+   }
+   ```
+   :::details 答え
+   **動きます**．
+   
+   `let (former, _) = tuple;` では， `tuple.0` が `former` にムーブされます．このときタプルパターンの中の 2 つめはワイルドカードパターンなので， `tuple.1` はムーブされずに残ります．
+   
+   `let (_, latter) = tuple;` では， `tuple.1` が `latter` にムーブされます． `tuple.0` は既にムーブされていますが，対応する左辺がワイルドカードパターンなので大丈夫です．
+   :::
+1. 次のコードは正常に動くでしょうか．
+   ```rust
+   fn main() {
+       let reference;
+       let vector = {
+           let v = vec![10, 20, 30];
+           reference = &v;
+           v
+       };
+   }
+   ```
+   :::details 答え
+   **動きます**．
+   
+   `v` から `vector` へムーブが起こりますが，*このとき既に `reference` のライフタイムは終了しています*．
+   
+   ブロックの後に `println!("{:?}", reference);` などを付け加えるとエラーになります．
+   :::
+1. 次のコードは正常に動くでしょうか．
+   ```rust
+   fn main() {
+       let reference;
+       let vector = {
+           let v = vec![10, 20, 30];
+           reference = &v;
+           *reference
+       };
+   }
+   ```
+   :::details 答え
+   **エラー**になります． `reference` のライフタイムが， `v` のスコープをはみ出そうとしています．
+   :::
+1. 次のコードは正常に動くでしょうか．
+   ```rust
+   fn main() {
+       let vector = vec![
+           (vec![5, 2], 3.5),
+           (vec![1, 4, 3, 3], 2.75),
+           (vec![4, 6], 5.),
+       ];
+       for &(v, mean) in &vector {
+           println!("{:?}: {}", v, mean);
+       }
+   }
+   ```
+   :::details 答え
+   **エラー**になります．
+   
+   `vector[0].0` / `vector[1].0` / `vector[2].0` から `vec` へベクタをムーブしようとしているためです．パターンを `&(ref v, mean)` あるいは `(v, mean)` に変えると動きます．
+   :::
 # 練習問題
 - [ABC186 B - Blocks on Grid](https://atcoder.jp/contests/abc186/tasks/abc186_b) / `as` を使うと，型を変換できます．[解答例](https://atcoder.jp/contests/abc186/submissions/19443273)
