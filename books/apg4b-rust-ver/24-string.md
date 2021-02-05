@@ -407,52 +407,6 @@ fn main() {
 ```
 とすれば， AC コードになります．
 
-## `dbg!` マクロ
-今のコードでは，最終的な `ans` の値だけを出力していました．しかし，これだと途中の計算が正しく行われているか確認することができず，間違いがあったときに気付くのが難しくなってしまいます．
-
-**`dbg!` マクロ**を用いると，プログラムの途中経過を覗くことができます．上の AC コードで， `for` ブロック内の最後に `dbg!(count, ans);` と書き加えてみます．
-```rust
-use proconio::input;
-
-fn main() {
-    input! {
-        s: String,
-    }
-    let mut count = 0;
-    let mut ans = 0;
-    for c in s.chars() {
-        match c {
-            'R' => count += 1,
-            'S' => count = 0,
-            _ => panic!(),
-        }
-        ans = ans.max(count);
-        dbg!(count, ans);
-    }
-    println!("{}", ans);
-}
-```
-すると，たとえば入力として
-```-:標準入力
-RRS
-```
-を与えて実行すると，標準出力に
-```-:標準出力
-2
-```
-という答えが出力されるほかに，標準エラー出力に
-```-:標準エラー出力
-[src/main.rs:16] count = 1
-[src/main.rs:16] ans = 1
-[src/main.rs:16] count = 2
-[src/main.rs:16] ans = 2
-[src/main.rs:16] count = 0
-[src/main.rs:16] ans = 2
-```
-という内容が出力されます． `dbg!` マクロが，その時点における `count` と `ans` の値を出力しています． `[src/main.rs:16]` は `dbg!` マクロがどのファイルの何行目にあったかを表しています．
-
-これを見ると， `count` と `ans` の値が，ループ 1 周目の最後でそれぞれ 1 と 1 ，ループ 2 周目の最後でそれぞれ 2 と 2 ，ループ 3 周目の最後でそれぞれ 0 と 2 であるということが分かります．よって，答えだけでなく途中経過も正しいことが確認できます．
-
 ## ABC166 A - A?C
 [ABC166 A - A?C](https://atcoder.jp/contests/abc166/tasks/abc166_a) を解いてみましょう．
 
@@ -500,9 +454,7 @@ fn main() {
 ## ABC184 B - Quizzes
 [ABC184 B - Quizzes](https://atcoder.jp/contests/abc184/tasks/abc184_b) を解いてみましょう．
 
-最初に与えられる整数 $N$ は，使う必要がありません．このようなときはワイルドカードパターン `_` を使いましょう．[解答例](https://atcoder.jp/contests/abc184/submissions/19555114)です．
-
-また，この解答例の中に `// dbg!(x);` という行があり， `//` を消すと `dbg!` マクロによるデバッグ出力が行われるようになります．しかし，デバッグ出力をするとプログラム全体が遅くなり，場合によっては[この提出](https://atcoder.jp/contests/abc184/submissions/19555097)のように TLE （ Time Limit Exceeded ，実行時間制限超過）になってしまいます．提出する際は，余計なデバッグ出力をコメントアウトしてから提出しましょう．
+最初に与えられる整数 $N$ は，使う必要がありません．このようなときはワイルドカードパターン `_` を使いましょう．[解答例](https://atcoder.jp/contests/abc184/submissions/19925482)です．
 
 ## ABC176 B - Multiple of 9
 [B - Multiple of 9](https://atcoder.jp/contests/abc176/tasks/abc176_b) を解いてみましょう．
