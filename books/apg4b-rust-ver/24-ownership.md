@@ -285,7 +285,7 @@ fn main() {
 タプルの要素にコピー不可能なものが含まれていると，タプル自体もコピー不可能になります．
 ```rust
 fn main() {
-    let tuple: (Vec<i32>, f64) = (vec![1, 2, 3], 0.1);
+    let tuple: (String, f64) = ("hello".to_string(), 0.1); // String はコピー不可能
     let moved = tuple; // ムーブ
 }
 ```
@@ -293,32 +293,32 @@ fn main() {
 タプルを作る際にも，ムーブが起こります．
 ```rust
 fn main() {
-    let vector = vec![1, 2, 3];
-    let tuple: (Vec<i32>, f64) = (vector, 0.1); // vector がムーブされる
-    println!("{:?}", vector); // エラー
+    let hello = "hello".to_string();
+    let tuple: (String, f64) = (hello, 0.1); // hello がムーブされる
+    println!("{}", hello); // エラー
 }
 ```
 ## 部分的なムーブ
 タプルの一部だけをムーブすることが可能です．
 ```rust
 fn main() {
-    let tuple: (Vec<i32>, f64) = (vec![1, 2, 3], 0.1);
-    let vector = tuple.0; // 一部をムーブ
+    let tuple: (String, f64) = ("hello".to_string(), 0.1);
+    let hello = tuple.0; // 一部をムーブ
 }
 ```
 一部の要素がムーブされていても，残りの要素は使用することができます．
 ```rust
 fn main() {
-    let tuple: (Vec<i32>, f64) = (vec![1, 2, 3], 0.1);
-    let vector = tuple.0; // 一部をムーブ
+    let tuple: (String, f64) = ("hello".to_string(), 0.1);
+    let hello = tuple.0; // 一部をムーブ
     assert_eq!(tuple.1, 0.1); // 使用できる
 }
 ```
 しかし，タプル全体を使用することはできなくなります．
 ```rust
 fn main() {
-    let tuple: (Vec<i32>, f64) = (vec![1, 2, 3], 0.1);
-    let vector = tuple.0; // 一部をムーブ
+    let tuple: (String, f64) = ("hello".to_string(), 0.1);
+    let hello = tuple.0; // 一部をムーブ
     let reference = &tuple; // エラー：借用できない
 }
 ```
@@ -326,9 +326,9 @@ fn main() {
 ワイルドカードパターン `_` への代入は使用に含まれず，ムーブも起こりません．よって次のコードは正常に動きます．
 ```rust
 fn main() {
-    let vector = vec![1, 2, 3];
-    let _ = vector;
-    println!("{:?}", vector);
+    let hello = "hello".to_string();
+    let _ = hello;
+    println!("{}", hello);
 }
 ```
 
