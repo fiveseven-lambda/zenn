@@ -29,3 +29,4 @@ chapters:
   - 23-string
   - 24-ownership
   - 25-function
+  - 26-call-by-reference
