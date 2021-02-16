@@ -192,6 +192,6 @@ where
 ```
 [Playground のリンク](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=45a599e006505df85317fd43bfd97388)．
 
-また，これを使うと [ABC182 E - Akari]() が次のように解けます： [AC コード](https://atcoder.jp/contests/abc182/submissions/20202805)．
+また，これを使うと [ABC182 E - Akari](https://atcoder.jp/contests/abc182/tasks/abc182_e) が次のように解けます： [AC コード](https://atcoder.jp/contests/abc182/submissions/20202805)．
 
 以上，行と列の転置でした．この記事が誰かの役に立てば幸いです．
