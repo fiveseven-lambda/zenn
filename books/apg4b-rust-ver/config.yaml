@@ -30,4 +30,4 @@ chapters:
   - 24-ownership
   - 25-function
   - 26-call-by-reference
-  - 27-bool
+  - 27-boolean
