@@ -131,6 +131,7 @@ fn main() {
     assert_eq!(false & false, false);
 }
 ```
+この演算を， AND 演算といいます．
 
 たとえば，次のコードを見てください．
 ```rust
@@ -197,6 +198,8 @@ fn main() {
 }
 ```
 
+この演算を， OR 演算といいます．
+
 たとえば，次のコードを見てください．
 ```rust
 fn main() {
@@ -244,14 +247,6 @@ fn fnc2() -> bool {
 ```-:標準出力
 fnc1: true
 ```
-## `!` 演算子
-`!` 演算子は， 1 つの `bool` 値を受け取り， `true` なら `false` ， `false` なら `true` を返します．
-```rust
-fn main() {
-    assert_eq!(!true, false);
-    assert_eq!(!false, true);
-}
-```
 ## `^` 演算子
 `^` 演算子は， 2 つの `bool` 値を受け取り，どちらか一方のみが `true` のとき `true` を返します．ともに `true` ，あるいはともに `false` であれば `^` の返り値は `false` になります．
 ```rust
@@ -262,7 +257,16 @@ fn main() {
     assert_eq!(false ^ false, false);
 }
 ```
-
+この演算を， XOR 演算といいます． XOR 演算の短絡評価をする演算子はありません．
+## `!` 演算子
+`!` 演算子は， 1 つの `bool` 値を受け取り， `true` なら `false` ， `false` なら `true` を返します．
+```rust
+fn main() {
+    assert_eq!(!true, false);
+    assert_eq!(!false, true);
+}
+```
+この演算を， NOT 演算といいます．
 ## 複合代入演算子
 `+` や `*` に対する `+=` や `*=` と同じように， `&` `|` `^` に対しても `&=` `|=` `^=` があります． `&&=` と `||=` はありません．
 ```rust
