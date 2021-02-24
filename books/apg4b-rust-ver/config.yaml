@@ -31,4 +31,5 @@ chapters:
   - 25-function
   - 26-call-by-reference
   - 27-boolean
-  - 28-bitwise-operation
+  - 28-recursion
+  - 29-bitwise-operation
