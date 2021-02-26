@@ -192,6 +192,10 @@ loop {
     }
 }
 ```
+
+:::message
+`left < len && slice[left] <= pivot` で，短絡評価を行う `&&` 演算子を用いています． `left < len` が先にあるので， `left < len` が真だったときにのみ `slice[left] <= pivot` かどうか確かめられます．ここでもし，短絡評価を行わない `&` 演算子を使って `(left < len) & (slice[left] <= pivot)` と書いていたらどうなるでしょうか？仮に `slice[1..]` の要素が全て `pivot` より小さく，ループ中で `left == len` になったとします．このとき， `left < len` は偽ですが，それでも `slice[left] <= pivot` かどうか確かめられます．しかし今 `left` は `0` 以上 `len` 未満の範囲にないので， `slice[left]` は範囲外アクセスになってしまいます．よって， `&` ではなく `&&` を使わなければいけません．
+:::
 ## 再帰呼出し
 ここまでの処理が終了したとき， `slice[..right]` の要素は全て `pivot` 以下であり， `slice[right + 1..]` の要素は全て `pivot` より大きいので， `slice[..right]` の部分と `slice[right + 1..]` の部分をそれぞれソートすると， `slice` 全体がソートされたことになります．ここで， `sort` 関数を再帰呼び出しします．
 ```rust
