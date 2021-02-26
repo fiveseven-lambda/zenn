@@ -130,6 +130,10 @@ let len = slice.len();
   - `slice[n]` は `pivot` に等しく，
   - 範囲 `slice[n + 1..]` の要素は全て `pivot` より大きい．
 
+例えば次のような状態です．
+
+![](https://storage.googleapis.com/zenn-user-upload/049dnu81wm6qxfyedcalikyvfsdn)
+
 これを，ここでは「スライスが `pivot` で分割されている」と呼ぶことにします．
 
  `left` ， `right` という 2 つの `usize` 型可変変数を用意し，それぞれ `1` と `len - 1` を代入しておきます．
