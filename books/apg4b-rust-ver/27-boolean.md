@@ -282,3 +282,93 @@ fn main() {
     assert_eq!(flag, false);
 }
 ```
+# 練習問題
+[ABC192 B - uNrEaDaBlE sTrInG](https://atcoder.jp/contests/abc192/tasks/abc192_b) を解いてみます．
+
+この問題を解くためには，文字列 $S$ に含まれる各文字 $c$ について「大文字アルファベットか」「小文字アルファベットか」を知る必要があります．これらはどちらも標準ライブラリに存在します．
+
+`char` 型あるいは `u8` 型の変数 `c` について， `c.is_ascii()` は `c` が ASCII 文字のとき `true` に，そうでないとき `false` になります．競技プログラミングで与えられる入力は大抵の場合 ASCII 文字です．
+
+`c` が ASCII 文字であると分かっているとき， `c` がどんな文字であるか調べるためには次の関数が使えます．
+
+| 関数名 | 返り値が `true` になるとき |
+|--|--|
+| `c.is_ascii_alphabetic()` | `c` が英語のアルファベットのとき |
+| `c.is_ascii_uppercase()` | `c` が英語の大文字アルファベットのとき | 
+| `c.is_ascii_lowercase()` | `c` が英語の小文字アルファベットのとき | 
+| `c.is_ascii_digit()` | `c` が数字のとき |
+| `c.is_ascii_hexdigit()` | `c` が 16 進数の表記に使われる文字のとき |
+| `c.is_ascii_alphanumeric()` | `c` が英語のアルファベットか数字のとき |
+| `c.is_ascii_whitespace()` | `c` がスペース，タブ，改行，改ページのとき | 
+| `c.is_ascii_punctuation()` | `c` が記号のとき | 
+| `c.is_ascii_graphic()` | `c` が表示文字のとき |
+| `c.is_ascii_control()` | `c` が制御文字のとき |
+
+与えられた文字列 $S$ が読みにくい文字列であるためには， $S$ を構成する*全ての*文字 $c$ について，奇数番目なら英小文字，偶数番目なら英大文字という条件が成り立っていなければなりません．
+
+「全ての〜について〜が成り立つ」というような命題を**全称命題**といいます．これをプログラム上で調べる方法は 2 つあります．
+
+まずは，条件が成り立っていないものが 1 つでも見つかったら `return` 式で `main` 関数を終了させるというものです．これを用いると次のように書けます．
+```rust
+use proconio::input;
+use proconio::marker::Chars;
+
+fn main() {
+    input! {
+        s: Chars
+    }
+    for i in 0..s.len() {
+        if (i % 2 == 0) ^ s[i].is_ascii_lowercase() {
+            // s[i] が条件を満たさないので，
+            // S は読みにくい文字列ではない
+            println!("No");
+            return;
+        }
+    }
+    // 制御がここに達したということは，
+    // 全ての文字を調べても一度も return されなかったということなので，
+    // S は読みにくい文字列
+    println!("Yes");
+}
+```
+
+もう 1 つの書き方は， `bool` 型の可変変数 `ans` を用意しておき，最初は `true` で初期化しておいて，条件を満たさない文字が見つかったら `false` を代入するというものです．
+```rust
+use proconio::input;
+use proconio::marker::Chars;
+
+fn main() {
+    input! {
+        s: Chars
+    }
+    let mut ans = true;
+    for i in 0..s.len() {
+        if (i % 2 == 0) ^ s[i].is_ascii_lowercase() {
+            ans = false;
+        }
+    }
+    // ここで ans が true ならば，
+    // ans に false が一度も代入されなかったということなので，
+    // S は読みにくい文字列
+    println!("{}", if ans { "Yes" } else { "No" });
+}
+```
+このやり方では， `&=` 演算子を用いて次のように書くこともできます．
+```rust
+use proconio::input;
+use proconio::marker::Chars;
+
+fn main() {
+    input! {
+        s: Chars
+    }
+    let mut ans = true;
+    for i in 0..s.len() {
+        ans &= (i % 2 == 0) ^ s[i].is_ascii_uppercase();
+    }
+    println!("{}", if ans { "Yes" } else { "No" });
+}
+```
+どちらのやり方でも正しいコードを書くことができます．
+
+全称命題に対し，「ある〜が少なくとも 1 つ存在して，〜が成り立つ」という命題を**存在命題**といいます．こちらは，「条件を満たすものが 1 つでも見つかったら `return` 式で `main` 関数を終了させる」「 `bool` 型の可変変数 `ans` をはじめ `false` で初期化しておいて，条件を満たすものが見つかったら `true` を代入する」という 2 通りのいずれかで書くことができます．
