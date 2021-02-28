@@ -304,7 +304,7 @@ fn main() {
 | `c.is_ascii_graphic()` | `c` が表示文字のとき |
 | `c.is_ascii_control()` | `c` が制御文字のとき |
 
-与えられた文字列 $S$ が読みにくい文字列であるためには， $S$ を構成する*全ての*文字 $c$ について，奇数番目なら英小文字，偶数番目なら英大文字という条件が成り立っていなければなりません．
+さて，これを使って今回の問題を解いてみましょう．与えられた文字列 $S$ が読みにくい文字列であるためには， $S$ を構成する*全ての*文字 $c$ について，奇数番目なら英小文字，偶数番目なら英大文字という条件が成り立っていなければなりません．
 
 「全ての〜について〜が成り立つ」というような命題を**全称命題**といいます．これをプログラム上で調べる方法は 2 つあります．
 
@@ -315,7 +315,7 @@ use proconio::marker::Chars;
 
 fn main() {
     input! {
-        s: Chars
+        s: Chars,
     }
     for i in 0..s.len() {
         if (i % 2 == 0) ^ s[i].is_ascii_lowercase() {
@@ -339,7 +339,7 @@ use proconio::marker::Chars;
 
 fn main() {
     input! {
-        s: Chars
+        s: Chars,
     }
     let mut ans = true;
     for i in 0..s.len() {
@@ -360,7 +360,7 @@ use proconio::marker::Chars;
 
 fn main() {
     input! {
-        s: Chars
+        s: Chars,
     }
     let mut ans = true;
     for i in 0..s.len() {
