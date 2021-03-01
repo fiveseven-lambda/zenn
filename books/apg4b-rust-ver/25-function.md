@@ -213,6 +213,18 @@ fn greet() {
 
 // greet のスコープの終了
 ```
+## 関数名の重複
+同じスコープで同じ名前の関数を定義することはできません．
+```rust
+fn fnc() {
+    println!("first definition");
+}
+
+// エラー
+fn fnc() {
+    println!("second definition");
+}
+```
 # 環境
 プログラム中のある時点において，「今存在している変数」を考えます．たとえば，
 
