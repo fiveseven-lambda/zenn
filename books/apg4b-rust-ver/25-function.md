@@ -456,7 +456,7 @@ fn minimum_factor(n: i32) -> i32 {
 # 標準ライブラリ
 よく使われる便利な関数は，自分で定義しなくても最初から用意されている場合があります．
 
-たとえば， 2 つの数を受け取って大きい方を返す `std::cmp::max` や小さい方を返す `std::cmp::min` がその例です．
+たとえば， 2 つの数を受け取って大きい方を返す [`std::cmp::max`](https://doc.rust-lang.org/std/cmp/fn.max.html) や小さい方を返す [`std::cmp::min`](https://doc.rust-lang.org/std/cmp/fn.min.html) がその例です（リンクは公式のドキュメントです）．
 ```rust
 fn main() {
     assert_eq!(std::cmp::max(2, 5), 5);

@@ -16,7 +16,7 @@ fn main() {
 }
 ```
 
-一方， `==` も演算子です．そして，これに対応する標準ライブラリの関数は， `PartialEq::eq` 関数です．これを用いると，
+一方， `==` も演算子です．そして，これに対応する標準ライブラリの関数は， [`PartialEq::eq`](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#tymethod.eq) 関数です．これを用いると，
 ```rust
 use proconio::input;
 
@@ -287,22 +287,22 @@ fn main() {
 
 この問題を解くためには，文字列 $S$ に含まれる各文字 $c$ について「大文字アルファベットか」「小文字アルファベットか」を知る必要があります．範囲パターン `'A'..'Z'` や `'a'..'z'` を使うこともできますが，標準ライブラリにある関数を使うこともできます．
 
-`char` 型あるいは `u8` 型の変数 `c` について， `c.is_ascii()` は `c` が ASCII 文字のとき `true` に，そうでないとき `false` になります．競技プログラミングで与えられる入力は大抵の場合 ASCII 文字です．
+`char` 型あるいは `u8` 型の変数 `c` について， [`c.is_ascii()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii) は `c` が ASCII 文字のとき `true` に，そうでないとき `false` になります．競技プログラミングで与えられる入力は大抵の場合 ASCII 文字です．
 
 `c` が ASCII 文字であると分かっているとき， `c` がどんな文字であるか調べるためには次の関数が使えます．
 
 | 関数名 | 返り値が `true` になるとき |
 |--|--|
-| `c.is_ascii_alphabetic()` | `c` が英語のアルファベットのとき |
-| `c.is_ascii_uppercase()` | `c` が英語の大文字アルファベットのとき | 
-| `c.is_ascii_lowercase()` | `c` が英語の小文字アルファベットのとき | 
-| `c.is_ascii_digit()` | `c` が数字のとき |
-| `c.is_ascii_hexdigit()` | `c` が 16 進数の表記に使われる文字のとき |
-| `c.is_ascii_alphanumeric()` | `c` が英語のアルファベットか数字のとき |
-| `c.is_ascii_whitespace()` | `c` がスペース，タブ，改行，改ページのとき | 
-| `c.is_ascii_punctuation()` | `c` が記号のとき | 
-| `c.is_ascii_graphic()` | `c` が表示文字のとき |
-| `c.is_ascii_control()` | `c` が制御文字のとき |
+| [`c.is_ascii_alphabetic()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_alphabetic) | `c` が英語のアルファベットのとき |
+| [`c.is_ascii_uppercase()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_uppercase) | `c` が英語の大文字アルファベットのとき | 
+| [`c.is_ascii_lowercase()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_lowercase) | `c` が英語の小文字アルファベットのとき | 
+| [`c.is_ascii_digit()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_digit) | `c` が数字のとき |
+| [`c.is_ascii_hexdigit()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_hexdigit) | `c` が 16 進数の表記に使われる文字のとき |
+| [`c.is_ascii_alphanumeric()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_alphanumeric) | `c` が英語のアルファベットか数字のとき |
+| [`c.is_ascii_whitespace()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_whitespace) | `c` がスペース，タブ，改行，改ページのとき | 
+| [`c.is_ascii_punctuation()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_punctuation) | `c` が記号のとき | 
+| [`c.is_ascii_graphic()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_graphic) | `c` が表示文字のとき |
+| [`c.is_ascii_control()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_control) | `c` が制御文字のとき |
 
 さて，これを使って今回の問題を解いてみましょう．与えられた文字列 $S$ が読みにくい文字列であるためには， $S$ を構成する*全ての*文字 $c$ について，奇数番目なら英小文字，偶数番目なら英大文字という条件が成り立っていなければなりません．
 
