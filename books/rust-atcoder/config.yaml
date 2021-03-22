@@ -1,0 +1,12 @@
+title: "RustCoder ―― AtCoder と Rust で始める競技プログラミング入門"
+summary: "あ"
+topics: ["rust", "競技プログラミング", "atcoder"]
+published: false
+price: 0
+chapters:
+  - 01-intro
+  - 02-environment-setup
+  - 03-hello-world
+  - 04-arithmetic
+  - 05-variable
+  - 06-literal
