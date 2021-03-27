@@ -52,7 +52,7 @@ fn digits() -> Vec<i32> {
 
 このように，ブロックに名前を付けて関数を作ることを，「関数を**定義**する」といいます．
 :::message
-関数に対する名前の付け方は，[第 5 章](https://zenn.dev/toga/books/apg4b-rust-ver/viewer/05-variable#%E5%A4%89%E6%95%B0%E5%90%8D)で説明した変数に対する名前の付け方と同じです．
+関数に対する名前の付け方は，[第 5 章](https://zenn.dev/toga/books/rust-atcoder/viewer/05-variable#変数名)で説明した変数に対する名前の付け方と同じです．
 :::
 
 ## 関数の呼び出し
