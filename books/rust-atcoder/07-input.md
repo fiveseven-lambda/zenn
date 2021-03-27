@@ -16,7 +16,7 @@ title: "入力の受け取り"
 ```
 となります．このようなプログラムを書くことができれば， AC （正解）です．
 
-この問題を解くためには，まず入力を受け取る必要があります．入力を受け取るには， **`proconio::input!` マクロ**を使います．
+この問題を解くためには，まず標準入力から入力を受け取る必要があります．入力を受け取るには， **`proconio::input!` マクロ**を使います．
 
 :::message
 AtCoder 上の環境では，何もしなくても `proconio::input!` マクロを使うことができます．一方，手元で環境構築をしている場合は，後述するように `Cargo.toml` を編集しなければいけません．
@@ -43,7 +43,7 @@ fn main() {
 ```
 とすれば， `n` ， `a` ， `b` を読み込んだ後， $n - a + b$ を計算して出力するようになります．これでさっきの問題を解くことができました．[ここ](https://atcoder.jp/contests/abc180/submit?taskScreenName=abc180_a)から提出し， AC になることを確認してください．
 # `Cargo.toml` （手元で環境構築をしている場合）
-`proconio::input!` マクロは， [crates.io](https://crates.io) にある [`proconio`](https://crates.io/crates/proconio) というクレートのマクロです．よって，このマクロを使うプログラムをビルドするときは `proconio` クレートのダウンロードとコンパイルも行うことになります．
+`proconio::input!` マクロは， [crates.io](https://crates.io) にある [`proconio`](https://crates.io/crates/proconio) というクレートのマクロです．よって，このマクロを使うプログラムをビルドするときは `proconio` クレートのダウンロードとコンパイルも必要になります．
 
 `proconio` にもバージョンがあります．これは， Rust 自体のバージョンとは別のものです．[ここ](https://github.com/rust-lang-ja/atcoder-rust-resources/wiki/2020-Update)を見ると， AtCoder の環境における `proconio` のバージョンは 0.3.6 であるということが分かります．そこで，手元の環境でもバージョン 0.3.6 の `proconio` を使えるようにします．
 
