@@ -113,6 +113,10 @@ fn main() {
 ```
 空のスライスは，何番目の要素にアクセスしようとしても範囲外アクセスとなりますが，スライスであることに変わりはありません．
 
+:::message
+`a..b` において $a > b$ のとき，あるいは `a..=b` において $a > b + 1$ のときは，実行時エラーになります．これは [`for` 式のとき](https://zenn.dev/toga/books/rust-atcoder/viewer/20-loop#..-%E6%BC%94%E7%AE%97%E5%AD%90)の挙動と異なるので注意してください．
+:::
+
 # 使用
 スライスの使い方をいくつか紹介します．完全な情報は[ドキュメント](https://doc.rust-lang.org/std/primitive.slice.html)に載っています．
 ## `for` 式
