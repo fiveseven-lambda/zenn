@@ -27,7 +27,7 @@ fn main() {
 fn main() {
     let mut mutable: i32;
     mutable = 30;
-    mutable = 20.0f64; // エラー
+    mutable = 20_f64; // エラー
 }
 ```
 `i32` 型の可変変数に `f64` 型の値を代入しようとしたのでエラーになっています．
