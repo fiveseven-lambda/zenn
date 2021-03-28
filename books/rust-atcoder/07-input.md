@@ -14,7 +14,7 @@ title: "入力の受け取り"
 ```-:標準出力
 101
 ```
-となります．このようなプログラムを書くことができれば， AC （正解）です．
+となります．このような計算を行うプログラムを書くことができれば， AC （正解）です．
 
 この問題を解くためには，まず標準入力から入力を受け取る必要があります．入力を受け取るには， **`proconio::input!` マクロ**を使います．
 
@@ -45,7 +45,7 @@ fn main() {
 # `Cargo.toml` （手元で環境構築をしている場合）
 `proconio::input!` マクロは， [crates.io](https://crates.io) にある [`proconio`](https://crates.io/crates/proconio) というクレートのマクロです．よって，このマクロを使うプログラムをビルドするときは `proconio` クレートのダウンロードとコンパイルも必要になります．
 
-`proconio` にもバージョンがあります．これは， Rust 自体のバージョンとは別のものです．[ここ](https://github.com/rust-lang-ja/atcoder-rust-resources/wiki/2020-Update)を見ると， AtCoder の環境における `proconio` のバージョンは 0.3.6 であるということが分かります．そこで，手元の環境でもバージョン 0.3.6 の `proconio` を使えるようにします．
+`proconio` にもバージョンがあります．これは， Rust 自体のバージョンとは別のものです．[ここ](https://github.com/rust-lang-ja/atcoder-rust-resources/wiki/2020-Update#proconio)を見ると， AtCoder の環境における `proconio` のバージョンは 0.3.6 であるということが分かります．そこで，手元の環境でもバージョン 0.3.6 の `proconio` を使えるようにします．
 
 `cargo` に対して `proconio` クレートのバージョン 0.3.6 を使うよう命令するには， `Cargo.toml` を編集して， `[dependencies]` と書かれた行の後に `proconio = "0.3.6"` という行を追加します．
 ```

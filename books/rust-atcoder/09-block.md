@@ -51,7 +51,7 @@ fn main() {
 1. `{ println!("Good afternoon"); println!("Good evening"); }` というブロック
 1. `println!("Good night");` という文
 
-の 3 つです． ②のブロックの中身は，
+の 3 つです．  2. のブロックの中身は，
 1. `println!("Good afternoon");` という文
 1. `println!("Good evening");` という文
 
@@ -140,9 +140,9 @@ fn main() {
 2 つの `hoge` は別の変数なので，型が違っても構いません．
 ```rust
 fn main() {
-    let hoge = 10;
+    let hoge: i32 = 10;
     println!("{}", hoge);
-    let hoge = 20.;
+    let hoge: f64 = 20.;
     println!("{}", hoge);
 }
 ```

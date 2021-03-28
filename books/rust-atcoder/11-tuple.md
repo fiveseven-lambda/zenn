@@ -87,7 +87,7 @@ error[E0308]: mismatched types
   = note: expected tuple `(i32, i32)`
              found tuple `(_, _, _)`
 ```
-`mismatched types` は，「型が合っていない」という意味です． `` this expression has type `i32` `` は「この式は `i32` 型である」， ``expected `i32`, found tuple`` は「`i32` が来るはずだったが，実際にはタプルがあった」という意味です．`expected a tuple with 2 elements, found one with 3 elements` は，「要素が 2 つのタプルが来るはずだったが，実際には要素が 3 つのタプルだった」という意味です．
+`mismatched types` は，「型が合っていない」という意味です． `` this expression has type `i32` `` は「この式は `i32` 型である」， ``expected `i32`, found tuple`` は「`i32` が来るはずだったが，実際にはタプルパターンがあった」という意味です．`expected a tuple with 2 elements, found one with 3 elements` は，「要素が 2 つのタプルパターンが来るはずだったが，実際には要素が 3 つのタプルパターンだった」という意味です．
 
 型注釈を付けるときは次のようになります．
 ```rust
@@ -132,4 +132,4 @@ fn main() {
 }
 ```
 
-括弧の中が空なので，型も `()` で値も `()` です．要素が無いため， `()` 型の変数は， `()` という 1 通りの値を取ることしかできません．
+括弧 `(` … `)` の中が空なので，型も `()` で値も `()` です．要素が無いため， `()` 型の変数は， `()` という 1 通りの値を取ることしかできません．
