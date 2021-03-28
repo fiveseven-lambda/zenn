@@ -67,3 +67,78 @@ assert_eq!(result, b'A');
 文字 `A` の ASCII コードは 65 です．
 :::
 # トレイト
+`i32` 型の引数を 1 つ受け取って値を出力する `print_i32` 関数を考えます．
+```rust
+fn print_i32(x: i32) {
+    println!("{}", x);
+}
+```
+`f64` や `&str` など他の型についても，同じような関数を考えることができます．では，これをジェネリクスを使って次のように定義しようとするとどうなるでしょうか．
+```rust
+fn print<T>(x: T) {
+    println!("{}", x);
+}
+```
+残念ながら，これはコンパイルエラーになります．型パラメータ `<T>` が付いた関数は全ての型 `T` について使えるようにならなければいけないのに対して，たとえば `T` がタプル `(i32, i32)` のときは， `println!("{}", x);` で値を出力することができないからです．
+
+そこで， `print::<T>` 関数を「全ての型 `T` について」使えるようにするのではなく，「 `{}` で出力できるような全ての型 `T` について」使えるようにしたいです．このような，型 `T` についての条件は，**トレイト**として扱われます．
+
+今回の「 `{}` で出力できる」という条件に対応するトレイトは， `std::fmt::Display` です． `std::fmt::Display` の条件を満たす全ての型 `T` に対して `print::<T>` 関数を定義するときは， `<T>` の代わりに `<T: std::fmt::Display>` と書きます．
+```rust
+fn print<T: std::fmt::Display>(x: T) {
+    println!("{}", x);
+}
+```
+「 `T` が `std::fmt::Display` の条件を満たす」という制限を， `print` 関数の**トレイト境界**といいます．
+
+`i32` や `&str` は `std::fmt::Display` の条件を満たすので， `print::<i32>` 関数や `print::<&str>` 関数は使うことができます．
+```rust
+print(10);
+print("Hello");
+```
+一方， `print::<(i32, i32)>` 関数を使おうとするとコンパイルエラーになります．
+```rust
+print((10_i32, 20_i32));
+```
+```
+error[E0277]: `(i32, i32)` doesn't implement `std::fmt::Display`
+ --> src/main.rs:2:11
+  |
+2 |     print((10_i32, 20_i32));
+  |           ^^^^^^^^^^^^^^^^ `(i32, i32)` cannot be formatted with the default formatter
+...
+5 | fn print<T: std::fmt::Display>(x: T) {
+  |    -----    ----------------- required by this bound in `print`
+  |
+  = help: the trait `std::fmt::Display` is not implemented for `(i32, i32)`
+  = note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+```
+## `impl`
+また，このようにトレイト境界をもつジェネリクスは `impl` キーワードを使うと次のように簡単に書くことができます．
+```rust
+fn print(x: impl std::fmt::Display) {
+    println!("{}", x);
+}
+```
+関数名の後の `<T: std::fmt::Display>` が無くなり，代わりに `T` と書いていたところに `impl std::fmt::Display` と書いています．書き方が違うだけで，意味は同じです．
+## `where`
+トレイト境界は， `where` キーワードを使って `{` の直前に書くこともできます．
+```rust
+fn print<T>(x: T)
+where
+    T: std::fmt::Display,
+{
+    println!("{}", x);
+}
+```
+関数が値を返すときは， `-> (型)` の後に `where (トレイト境界)` を書きます．
+## 複数のトレイト境界
+複数のトレイト境界は， `+` でつないで書きます．たとえば， 2 つの引数を受け取って，値が等しいときにだけ出力する `print_when_equal` 関数は，次のように書きます．
+```rust
+fn print_when_equal<T: std::fmt::Display + PartialEq>(x: T, y: T) {
+    if x == y {
+        println!("{} == {}", x, y);
+    }
+}
+```
+`PartialEq` は `==` 演算子で比較可能であるという条件を表すトレイトです（詳しくは後の章で説明します）． `std::fmt::Display + PartialEq` と書くと， `std::fmt::Display` の条件と `PartialEq` の条件を両方満たす `T` についてのみ `print_when_equal::<T>` が使えるようになります．
