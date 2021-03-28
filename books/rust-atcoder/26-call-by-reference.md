@@ -142,7 +142,7 @@ fnc3(&mut hoge, &mut hoge);
 ```
 のように呼び出すことはできるでしょうか．
 
-[18 章](https://zenn.dev/toga/books/apg4b-rust-ver/viewer/18-mutable-reference)で説明した通り，ある変数を同時に複数回借用できるのは，全ての借用が不変であるときに限ります．よって，
+[第 18 章](https://zenn.dev/toga/books/rust-atcoder/viewer/18-mutable-reference)で説明した通り，ある変数を同時に複数回借用できるのは，全ての借用が不変であるときに限ります．よって，
 - 2 回とも不変借用をしている `fnc1(&hoge, &hoge)`
 
 は問題ありませんが，
@@ -224,7 +224,7 @@ fn main() {
     println!("{}", x);
 }
 ```
-各ループの最後に， `dbg!(x)` と付け加えました．[コードテスト](https://atcoder.jp/contests/practice/custom_test)で実行してみると，次のように出力されるはずです．
+各ループの最後に， `dbg!(x)` と付け加えました．実行すると，標準出力と標準エラー出力に対してそれぞれ次のように出力されるはずです．
 ```-:標準出力
 57
 ```
