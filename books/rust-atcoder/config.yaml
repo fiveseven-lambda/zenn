@@ -34,3 +34,4 @@ chapters:
   - 28-recursion
   - 29-bitwise-operation
   - 30-time-complexity
+  - 31-generics
