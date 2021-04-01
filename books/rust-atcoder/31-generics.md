@@ -136,8 +136,20 @@ where
 }
 ```
 関数が値を返すときは， `-> (型)` の後に `where (トレイト境界)` を書きます．
+```rust
+fn print<T>(x: T) -> T
+where
+    T: std::fmt::Display,
+{
+    println!("{}", x);
+    x
+}
+```
 ## 複数のトレイト境界
-複数のトレイト境界は， `+` でつないで書きます．たとえば， 2 つの引数を受け取って，値が等しいときにだけ出力する `print_when_equal` 関数は，次のように書きます．
+複数のトレイト境界は， `+` でつないで書きます．
+
+たとえば， 2 つの引数を受け取って，値が等しいときにだけ出力する `print_when_equal` 関数を考えます． `==` `!=` 演算子で比較可能であるという条件は `PartialEq` トレイトで表されます（詳しくは後の章で説明します）． `std::fmt::Display` の条件と `PartialEq` の条件を*両方*満たすような `T` についてのみ `print_when_equal::<T>` が使えるようにするには， `T: std::fmt::Display + PartialEq` と書きます．
+
 ```rust
 fn print_when_equal<T: std::fmt::Display + PartialEq>(x: T, y: T) {
     if x == y {
@@ -145,4 +157,3 @@ fn print_when_equal<T: std::fmt::Display + PartialEq>(x: T, y: T) {
     }
 }
 ```
-`PartialEq` は `==` 演算子で比較可能であるという条件を表すトレイトです（詳しくは後の章で説明します）． `std::fmt::Display + PartialEq` と書くと， `std::fmt::Display` の条件と `PartialEq` の条件を両方満たす `T` についてのみ `print_when_equal::<T>` が使えるようになります．
