@@ -148,12 +148,13 @@ where
 ## 複数のトレイト境界
 複数のトレイト境界は， `+` でつないで書きます．
 
-たとえば， 2 つの引数を受け取って，値が等しいときにだけ出力する `print_when_equal` 関数を考えます． `==` `!=` 演算子で比較可能であるという条件は `PartialEq` トレイトで表されます（詳しくは後の章で説明します）． `std::fmt::Display` の条件と `PartialEq` の条件を*両方*満たすような `T` についてのみ `print_when_equal::<T>` が使えるようにするには， `T: std::fmt::Display + PartialEq` と書きます．
+`{}` での出力ができるという条件には `std::fmt::Display` トレイトが対応しました．一方， `{:?}` でのデバッグ出力ができるという条件には `std::fmt::Debug` トレイトが対応します．
+
+関数内で `{}` での出力と `{:?}` でのデバッグ出力を両方行いたいときは，型パラメータ `T` が `std::fmt::Display` の条件と `std::fmt::Debug` の条件を両方満たす必要があります．このように `T` に複数の条件を課す場合は， `+` 演算子を使って `T: std::fmt::Display + std::fmt::Debug` と書きます．
 
 ```rust
-fn print_when_equal<T: std::fmt::Display + PartialEq>(x: T, y: T) {
-    if x == y {
-        println!("{} == {}", x, y);
-    }
+fn print_display_and_debug<T: std::fmt::Display + std::fmt::Debug>(x: T){
+    println!("{}", x);
+    println!("{:?}", x);
 }
 ```
