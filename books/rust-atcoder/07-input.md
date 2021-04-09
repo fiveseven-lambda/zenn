@@ -44,7 +44,7 @@ fn main() {
 とすれば， `n` ， `a` ， `b` を読み込んだ後， $n - a + b$ を計算して出力するようになります．これでさっきの問題を解くことができました．[ここ](https://atcoder.jp/contests/abc180/submit?taskScreenName=abc180_a)から提出し， AC になることを確認してください．
 
 :::message
-`proconio::input!` マクロを書くだけで変数 `n` ， `a` ， `b` が使えるようになるため， `let n;` のような宣言を書く必要はありません．
+`proconio::input!` マクロを書くだけで変数 `n` ， `a` ， `b` が使えるようになるため，今回 `let n;` のような宣言を書く必要はありません．
 :::
 # `Cargo.toml` （手元で環境構築をしている場合）
 `proconio::input!` マクロは， [crates.io](https://crates.io) にある [`proconio`](https://crates.io/crates/proconio) というクレートのマクロです．よって，このマクロを使うプログラムをビルドするときは `proconio` クレートのダウンロードとコンパイルも必要になります．
