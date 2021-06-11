@@ -142,21 +142,24 @@ $X_k$ を求めるには $X_{k:0}$，$X_{k:1}$ が分かればよく， $X_{k:0}
 
 たとえば， Rust での実装は次のようになります．
 ```rust:FFT の Rust による実装
-fn fft(v: &mut Vec<Complex64>, n: u32) {
-    let len = v.len();
-    assert_eq!(len, 1 << n);
-    let mask1 = len - 1; // k が数列の長さを超えたときに割った余りをとるマスク
-    let zeta: Vec<_> = (0..len)
-        .map(|i| Complex64::from_polar(1., -std::f64::consts::TAU * i as f64 / len as f64))
-        .collect(); // ゼータの 0 乗から -(len - 1) 乗
-    for i in 0..n {
+use num::complex::Complex64; // 複素数
+use std::f64::consts::TAU; // 2π
+
+fn fft(x: &mut Vec<Complex64>, bit: u32) {
+    let n = x.len();
+    assert_eq!(n, 1 << bit);
+    let mask1 = n - 1; // k が数列の長さを超えたときに割った余りをとるマスク
+    let zeta: Vec<_> = (0..n)
+        .map(|i| Complex64::from_polar(1., -TAU * i as f64 / n as f64))
+        .collect(); // ゼータの 0 乗から -(n - 1) 乗
+    for i in 0..bit {
         let mask2 = mask1 >> i + 1; // イオタの部分を得るマスク
-        *v = (0..len)
+        *x = (0..n)
             .map(|j| {
                 let lower = j & mask2; // イオタの部分
                 let upper = j ^ lower; // k の部分
                 let shift = upper << 1 & mask1;
-                v[shift | lower] + zeta[upper] * v[shift | mask2 + 1 | lower]
+                x[shift | lower] + zeta[upper] * x[shift | mask2 + 1 | lower]
             })
             .collect();
     }
