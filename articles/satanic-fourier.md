@@ -140,7 +140,57 @@ $X_k$ を求めるには $X_{k:0}$，$X_{k:1}$ が分かればよく， $X_{k:0}
 # 実装
 実装の際は， $X$ の添字 $k:\iota$ を「 $k$ の $2$ 進法表記と $\iota$ を並べて書いて 1 つの数とみなしたもの」として扱います．たとえば， $k = 5$， $\iota = 10$ ならば， $k = 101_{(2)}$ と $10$ を並べて書くと $10110_{(2)} = 22$ なので， $X[22]$ に $X_{5:10}$ の値が入ります．
 
-たとえば， Rust での実装は次のようになります．
+以下に， C++， python， Rust での実装を示します．
+```cpp:FFT の C++ による実装
+#include <vector>
+#include <complex>
+#include <cassert>
+
+constexpr double TAU = 6.28318530717958647692528676655900577;
+
+void fft(std::vector<std::complex<double>> &x, const unsigned bit){
+	std::size_t n = x.size();
+	assert(n == 1 << bit);
+	std::size_t mask1 = n - 1; // k が数列の長さを超えたときに割った余りをとるマスク
+	std::vector<std::complex<double>> zeta(n);
+	for(std::size_t i = 0; i < n; ++i){
+		zeta[i] = std::polar(1., -TAU * i / n); // ゼータの -i 乗
+	}
+	for(unsigned i = 0; i < bit; ++i){
+		std::size_t mask2 = mask1 >> i + 1; // イオタの部分を得るマスク
+		std::vector<std::complex<double>> tmp(n);
+		for(std::size_t j = 0; j < n; ++j){
+			std::size_t lower = j & mask2; // イオタの部分
+			std::size_t upper = j ^ lower; // k の部分
+			std::size_t shift = upper << 1 & mask1;
+			tmp[j] = x[shift | lower] + zeta[upper] * x[shift | mask2 + 1 | lower];
+		}
+		x = std::move(tmp);
+	}
+}
+```
+
+```python:FFT の python による実装
+import math
+import cmath
+
+def fft(x, bit):
+    n = len(x)
+    assert n == 1 << bit
+    mask1 = n - 1 # k が数列の長さを超えたときに割った余りをとるマスク
+    zeta = [cmath.rect(1, -math.tau * i / n) for i in range(n)] # ゼータの 0 乗から -(n - 1) 乗
+    for i in range(bit):
+        mask2 = mask1 >> i + 1 # イオタの部分を得るマスク
+        tmp = []
+        for j in range(n):
+            lower = j & mask2 # イオタの部分
+            upper = j ^ lower # k の部分
+            shift = upper << 1 & mask1
+            tmp.append(x[shift | lower] + zeta[upper] * x[shift | mask2 + 1 | lower])
+        x = tmp
+    return x
+```
+
 ```rust:FFT の Rust による実装
 use num::complex::Complex64; // 複素数
 use std::f64::consts::TAU; // 2π
@@ -165,3 +215,6 @@ fn fft(x: &mut Vec<Complex64>, bit: u32) {
     }
 }
 ```
+
+# 終わりに
+この記事で扱った実装方法は [satanic さんの github.io](https://satanic0258.github.io/snippets/math/FFT.html) に載っていたもので，[るまさんのブログ](https://tomorinao.blogspot.com/2018/10/various-fft.html)でも解説されています．私は勝手に **satanic FFT** などと呼んでいます．
