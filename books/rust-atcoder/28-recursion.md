@@ -64,8 +64,7 @@ fn fact(n: i32) -> i32 {
 ```rust
 fn fact(n: i32) -> i32 {
     if n == 0 {
-        // ベースケース
-        1
+        1 // ベースケース
     } else {
         fact(n - 1) * n
     }
@@ -94,8 +93,7 @@ fn main() {
 fn sum(slice: &[i32]) -> i32 {
     // is_empty 関数は空スライスのとき true を返す
     if slice.is_empty() {
-        // ベースケース
-        0
+        0 // ベースケース
     } else {
         // 最初の要素を除いた残りの部分の総和
         sum(&slice[1..])
