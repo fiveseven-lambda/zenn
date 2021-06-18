@@ -35,3 +35,4 @@ chapters:
   - 29-bitwise-operation
   - 30-time-complexity
   - 31-generics
+  - 32-returning-reference
