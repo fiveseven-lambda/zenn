@@ -291,7 +291,7 @@ fn main() {
 
 `c` が ASCII 文字であると分かっているとき， `c` がどんな文字であるか調べるためには次の関数が使えます．
 
-| 関数名 | 返り値が `true` になるとき |
+| 関数名 | 返り値が `true` になる条件 |
 |--|--|
 | [`c.is_ascii_alphabetic()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_alphabetic) | `c` が英語のアルファベットのとき |
 | [`c.is_ascii_uppercase()`](https://doc.rust-lang.org/std/primitive.char.html#method.is_ascii_uppercase) | `c` が英語の大文字アルファベットのとき | 
