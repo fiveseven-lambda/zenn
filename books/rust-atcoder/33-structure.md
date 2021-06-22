@@ -124,7 +124,7 @@ let david = Physical {
 ```
 `Physical` 型の変数 `david` に，身長が 170，体重が 50 であることを表す `Physical` 型の値が代入されます．
 
-このとき，フィールドの順番を変えてもかまいません．次のように書いても，同じインスタンスが生成されます．
+このとき，フィールドの順番を変えてもかまいません． `height: 170` と `weight: 50` を入れ替えて次のように書いても，同じインスタンスが生成されます．
 ```rust
 let david = Physical {
     weight: 50,
@@ -185,6 +185,8 @@ assert_eq!(w, 50);
 `Physical { height: h, weight: w, }` の部分が**構造体パターン**です．これにより， `i32` 型の変数 `h` と `i32` 型の変数 `w` が作られ，それぞれ 170， 50 が代入されます．
 ![](https://storage.googleapis.com/zenn-user-upload/e851ee423410a5e3d8cf6058.png)
 コロン `:` の前の `height` `weight` はフィールド名，コロンの後の `h` `w` は変数名です．
+
+構造体パターンにおいても， `height: h` と `weight: w` の順番は関係ありません．
 # フィールドの省略記法
 名前付きフィールドにおいて，フィールド名と変数名が同じであれば， `height: height` を単に `height` と書くことができます．
 
