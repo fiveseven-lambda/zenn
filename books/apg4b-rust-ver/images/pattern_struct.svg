@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="pattern_struct.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.09921875"
+     inkscape:cx="8269.6063"
+     inkscape:cy="1290.0787"
+     inkscape:window-width="1918"
+     inkscape:window-height="1059"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible;"
+       id="marker92819"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path92817" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path92550" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path92550-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker92819-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path92817-7" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:70.5556px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="546.26971"
+       y="-647.04657"
+       id="text3663"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_tuple_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan3661"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'courier new';-inkscape-font-specification:'courier new';stroke-width:0.264583"
+         x="546.26971"
+         y="-647.04657">let Point(x, y) = point;</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5.00000014;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:15.00000042,15.00000042;stroke-opacity:1;stroke-dashoffset:0"
+       d="m 1307.2189,-619.41771 216.3978,-0.14181"
+       id="path19797"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_tuple_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:15, 15;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 2309.1172,172.85337 216.3978,-0.14181"
+       id="path19797-0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:70.5556px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="1320.6483"
+       y="-543.5625"
+       id="text23042"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_tuple_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan23040"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'courier new';-inkscape-font-specification:'courier new';stroke-width:0.264583"
+         x="1320.6483"
+         y="-543.5625">= Point(1, 2)</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 1657.0944,-522.28173 h 46.5308"
+       id="path91398"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_tuple_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1784.4545,-522.28173 h 46.5308"
+       id="path91398-2"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_tuple_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 1681.2706,-520.21316 -0.01,34.041 -691.47232,-0.39471 0.14677,-132.69588"
+       id="path91535"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_tuple_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker92819)"
+       d="m 1809.4831,-521.97109 -0.1692,75.23508 -692.7194,-0.007 0.1733,-172.3722"
+       id="path91572"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_tuple_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3216.5326,279.35456 h 120.4089"
+       id="path91398-9"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3767.138,279.35456 h 78.3024"
+       id="path91398-2-7"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-9)"
+       d="m 3277.2653,281.42313 -0.01,34.041 -1710.2425,-0.3947 -0.952,-132.69588"
+       id="path91535-7"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker92819-7)"
+       d="m 3806.8184,279.66521 -0.7478,75.23507 -1771.1995,-0.007 1.4341,-172.3722"
+       id="path91572-6"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:70.5556px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="573.26172"
+       y="148.5498"
+       id="text94413"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="573.26172"
+         y="148.5498"
+         id="tspan94419">let Physical { height: h, weight: w, } = david;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:70.5556px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="2324.0969"
+       y="255.70132"
+       id="text118099"
+       inkscape:export-filename="/home/toga/work/zenn/books/apg4b-rust-ver/images/pattern_struct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="2324.0969"
+         y="255.70132"
+         id="tspan118105">= Physical { height: 170, weight: 50, }</tspan></text>
+  </g>
+</svg>
