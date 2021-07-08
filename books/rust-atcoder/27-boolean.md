@@ -364,7 +364,7 @@ fn main() {
     }
     let mut ans = true;
     for i in 0..s.len() {
-        ans &= (i % 2 == 0) ^ s[i].is_ascii_uppercase();
+        ans &= !((i % 2 == 0) ^ s[i].is_ascii_uppercase());
     }
     println!("{}", if ans { "Yes" } else { "No" });
 }
