@@ -456,7 +456,7 @@ fn minimum_factor(n: i32) -> i32 {
 # 標準ライブラリ
 よく使われる便利な関数は，自分で定義しなくても最初から用意されている場合があります．
 
-たとえば， 2 つの数を受け取って大きい方を返す [`std::cmp::max`](https://doc.rust-lang.org/std/cmp/fn.max.html) や小さい方を返す [`std::cmp::min`](https://doc.rust-lang.org/std/cmp/fn.min.html) がその例です（リンクは公式のドキュメントです）．
+たとえば， 2 つの数を受け取って大きい方を返す `std::cmp::max` や小さい方を返す `std::cmp::min` がその例です．
 ```rust
 fn main() {
     assert_eq!(std::cmp::max(2, 5), 5);
@@ -491,7 +491,34 @@ fn min(x: i32, y: i32) -> i32 {
 ここに書いた `max` `min` の定義だと，型が `i32` の場合にしか使えません．一方， `std::cmp::max` `std::cmp::min` は，比較さえできれば `usize` や `f64` など他の型についても使えます．このように，複数の型に対して使えるような関数の作り方は，[第 31 章](https://zenn.dev/toga/books/rust-atcoder/viewer/31-generics)で説明します．
 :::
 
-また，標準ライブラリにある関数の一部は，今まで `x.max(y)` や `slice.sort()` のように `変数名.関数名(引数)` という形式で登場していました．実は， `2.max(5)` と書くと， `Ord::max(2, 5)` と同じ意味，もっと言うと `std::cmp::Ord::max(2, 5)` と同じ意味になります．このような関数については，後の章で説明します．
+また，標準ライブラリにある関数の一部は，今まで `x.max(y)` や `slice.sort()` のように `変数名.関数名(引数)` という形式で登場していました．実は， `2.max(5)` と書くと， `std::cmp::Ord::max(2, 5)` と同じ意味になります．このような関数については，後の章で説明します．
+
+## 公式ドキュメント
+[公式ドキュメント](https://doc.rust-lang.org/std)には，標準ライブラリに含まれる*全ての*型，関数，マクロ（そして今後登場する構造体，列挙体，トレイト）が載っています．英語で書かれているため，英語を読むのが難しい場合は機械翻訳などを使って読むと良いでしょう．
+
+公式ドキュメントで `std::cmp::max` の説明を見てみましょう．この関数は標準ライブラリの中で `cmp` という分類に属していると言いましたが，この分類を**モジュール**と呼びます．公式ドキュメントのページをスクロールすると[モジュールの一覧](https://doc.rust-lang.org/stable/std/#modules)が出てくるので，ここから `cmp` を探してクリックすると [`cmp` モジュールの中身の一覧](https://doc.rust-lang.org/stable/std/cmp/index.html)に飛ぶことができます．このページを下の方にスクロールすると[関数の一覧](https://doc.rust-lang.org/stable/std/cmp/index.html#functions)があり，その中に先ほどの [`std::cmp::max`](https://doc.rust-lang.org/stable/std/cmp/fn.max.html) があります．ここにある説明を読んでみましょう．
+
+> Compares and returns the maximum of two values.
+
+2 つの値を比較し，最大値を返すと書いています．
+
+> Returns the second argument if the comparison determines them to be equal.
+
+もし値を比較した結果等しかった場合， 2 つめの引数を返すと書いています．これは以下を実行することで確認できます．
+
+```rust
+fn main() {
+    let x = 10;
+    let y = 10;
+    let z = std::cmp::max(&x, &y);
+    // 2 つの値が等しいので，返り値は &y になる
+    println!("&x: {:p}", &x);
+    println!("&y: {:p}", &y);
+    println!("z:  {:p}", z);
+}
+```
+
+Argument （引数）のようにプログラミング特有の英単語が登場することも多いです．検索したり翻訳したりしつつ，このような英単語を少しずつ知ってゆくと良いでしょう．
 
 # 練習問題
 - [ABC189 B - Alcoholic](https://atcoder.jp/contests/abc189/tasks/abc189_b) / `main` 関数の中でも `return` 式が使えます．[解答例](https://atcoder.jp/contests/abc189/submissions/19690590)
