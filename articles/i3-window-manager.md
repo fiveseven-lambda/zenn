@@ -3,7 +3,7 @@ title: "i3wm，config しないなんて勿体ない！"
 emoji: "🪟"
 type: "tech"
 topics: ["i3wm"]
-published: false
+published: true
 ---
 
 # みなさん i3 window manager 使ってますか？
