@@ -2,8 +2,9 @@
 title: "入力の受け取り"
 ---
 # 入力
-[この問題](https://atcoder.jp/contests/abc180/tasks/abc180_a)を見てみましょう．
-> 問題文
+この章からは実際に競技プログラミングの問題を解き始めます．まずは[この問題](https://atcoder.jp/contests/abc180/tasks/abc180_a)を見てみましょう．
+
+> 問題文 (ABC180 A - box)
 > $N$ 個のボールが入っていた箱から $A$ 個のボールを取り出し、新たに $B$ 個のボールを入れました。今、箱にはボールが何個入っていますか?
 
 「入力例 1 」と「出力例 1 」を見てください．入力が
@@ -16,10 +17,10 @@ title: "入力の受け取り"
 ```
 となります．このような計算を行うプログラムを書くことができれば， AC （正解）です．
 
-この問題を解くためには，まず標準入力から入力を受け取る必要があります．入力を受け取るには， **`proconio::input!` マクロ**を使います．
+この問題を解くためには，まず標準入力から数を受け取る必要があります．入力を受け取るには， **`proconio::input!` マクロ**を使います．
 
 :::message
-AtCoder 上の環境では，何もしなくても `proconio::input!` マクロを使うことができます．一方，手元で環境構築をしている場合は，後述するように `Cargo.toml` を編集しなければいけません．
+AtCoder 上の環境では，何もしなくても `proconio::input!` マクロを使うことができます．一方，手元で環境構築をしている場合は，下で説明するように `Cargo.toml` を編集しなければいけません．
 :::
 ```rust
 proconio::input! {
@@ -47,11 +48,11 @@ fn main() {
 `proconio::input!` マクロを書くだけで変数 `n` ， `a` ， `b` が使えるようになるため，今回 `let n;` のような宣言を書く必要はありません．
 :::
 # `Cargo.toml` （手元で環境構築をしている場合）
-`proconio::input!` マクロは， [crates.io](https://crates.io) にある [`proconio`](https://crates.io/crates/proconio) というクレートのマクロです．よって，このマクロを使うプログラムをビルドするときは `proconio` クレートのダウンロードとコンパイルも必要になります．
+`proconio::input!` マクロは， [crates.io](https://crates.io) にある [`proconio`](https://crates.io/crates/proconio) というクレートの中のマクロです．よって，このマクロを使うプログラムをビルドするときは `proconio` クレートのダウンロードとコンパイルも必要になります．
 
 `proconio` にもバージョンがあります．これは， Rust 自体のバージョンとは別のものです．[ここ](https://github.com/rust-lang-ja/atcoder-rust-resources/wiki/2020-Update#proconio)を見ると， AtCoder の環境における `proconio` のバージョンは 0.3.6 であるということが分かります．そこで，手元の環境でもバージョン 0.3.6 の `proconio` を使えるようにします．
 
-`cargo` に対して `proconio` クレートのバージョン 0.3.6 を使うよう命令するには， `Cargo.toml` を編集して， `[dependencies]` と書かれた行の後に `proconio = "0.3.6"` という行を追加します．
+`cargo` に対して `proconio` クレートのバージョン 0.3.6 を使うよう命令するには，[第 2 章](https://zenn.dev/toga/books/rust-atcoder/viewer/02-environment-setup)で述べた `Cargo.toml` を編集して， `[dependencies]` と書かれた行の後に `proconio = "0.3.6"` という行を追加します．
 ```
 [dependencies]
 proconio = "0.3.6"

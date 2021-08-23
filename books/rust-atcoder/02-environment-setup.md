@@ -67,9 +67,9 @@ RLS も Rust ツールチェーンの 1 つであり， `rustup` を通してイ
 ## `rustup` のインストール
 [公式](https://www.rust-lang.org/ja/tools/install)の手順に従ってください．
 
-MacOS や Linux の場合は，コマンドを一度実行するだけです．万が一 `ld` のようなリンカがインストールされていない場合，これもインストールする必要があります．
+MacOS や Linux の場合は，このページに表示されているコマンドを一度実行するだけです．万が一 `ld` のようなリンカがインストールされていない場合，これもインストールする必要があります．
 
-一方 Windows の場合は， `rustup` 自体のインストーラの実行にくわえて，[ここ](https://visualstudio.microsoft.com/ja/downloads)から Visual C++ Build Tools をインストールすることが必要になります．
+一方 Windows の場合は， `rustup` 自体のインストーラの実行にくわえて，[ここ](https://visualstudio.microsoft.com/ja/downloads/#build-tools-for-visual-studio-2019)から Visual C++ Build Tools をインストールすることが必要になります．[Microsoft による解説](https://docs.microsoft.com/ja-jp/windows/dev-environment/rust/setup)もあります．
 ## `rustup` `rustc` `cargo` がインストールされていることの確認
 次のコマンドを実行してバージョンが表示されれば，正常にインストールされています．
 ```
@@ -77,6 +77,7 @@ $ rustup --version
 $ rustc --version
 $ cargo --version
 ```
+`--` はハイフン 2 個です．
 ## `cargo` によるビルド
 `cargo` は， `new` や `build` や `run` などのサブコマンドをとります．
 
@@ -88,7 +89,7 @@ $ cargo new hello_world
 ```
 $ cd hello_world
 ```
-ソースファイルは `src/main.rs` にあります．このとき， `Hello, world!` を出力する次のようなプログラムが初めから書かれています．
+このディレクトリの中にある `src/main.rs` にソースコードを書いていきます．このとき，標準出力に `Hello, world!` とだけ出力する次のようなプログラムが初めから書かれています．
 ```rust:src/main.rs
 fn main() {
     println!("Hello, world!");
@@ -105,45 +106,53 @@ $ cargo run
 $ cargo build
 ```
 
-また， `hello_world` 直下に `Cargo.toml` というファイルも作られているはずです．これを開くと， `[dependencies]` と書かれた行があるでしょう．ライブラリクレートを使用するときはこの下にその旨を記述します．記述の仕方については[第 7 章](https://zenn.dev/toga/books/rust-atcoder/viewer/07-input)で説明します．
+ソースコードに文法的な間違いがあると，コンパイルの際にエラーが起きます．サブコマンド `check` を使うと，ソースコードの文法に間違いがないかチェックすることができます．実際にビルドを行わない分， `cargo build` より速いです．
+```
+$ cargo check
+```
+
+また， `hello_world` 直下に `Cargo.toml` というファイルも作られているはずです．これを開くと， `[dependencies]` と書かれた行があるでしょう．ライブラリクレートを使用したいときはこの下にその旨を記述します．記述の仕方については[第 7 章](https://zenn.dev/toga/books/rust-atcoder/viewer/07-input)で説明します．
 
 ##  RLS のインストール
 エディタとして VSCode を使う場合を想定します．
 
-まず， Ctrl + Shift + P を押してから
+まず， VSCode を開いた状態で Ctrl + Shift + P を押し，
 ```
 ext install rust-lang.rust
 ```
-を入力して実行することで， [Rust 用の拡張機能](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust)がインストールされます．すると， `cargo new` で作ったディレクトリを VSCode で開いたときに RLS が自動的にインストールされてコードの補完やエラーの表示が有効になります．
+を入力して実行することで， [Rust 用の拡張機能](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust)がインストールされます．すると， `cargo new` で作ったディレクトリ（上の例ならば `hello_world`）を VSCode で開いたときに，コードの補完やエラーの表示が有効になります．
 # ジャッジシステムとバージョンを合わせる方法
 Rust は，日々少しずつ変化する言語です． [GitHub](https://github.com/rust-lang/) 上で多くの人が議論を重ね，よりよい言語にしようとしています．新しい Rust ツールチェーンが公開されたら， `rustup` を使って自分の環境をアップデートすることができます．
 
 古い `rustc` でコンパイルできたソースコードが新しい `rustc` でコンパイルできなくなることはありません．これを**後方互換性**といいます．一方，新しい `rustc` でコンパイルできるソースコードが古い `rustc` でコンパイルできないことは十分に考えられます．
 
-Rust で書いたコードを AtCoder に提出すると， AtCoder のサーバー上にある Rust ツールチェーンを用いてビルドと実行が行われます．手元の Rust ツールチェーンと AtCoder の Rust ツールチェーンのバージョンが異なる場合，手元で動くコードが AtCoder 上では動かないなどの問題が生じる可能性も考えられます．
+Rust で書いたコードを AtCoder に提出すると，ジャッジ（正誤判定）のためにビルドと実行が行われます．このときに用いられるのは，AtCoder のサーバーにインストールされている Rust ツールチェーンです．手元の Rust ツールチェーンと AtCoder の Rust ツールチェーンのバージョンが異なる場合，手元で動くコードが AtCoder 上では動かないといった問題が生じるかもしれません．
+
+Rust のバージョンは， 1.42.0 のように 3 つの数字の組として表されます．
 
 手元の Rust ツールチェーンのバージョンは，次のコマンドで確認することができます．
 ```
 $ rustc --version
 ```
-X.XX.X のような部分がバージョンです．
+`rustc 1.42.0 (b8cedc004 2020-03-09)` のような出力であれば， `1.42.0` がバージョンです．
 
-一方， AtCoder の Rust ツールチェーンのバージョンは，コード提出画面の言語選択欄に書かれています．言語リストから Rust を選択するときに「 Rust (X.XX.X) 」のように書かれていたら， X.XX.X がバージョンです．
+一方， AtCoder の Rust ツールチェーンのバージョンは，コード提出画面の言語選択欄に書かれています．言語リストから Rust を選択するときに「 Rust (X.XX.X) 」のように書かれていたら， X.XX.X がバージョンです（2020 年言語アップデート後だと 1.42.0 です）．
 
 手元の環境を AtCoder に合わせる場合，まず AtCoder と同じバージョンの Rust ツールチェーンをインストールする必要があります．インストーラである `rustup` を使うと次のコマンドでインストールできます．
 ```
 $ rustup toolchain install X.XX.X
 ```
-`X.XX.X` の部分には， AtCoder の Rust ツールチェーンのバージョンを入れてください．
+`X.XX.X` の部分は， AtCoder の Rust ツールチェーンのバージョンで置き換えてください．
 
-いま手元の環境には，もともとあった Rust ツールチェーンと今インストールした Rust ツールチェーンが両方存在しています． `cargo` を使ってビルドを行う際に，次のようにしてどちらを使うか指定します．
-```
-$ cargo +X.XX.X run
-```
-```
-$ cargo +X.XX.X build
-```
-また，次のコマンドでデフォルトのツールチェーンを指定しておくと， `cargo` を実行するたびに毎回バージョンを指定する必要がなくなります．
+いま手元の環境には，もともとあった Rust ツールチェーンと今インストールした Rust ツールチェーンが両方存在しています．次のコマンドを実行することで，今インストールしたバージョン `X.XX.X` のツールチェーンが今後のビルドに用いられるようになります．
 ```
 $ rustup default X.XX.X
 ```
+`X.XX.X` の部分は， AtCoder の Rust ツールチェーンのバージョンで置き換えてください．
+
+再度バージョンの確認をして， AtCoder と同じものに変わっていることを確かめてください．
+```
+$ rustc --version
+```
+
+これで， AtCoder とのバージョンの差を気にすることなく Rust が書けるようになりました．
