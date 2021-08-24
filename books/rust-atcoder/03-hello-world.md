@@ -73,6 +73,10 @@ fn main() {
 An error occured.
 ```
 
+:::message
+`println!` `eprintln!` の末尾の `ln` は， line （行）の略です． `eprintln!` `eprint!` の先頭の `e` は， error の頭文字です．
+:::
+
 # インデント
 ソースコード中で，スペースや改行といった「ホワイトスペース」と呼ばれる文字は，区切りとして以外の意味を持ちません．どういうことかというと，
 ```rust

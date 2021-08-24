@@ -2,7 +2,7 @@
 title: "アサート"
 ---
 # `assert!` マクロ
-アサートは，プログラムの異常に気付きやすいようにするための手段です．次のコードを見てください．
+**アサート**は，プログラムの異常に気付きやすいようにするための手段です．次のコードを見てください．
 ```rust
 use proconio::input;
 
@@ -82,7 +82,7 @@ assert!(0 <= r && r < 10, "割った余りが {} で，想定の範囲を超え�
 ```
 と書くこともできます．
 # `assert_eq!` / `assert_ne!` マクロ
-`assert!` マクロの中で `==` を使って `assert!(a == b)` のように書くときは，代わりに `assert_eq!` マクロを使って `assert_eq!(a, b)` と書くこともできます．
+**`assert_eq!` マクロ**を使って `assert_eq!(a, b)` と書くと， `assert!` マクロで `assert!(a == b)` と書いたのと同じことになります．
 ```rust
 use proconio::input;
 
@@ -95,6 +95,10 @@ fn main() {
     assert_eq!(rounded % y, 0); // rounded % y == 0 をチェック
 }
 ```
-同様に， `assert!(a != b)` の代わりに `assert_ne!(a, b)` と書くことができます．
+同様に， `assert!(a != b)` の代わりに **`assert_ne!` マクロ**を使って `assert_ne!(a, b)` と書くことができます．
+
+:::message
+`eq` は equal の先頭 2 文字， `ne` は not equal の頭文字です．
+:::
 
 `assert_eq!` / `assert_ne!` の場合も， `assert_eq!(a, b, "メッセージ");` のようにして失敗時のメッセージを追加することができます．

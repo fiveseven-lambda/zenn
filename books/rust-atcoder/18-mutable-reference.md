@@ -20,14 +20,14 @@ fn main() {
     let mut hoge = 10;
     let reference = &hoge;
     assert_eq!(*reference, 10); // 使用は OK
-    *reference = 20; // 代入はエラー
+    // *reference = 20; // 代入はエラー
 }
 ```
 `*reference` を使用することはできますが， `*reference` に値を代入することはできません．
 
 ## ライフタイムと可変性
 次のコードはエラーになります．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let mut hoge = 10;
     let reference = &hoge;
@@ -118,9 +118,9 @@ fn main() {
         let hoge = 10;
         reference = &hoge; // &hoge のライフタイムの開始
         assert_eq!(*reference, 10); // &hoge のライフタイムの終了
-        reference = &20; // &hoge はもう使えない
+        reference = &20;
     }
-    assert_eq!(*reference, 20); // &20 は静的
+    assert_eq!(*reference, 20); // &20 のライフタイムは静的
 }
 ```
 この例では， `reference = &20;` という代入によって `&hoge` の値が失われるので， `&hoge` のライフタイムはその前の `assert_eq!` までとなります．
@@ -151,18 +151,17 @@ fn main() {
 可変参照に対し，可変でない参照を不変参照といいます．
 ## 可変性
 可変参照も，普通の参照と同じように，ライフタイムが終了するまでもとの変数に値を代入することができません．よって次のコードはエラーになります．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let mut hoge = 10;
     let reference = &mut hoge;
-    println!("{}", reference);
     hoge = 20; // エラー： hoge への代入
     println!("{}", reference); // &mut hoge のライフタイムの終了
 }
 ```
 ## 変数が可変でない場合
 もとの変数が可変として宣言されていない場合，可変として借用することができません．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let hoge = 10;
     let reference = &mut hoge; // エラー
@@ -180,7 +179,7 @@ error[E0596]: cannot borrow `hoge` as mutable, as it is not declared as mutable
 ``cannot borrow `hoge` as mutable, as it is not declared as mutable`` は，「`hoge` は可変として宣言されていないので，可変として借用することができない」という意味です．
 
 また，借用によって可変でなくなっている変数についても，可変として借用することができません．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let mut hoge = 10;
     let immutable_reference = &hoge; // &hoge のライフタイムの開始
@@ -203,7 +202,7 @@ error[E0502]: cannot borrow `hoge` as mutable because it is also borrowed as imm
 ``cannot borrow `hoge` as mutable because it is also borrowed as immutable`` は，「`hoge` は不変として借用されているので，可変として借用することができない」という意味です．
 
 もちろん，最初の借用が可変だとしても同じです．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let mut hoge = 10;
     let reference1 = &mut hoge; // &mut hoge のライフタイムの開始
@@ -226,11 +225,11 @@ error[E0499]: cannot borrow `hoge` as mutable more than once at a time
 ``cannot borrow `hoge` as mutable more than once at a time`` は，「`hoge` を一度に 2 回以上可変として借用することはできない」という意味です．
 ## 可変として借用されている変数の使用
 次のコードはエラーになります．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let mut hoge = 10;
     let reference = &mut hoge;
-    let fuga = hoge + 20;
+    let fuga = hoge + 20; // エラー
     *reference += 30;
 }
 ```
@@ -264,11 +263,11 @@ fn main() {
 - 変数が可変であっても，借用されている間は書き換えられない．
 - ある可変変数への可変参照は，同時に最大 1 つまでしか存在しない．
 
-これにより，ある変数の中身を書き換えることができる権利をもつものは常にただ 1 つであることが保証されます．これを排他制御といいます．
+これにより，ある変数の中身を書き換えることができる権利をもつものは常に高々 1 つであることが保証されます．これを排他制御といいます．
 
 ## 型強制
 `&T` 型の値を， `&mut T` 型の変数に代入することはできません．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let mut hoge: i32 = 10;
     let immutable_reference = &hoge;
@@ -282,11 +281,11 @@ fn main() {
 fn main() {
     let mut hoge: i32 = 10;
     let mutable_reference = &mut hoge;
-    let immutable_reference: &i32 = mutable_reference;
+    let immutable_reference: &i32 = mutable_reference; // エラーではない
     assert_eq!(*immutable_reference, 10);
 }
 ```
-左辺の `immutable_reference` が `&i32` であるため， `&mut i32` 型の `mutable_reference` は強制的に `&i32` へと変換されます．これを**型強制**といいます．
+左辺 `immutable_reference` と右辺 `mutable_reference` がともに同じ型（`i32`）への参照型であり，左辺が不変 `&`，右辺が可変 `&mut` です．このような状況下では，異なる型ですが特別に代入が許されます．これを `&mut T` から `&T` への **型強制**といいます．
 # パターンマッチ
 ## `&mut` パターン
 可変参照のパターンマッチには `&mut` を使います．
@@ -296,15 +295,15 @@ fn main() {
     let &mut copied = &mut hoge;
 }
 ```
-左辺が `&mut` なのに右辺が `&` だったり，
-```rust
+パターンマッチでは，左辺が `&mut` なのに右辺が `&` だったり，
+```rust:コンパイルエラー
 fn main() {
     let mut hoge = 10;
     let &mut copied = &hoge;
 }
 ```
 左辺が `&` なのに右辺が `&mut` だったりすると，
-```rust
+```rust:コンパイルエラー
 fn main() {
     let mut hoge = 10;
     let &copied = &mut hoge;
@@ -335,7 +334,7 @@ fn main() {
 ```
 `reference` には不変参照 `&hoge` が代入されています．
 
-一方，変数名に `ref` と `mut` を両方付けると可変参照になります．
+一方，変数名に `ref` と `mut` を両方付けると可変参照パターンになります．
 ```rust
 fn main() {
     let mut hoge = 10;
@@ -346,8 +345,8 @@ fn main() {
 ```
 `reference` には可変参照 `&mut hoge` が代入されています．
 
-`ref` と `mut` の順番を逆にすると，
-```rust
+`ref` と `mut` の順番を逆にすると，コンパイルエラーになります．
+```rust:コンパイルエラー
 fn main() {
     let mut hoge = 10;
     let mut ref reference = hoge;
@@ -355,7 +354,6 @@ fn main() {
     assert_eq!(hoge, 20);
 }
 ```
-エラーになります．
 ```
 error: the order of `mut` and `ref` is incorrect
  --> src/main.rs:3:9

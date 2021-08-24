@@ -52,9 +52,12 @@ fn digits() -> Vec<i32> {
 
 このように，ブロックに名前を付けて関数を作ることを，「関数を**定義**する」といいます．
 :::message
-関数に対する名前の付け方は，[第 5 章](https://zenn.dev/toga/books/rust-atcoder/viewer/05-variable#変数名)で説明した変数に対する名前の付け方と同じです．
+`fn` は， function （関数）の略です．
 :::
 
+:::message
+関数に対する名前の付け方は，[第 5 章](https://zenn.dev/toga/books/rust-atcoder/viewer/05-variable#変数名)で説明した変数に対する名前の付け方と同じです．
+:::
 ## 関数の呼び出し
 こうして `digits` 関数を定義しておくと， `digits()` と書くことでブロックを実行することができます．すなわち，
 ```rust

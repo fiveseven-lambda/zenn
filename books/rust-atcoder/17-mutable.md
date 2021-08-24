@@ -23,7 +23,7 @@ fn main() {
 }
 ```
 しかし，型を変更することはできません．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let mut mutable: i32;
     mutable = 30;
@@ -65,7 +65,7 @@ fn main() {
 
 ## 未初期化
 可変変数も，未初期化の可能性があるまま使用することはできません．
-```rust
+```rust:コンパイルエラー
 use proconio::input;
 
 fn main() {
