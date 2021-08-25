@@ -142,9 +142,6 @@ fn main() {
 fn main() {
     let mut hoge = 10;
     let reference: &mut i32 = &mut hoge;
-    assert_eq!(*reference, 10);
-    *reference = 20;
-    assert_eq!(*reference, 20);
 }
 ```
 

@@ -207,7 +207,7 @@ fn main() {
 ```
 
 一方，先ほどの例では，
-```rust
+```rust:コンパイルエラー
 fn main() {
     let reference = {
         let hoge = 100;

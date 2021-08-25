@@ -32,7 +32,7 @@ fn main() {
 
 よって， `sum(vector)` 以降 `vector` を使うことはできません．
 
-```rust
+```rust:コンパイルエラー
 fn main() {
     let vector = vec![20, 80, 60, 40];
     let s = sum(vector); // ムーブ

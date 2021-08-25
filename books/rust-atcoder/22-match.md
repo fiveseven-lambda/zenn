@@ -120,7 +120,7 @@ fn main() {
 - どちらにもマッチしなければ，ブロックの中身は実行されません．
 
 複数のパターンの間で使われている変数が一致していなかった場合エラーになります．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let tuple = (3, 2, 1);
     if let (x, 0, 0) | (x, y, 1) | (x, y, 2) = tuple {
@@ -131,7 +131,7 @@ fn main() {
 `(x, y, 1)` と `(x, y, 2)` の中には変数 `y` が現れているのに， `(x, 0, 0)` の中には現れていないので，エラーになります．
 
 パターンの間で変数の型が一致していないときもエラーになります．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let tuple: (i32, f64) = (1, 2.0);
     if let (1, x) | (x, 2.0) = tuple {
@@ -235,7 +235,7 @@ fn main() {
 }
 ```
 # `while let` 式
-`if let` 式は「マッチしたらブロックの中身が実行される」ものでした．一方， `while let` 式は「マッチしている間ブロックの中身が実行され続ける」ものです．
+`if let` 式は「マッチしたらブロックの中身が実行される」ものでした．一方， `while let` 式は「マッチしている間ブロックの中身が繰り返される」ものです．
 ```rust
 fn main() {
     let array = [0, 0, 0, 1, 2];
@@ -388,8 +388,8 @@ fn main() {
 ```
 
 ## `unreachable!()`
-`match` 式のアームは，全ての場合をカバーしなければなりません．例えば，上の例で最後のアームを消すと
-```rust
+`match` 式のアームは，全ての場合をカバーしなければなりません．例えば，上の例で最後のアームを消すとエラーになります．
+```rust:コンパイルエラー
 use proconio::input;
 
 fn main() {
@@ -405,7 +405,6 @@ fn main() {
     println!("{}", y);
 }
 ```
-エラーになります．
 ```
 error[E0004]: non-exhaustive patterns: `i32::MIN..=-1_i32` and `2_i32..=i32::MAX` not covered
  --> src/main.rs:7:19
@@ -419,7 +418,7 @@ error[E0004]: non-exhaustive patterns: `i32::MIN..=-1_i32` and `2_i32..=i32::MAX
 `non-exhaustive patterns` は「網羅的でないパターン」という意味です．
 
 これは，理論上他の場合が存在しないという場合であっても起こることがあります．
-```rust
+```rust:コンパイルエラー
 use proconio::input;
 
 fn main() {
@@ -465,7 +464,7 @@ fn main() {
 もし `unreachable!()` と書いた部分に到達してしまったら，実行時エラーになります．
 ## `match` 式の返す値
 `match` 式の返す値は，全て同じ型でなければなりません．次のコードはエラーになります．
-```rust
+```rust:コンパイルエラー
 use proconio::input;
 
 fn main() {

@@ -32,9 +32,9 @@ fn fnc() {
 struct Point(i32, i32);
 ```
 同じスコープで同じ名前の構造体を定義してもいけません．
-```rust
+```rust:コンパイルエラー
 struct Point(i32, i32);
-struct Point(i32, i32); // エラー
+struct Point(i32, i32);
 ```
 
 ## インスタンス
@@ -44,8 +44,8 @@ let point: Point;
 ```
 
 `Point` は， `(i32, i32)` とは別の型として扱われます．よって，次の代入はエラーになります．
-```rust
-let point: Point = (2_i32, 3_i32); // エラー
+```rust:コンパイルエラー
+let point: Point = (2_i32, 3_i32);
 ```
 `(i32, i32)` 型の値を `Point` 型の変数に代入しようとしているからです．
 
@@ -87,9 +87,9 @@ struct Point(i32, i32);
 struct Physical(i32, i32);
 ```
 `Point` と `Physical` は別の型なので，三角形の頂点の座標と David の身体測定の結果を取り違えるようなミスは防ぐことができます．
-```rust
-let apex: Point = Physical(170, 50); // エラー
-let david: Physical = Point(7, 12); // エラー
+```rust:コンパイルエラー
+let apex: Point = Physical(170, 50);
+let david: Physical = Point(7, 12);
 ```
 また， `Point(7, 12)` を見た人は「これは点の座標なんだな」， `Physical(170, 50)` を見た人は「これは身長と体重のデータなんだな」と思うことができます．
 
@@ -236,25 +236,25 @@ assert_eq!(height, 170);
 ```
 # 演算，出力，コピー
 今まで， `+` で足し算できる型（ `i32` `f64` など）とそうでない型（ `bool` `char` `Vec<i32>` など）がありました．上で定義した構造体は，今のところ足し算できません．
-```rust
-Point(1, 2) + Point(3, 4); // エラー
+```rust:コンパイルエラー
+Point(1, 2) + Point(3, 4);
 ```
 `-` `*` `/` `%` といった他の演算もできません．また， `==` `!=` `<` `<=` `>` `>=` による比較もできません．
-```rust
-Point(1, 2) == Point(1, 2); // エラー
+```rust:コンパイルエラー
+Point(1, 2) == Point(1, 2);
 ```
 
 今まで， `{}` で出力できる型（ `i32` `char` など）とそうでない型（ `Vec<i32>` や `(i32, f64)` など）がありました．上で定義した構造体は，今のところ `{}` で出力できません．
-```rust
-println!("{}", Point(1, 2)); // エラー
+```rust:コンパイルエラー
+println!("{}", Point(1, 2));
 ```
 `{:?}` や `{:#?}` でも出力できません．
-```rust
-println!("{:?}", Point(1, 2)); // エラー
+```rust:コンパイルエラー
+println!("{:?}", Point(1, 2));
 ```
 
 今まで，コピー可能な型（ `i32` `(i32, f64)` など）とそうでない型（ `Vec<i32>` など）がありました．上で定義した構造体は，今のところコピー不可能です．
-```rust
+```rust:コンパイルエラー
 let point = Point(1, 2);
 let moved = point; // ムーブ
 println!("{}", point.0); // エラー

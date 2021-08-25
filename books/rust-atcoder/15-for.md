@@ -98,7 +98,7 @@ fn main() {
 ```
 
 また， `for` のブロックから値を返すことはできません．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let primes: [i32; 4] = [2, 3, 5, 7];
     let ans = for p in &primes {

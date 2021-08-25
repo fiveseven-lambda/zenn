@@ -77,7 +77,7 @@ fn main() {
 
 一方，*所有権を失った変数 `vector` を使用することはできません*．
 
-```rust
+```rust:コンパイルエラー
 fn main() {
     let vector: Vec<i32> = vec![1, 2, 3];
     let moved = vector;
@@ -221,7 +221,7 @@ fn main() {
 と出力されます．
 
 `Vec<T>` の `T` がコピー可能でない場合，*ベクタから要素だけをムーブすることはできません*．よって次のコードはエラーになります．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let vector: Vec<Vec<i32>> = vec![vec![2, 3, 4], vec![1], vec![0; 5]];
     let moved = vector[0]; // エラー：ムーブできない
@@ -241,7 +241,7 @@ for i in &vector {
 の部分を，型に着目して見てみましょう． `for` 式では， `in` の後に `&[T; N]` や `&Vec<T>` や `&[T]` を置くと，各要素への参照 `&T` が走査されます．今回， `&vector` の型は `&Vec<Vec<i32>>` なので， `i` の型は `&Vec<i32>` になり， `j` の型は `&i32` になります．
 
 これを，次のように書いてしまうとエラーになります．
-```rust
+```rust:コンパイルエラー
 for &i in &vector { // エラー：ムーブ
     for j in &i {
         print!("{} ", j);
@@ -253,7 +253,7 @@ for &i in &vector { // エラー：ムーブ
 
 ## 参照
 変数が借用されている間は，ムーブを行うことができません．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let vector = vec![1, 2, 3];
     let reference = &vector; // 借用
@@ -274,7 +274,7 @@ fn main() {
 となって，参照 `reference` の指す先が失われてしまうからです．
 
 同様に，参照の中身をムーブすることもできません．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let vector = vec![1, 2, 3];
     let reference = &vector;
@@ -291,7 +291,7 @@ fn main() {
 ```
 ## タプルの生成
 タプルを作る際にも，ムーブが起こります．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let hello = "hello".to_string();
     let tuple: (String, f64) = (hello, 0.1); // hello がムーブされる
@@ -315,7 +315,7 @@ fn main() {
 }
 ```
 しかし，タプル全体を使用することはできなくなります．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let tuple: (String, f64) = ("hello".to_string(), 0.1);
     let hello = tuple.0; // 一部をムーブ
@@ -351,7 +351,7 @@ fn main() {
 
 # ループとムーブ
 次のコードはエラーになります．
-```rust
+```rust:コンパイルエラー
 fn main() {
     let vector: Vec<i32> = Vec::new();
     for _ in 0..10 {
