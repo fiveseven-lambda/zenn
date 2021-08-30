@@ -108,4 +108,4 @@ fn main() {
 - [ABC183 B - Billiards](https://atcoder.jp/contests/abc183/tasks/abc183_b) / [解答例](https://atcoder.jp/contests/abc183/submissions/19519502)
 - [ABC168 C - : (Colon)](https://atcoder.jp/contests/abc168/tasks/abc168_c) （余弦定理を知っていることが前提になります）
   `f64` 型変数 $x$ があったとき， `x.sqrt()` は $\sqrt x$， `x.cos()` は $\cos x$ になります．
-  複雑な計算は適宜変数をおくのが大事です．[解答例](https://atcoder.jp/contests/abc168/submissions/19109334)．
+  複雑な計算は適宜変数をおくのが大事です．[解答例](https://atcoder.jp/contests/abc168/submissions/25462405)．

@@ -16,7 +16,7 @@ title: "構造体"
 struct Point(i32, i32);
 ```
 
-構造体に名前を付けるときのルールは，[第 5 章](https://zenn.dev/toga/books/rust-atcoder/viewer/05-variable#%E5%A4%89%E6%95%B0%E5%90%8D)で説明した変数名のルールと同じです．一方，慣例は変数名と異なります．
+構造体に付ける名前のルールは，[第 5 章](https://zenn.dev/toga/books/rust-atcoder/viewer/05-variable#%E5%A4%89%E6%95%B0%E5%90%8D)で説明した変数名のルールと同じです．一方，慣例は変数名と異なります．
 - 先頭は大文字にします．
 - 複数の単語をつなげるときはアンダースコア `_` を挟まず，代わりに `StudentData` のように各単語の頭文字を大文字にします．これを，スネークケースに対し**キャメルケース**といいます．
 
@@ -40,18 +40,22 @@ struct Point(i32, i32);
 ## インスタンス
 定義した構造体 `Point` は，新しい型として使えます．よって，型が `Point` であるような変数を宣言することができます．
 ```rust
-let point: Point;
+struct Point(i32, i32);
+
+fn main() {
+    let point: Point;
+}
 ```
 
-`Point` は， `(i32, i32)` とは別の型として扱われます．よって，次の代入はエラーになります．
+`Point` は， `(i32, i32)` とは別の型として扱われます．よって， `Point` 型の変数 `point` に対し次の代入はエラーになります．
 ```rust:コンパイルエラー
-let point: Point = (2_i32, 3_i32);
+point = (2_i32, 3_i32);
 ```
 `(i32, i32)` 型の値を `Point` 型の変数に代入しようとしているからです．
 
 `Point` 型の値を作るときは， `(2, 3)` の代わりに `Point(2, 3)` と書きます．
 ```rust
-let point: Point = Point(2, 3);
+point = Point(2, 3);
 ```
 こうして作られた `Point` 型の値を，構造体 `Point` の**インスタンス**といいます．
 
