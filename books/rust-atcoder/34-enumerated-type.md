@@ -142,6 +142,8 @@ enum Shape {
     Circle,
 }
 
+// shape が Shape::Triangle のときに true，
+// そうでないときに false を返す関数
 fn is_triangle(shape: Shape) -> bool {
     if let Shape::Triangle = shape {
         true
