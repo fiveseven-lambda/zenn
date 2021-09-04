@@ -223,3 +223,5 @@ fn main() {
 ```
 
 `area` 関数内の `Shape::Triangle(a, b, c)`，`Shape::Rectangle { height: h, width: w }`，`Shape::Circle { radius }` は全て論駁可能なパターンであり，それぞれ `Shape::Triangle`，`Shape::Rectangle`，`Shape::Circle` のときマッチに成功して，あとは構造体パターンと同じようにフィールドを変数名で受けます．特に最後の `Shape::Circle { radius }` は `Shape::Circle { radius: radius }` と同じ意味です．
+
+また， `match` 式のアームは全てのケースをカバーしている必要がありますが， `Shape` 型の値は必ずこれら 3 つのアームのいずれかに該当するので問題ありません．
