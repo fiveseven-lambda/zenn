@@ -19,7 +19,7 @@ AtCoder のジャッジ環境に用いられている Rust ツールチェーン
 競技プログラミングでは，「 2 つの数を受け取って，その和を計算するプログラムを作れ」というように，標準入力で受け取ったデータに対し正しく処理を行って結果を標準出力に返すプログラムを作る問題が出題されます．この問題であれば，プログラムが 2 つの数を受け取ったときに正しく和を出力できていれば正解となります．一方，間違った数を出力している場合や，計算に時間がかかりすぎている場合は不正解となります．
 
 # 提出
-AtCoder での提出の仕方を知るために，問題を 1 つ解いてみましょう．ログインした後， [practice contest A - Welcome to AtCoder](https://atcoder.jp/contests/practice/tasks/practice_1) を開いてください．
+AtCoder での提出の仕方を知るために，問題を 1 つ解いてみましょう．ログインした後，[practice contest](https://atcoder.jp/contests/practice) に参加登録し，[A - Welcome to AtCoder](https://atcoder.jp/contests/practice/tasks/practice_1) を開いてください．
 
 問題文に，どのようなプログラムを作るのか書いてあります．以下の手順で，この問題に対する提出を行ってみましょう．
 
