@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "zenn-cli": "^0.1.85"
+    "zenn-cli": "^0.1.95"
   },
   "repository": {
     "type": "git",

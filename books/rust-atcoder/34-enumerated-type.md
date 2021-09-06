@@ -17,7 +17,7 @@ enum Shape {
 }
 ```
 
-こう書くと， `Shape` 型の変数は `Shape::Triangle` `Shape::Rectangle` `Shape::Circle` という 3 通りの値を取ることができるようになります．
+こう書くと， `Shape` 型の変数は `Shape::Triangle` `Shape::Rectangle` `Shape::Circle` という 3 通りの値だけを取ることができるようになります．
 ```rust
 enum Shape {
     Triangle,
@@ -177,7 +177,7 @@ fn is_triangle(shape: Shape) -> bool {
 }
 ```
 
-とも書けます． `matches!` マクロは 2 つの引数をとりますが，そのうち 2 つめにはパターンを渡します．マッチが成功すれば `true`，失敗すれば `false` を返します．
+とも書けます． `matches!` マクロは 2 つの引数をとりますが，そのうち 2 つめには論駁可能なパターンを渡します．1 つめの引数（式）を 2 つめの引数（パターン）で受け，マッチが成功すれば `true`，失敗すれば `false` を返します．
 
 パターンを使うと，列挙子のもつフィールドの値を取り出すこともできます．
 ```rust
