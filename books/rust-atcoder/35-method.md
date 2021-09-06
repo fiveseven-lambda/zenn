@@ -179,7 +179,6 @@ impl Vector {
 }
 ```
 
-すでに登場したメソッドの例として， [`f64::sqrt(self)`](https://doc.rust-lang.org/stable/std/primitive.f64.html#method.sqrt) や [`f64::sin(self)`](https://doc.rust-lang.org/stable/std/primitive.f64.html#method.sin) などがあります．
 # 関連関数
 `Vector` 型のゼロベクトルを返す `zero` 関数を考えます．
 ```rust
@@ -191,4 +190,6 @@ impl Vector {
 ```
 これも `Vector` に関連付けて定義されている関数ですが，引数 `self` を取りません．このような関数を**関連関数**といい，呼び出すときは毎回 `Vector::` をつけて `Vector::zero()` と書きます．
 
-すでに登場した関連関数の例として， [`String::new()`](https://doc.rust-lang.org/stable/std/string/struct.String.html#method.new) があります．
+:::message
+既に登場したメソッドの例として， [`f64::sqrt(self)`](https://doc.rust-lang.org/stable/std/primitive.f64.html#method.sqrt) や [`f64::sin(self)`](https://doc.rust-lang.org/stable/std/primitive.f64.html#method.sin) などがあります．一方，既に登場した関連関数の例として， [`String::new()`](https://doc.rust-lang.org/stable/std/string/struct.String.html#method.new) があります．
+:::
