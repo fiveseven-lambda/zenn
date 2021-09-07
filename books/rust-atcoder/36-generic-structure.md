@@ -94,7 +94,7 @@ assert_eq!(p.abscissa(), 5);
 
 `abscissa()` は `Point<i32>` にしか実装されていないため，たとえば `Point<i64>` 型の値に対して `abscissa()` を呼び出すことはできません．
 ```rust:コンパイルエラー
-assert_eq!(Point::<i64>(5, 2).abscissa(), 5);
+Point::<i64>(5, 2).abscissa();
 ```
 `impl Point<i32> { }` だけでなく `impl Point<i64> { }` の中でも `abscissa()` を定義すれば，`Point<i64>` 型の値に対しても `abscissa()` を呼び出すことができるようになります．
 
