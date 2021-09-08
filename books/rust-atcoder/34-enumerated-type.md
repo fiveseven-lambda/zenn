@@ -225,3 +225,25 @@ fn main() {
 `area` 関数内の `Shape::Triangle(a, b, c)`，`Shape::Rectangle { height: h, width: w }`，`Shape::Circle { radius }` は全て論駁可能なパターンであり，それぞれ `Shape::Triangle`，`Shape::Rectangle`，`Shape::Circle` のときマッチに成功して，あとは構造体パターンと同じようにフィールドを変数名で受けます．特に最後の `Shape::Circle { radius }` は `Shape::Circle { radius: radius }` と同じ意味です．
 
 また， `match` 式のアームは全てのケースをカバーしている必要がありますが， `Shape` 型の値は必ずこれら 3 つのアームのいずれかに該当するので問題ありません．
+
+:::message
+`Shape` はコピー不可能な型なので，たとえば
+```rust
+fn fnc(shape: &Shape) {
+    let moved = *shape;
+}
+```
+と書くことはできません．`shape` は参照でしかなく，参照を通して中身の所有権を奪うことはできないからです．
+
+しかし，上のコードでは
+```rust
+fn area(shape: &Shape) -> f64 {
+    match *shape {
+        Shape::Triangle(a, b, c) => /* 略 */,
+        Shape::Rectangle { height: h, width: w, } => /* 略 */,
+        Shape::Circle { radius } => /* 略 */,
+    }
+}
+```
+と書くことができました．これは，実際に値の移動が起こっているのが `a` `b` `c` や `height` `width` `radius` といったフィールドだけの話であり，これらはコピー可能な `f64` 型だからです．
+:::
