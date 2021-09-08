@@ -219,5 +219,5 @@ impl Shape {
 ```
 
 :::message
-既に登場したメソッドの例として， [`f64::sqrt(self)`](https://doc.rust-lang.org/stable/std/primitive.f64.html#method.sqrt) や [`f64::sin(self)`](https://doc.rust-lang.org/stable/std/primitive.f64.html#method.sin) などがあります．一方，既に登場した関連関数の例として， [`String::new()`](https://doc.rust-lang.org/stable/std/string/struct.String.html#method.new) があります．
+既に登場したメソッドの例として，標準ライブラリの [`f64::sqrt(self)`](https://doc.rust-lang.org/stable/std/primitive.f64.html#method.sqrt) や [`f64::sin(self)`](https://doc.rust-lang.org/stable/std/primitive.f64.html#method.sin) などがあります．一方，既に登場した関連関数の例として，標準ライブラリの [`String::new()`](https://doc.rust-lang.org/stable/std/string/struct.String.html#method.new) があります．
 :::
