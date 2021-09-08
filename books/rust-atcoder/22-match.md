@@ -569,3 +569,4 @@ fn main() {
 `0..=9` の代わりに `value @ 0..=9` と書くと， `tuple` の 2 つめの要素がパターン `0..=9` にマッチしたとき，その値が `value` として使えるようになります．
 # 練習問題
 - [ABC168 A - ∴ (Therefore)](https://atcoder.jp/contests/abc168/tasks/abc168_a) / [解答例](https://atcoder.jp/contests/abc168/submissions/19554528)
+- [ABC214 A - New Generation ABC](https://atcoder.jp/contests/abc214/tasks/abc214_a)
