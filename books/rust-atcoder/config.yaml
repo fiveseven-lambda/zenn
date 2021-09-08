@@ -34,8 +34,9 @@ chapters:
   - 28-recursion
   - 29-bitwise-operation
   - 30-time-complexity
-  - 31-generics
+  - 31-generic-function
   - 32-returning-reference
   - 33-structure
   - 34-enumerated-type
   - 35-method
+  - 36-generic-structure
