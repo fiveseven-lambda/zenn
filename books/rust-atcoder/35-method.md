@@ -190,6 +190,33 @@ impl Vector {
 ```
 これも `Vector` に関連付けて定義されている関数ですが，引数 `self` を取りません．このような関数を**関連関数**といい，呼び出すときは毎回 `Vector::` をつけて `Vector::zero()` と書きます．
 
+# 列挙型
+列挙型についても，構造体と同様にメソッドや関連関数を定義することができます．たとえば前の章で登場した列挙型 `Shape` の面積を求める関数 `area()` は，次のようにメソッドとして定義できます．
+```rust
+enum Shape {
+    Triangle(f64, f64, f64),
+    Rectangle { height: f64, width: f64 },
+    Circle { radius: f64 },
+}
+
+impl Shape {
+    fn area(&self) -> f64 {
+        match *self {
+            Shape::Triangle(a, b, c) => {
+                let s = (a + b + c) / 2.;
+                let squared = s * (s - a) * (s - b) * (s - c);
+                squared.sqrt()
+            }
+            Shape::Rectangle {
+                height: h,
+                width: w,
+            } => h * w,
+            Shape::Circle { radius } => radius * radius * std::f64::consts::PI,
+        }
+    }
+}
+```
+
 :::message
 既に登場したメソッドの例として， [`f64::sqrt(self)`](https://doc.rust-lang.org/stable/std/primitive.f64.html#method.sqrt) や [`f64::sin(self)`](https://doc.rust-lang.org/stable/std/primitive.f64.html#method.sin) などがあります．一方，既に登場した関連関数の例として， [`String::new()`](https://doc.rust-lang.org/stable/std/string/struct.String.html#method.new) があります．
 :::

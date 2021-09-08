@@ -111,8 +111,8 @@ enum Shape {
     Circle,
 }
 
-fn fnc(shape: Shape) {
-    if shape == Shape::Triangle {
+fn fnc(shape: &Shape) {
+    if *shape == Shape::Triangle {
         println!("It's triangle.");
     }
 }
@@ -127,7 +127,7 @@ enum Shape {
     Circle { radius: f64 },
 }
 
-fn fnc(shape: Shape) {
+fn fnc(shape: &Shape) {
     let value = shape.0; // .0 は Shape::Triangle にしかない
     let value = shape.height; // .height は Shape::Rectangle にしかない
 }
@@ -144,8 +144,8 @@ enum Shape {
 
 // shape が Shape::Triangle のときに true，
 // そうでないときに false を返す関数
-fn is_triangle(shape: Shape) -> bool {
-    if let Shape::Triangle = shape {
+fn is_triangle(shape: &Shape) -> bool {
+    if let Shape::Triangle = *shape {
         true
     } else {
         false
@@ -153,16 +153,16 @@ fn is_triangle(shape: Shape) -> bool {
 }
 
 fn main() {
-    assert_eq!(is_triangle(Shape::Triangle), true);
-    assert_eq!(is_triangle(Shape::Rectangle), false);
+    assert_eq!(is_triangle(&Shape::Triangle), true);
+    assert_eq!(is_triangle(&Shape::Rectangle), false);
 }
 ```
 
 `Shape::Triangle` は論駁可能なパターンであり，右辺が `Shape::Triangle` のとき成功，そうでないとき失敗します．これを `if let` ではなく `match` を使って書けば
 
 ```rust
-fn is_triangle(shape: Shape) -> bool {
-    match shape {
+fn is_triangle(shape: &Shape) -> bool {
+    match *shape {
         Shape::Triangle => true,
         _ => false,
     }
@@ -172,8 +172,8 @@ fn is_triangle(shape: Shape) -> bool {
 となります．また， [**`matches!` マクロ**](https://doc.rust-lang.org/std/macro.matches.html)を使うと単に
 
 ```rust
-fn is_triangle(shape: Shape) -> bool {
-    matches!(shape, Shape::Triangle)
+fn is_triangle(shape: &Shape) -> bool {
+    matches!(*shape, Shape::Triangle)
 }
 ```
 
@@ -188,8 +188,8 @@ enum Shape {
 }
 
 // 図形の面積を求める関数
-fn area(shape: Shape) -> f64 {
-    match shape {
+fn area(shape: &Shape) -> f64 {
+    match *shape {
         Shape::Triangle(a, b, c) => {
             let s = (a + b + c) / 2.;
             let squared = s * (s - a) * (s - b) * (s - c);
@@ -207,18 +207,18 @@ fn main() {
     // 3 辺の長さがそれぞれ 1.5, 2, 2.5 の三角形は直角三角形なので，
     // 面積は 底辺 × 高さ ÷ 2 に等しい
     let shape1 = Shape::Triangle(1.5, 2., 2.5);
-    assert!((area(shape1) - 1.5).abs() < 1e-6);
+    assert!((area(&shape1) - 1.5).abs() < 1e-6);
 
     // 長方形の面積は 縦 × 横 に等しい
     let shape2 = Shape::Rectangle {
         height: 1.,
         width: 2.5,
     };
-    assert!((area(shape2) - 2.5).abs() < 1e-6);
+    assert!((area(&shape2) - 2.5).abs() < 1e-6);
 
     // 円の面積は 半径の 2 乗 × 円周率 に等しい
     let shape3 = Shape::Circle { radius: 2. };
-    assert!((area(shape3) - 12.566371).abs() < 1e-6);
+    assert!((area(&shape3) - 12.566371).abs() < 1e-6);
 }
 ```
 
