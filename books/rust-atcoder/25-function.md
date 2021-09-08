@@ -523,5 +523,9 @@ fn main() {
 
 Argument （引数）のようにプログラミング特有の英単語が登場することも多いです．検索したり翻訳したりしつつ，このような英単語を少しずつ知ってゆくと良いでしょう．
 
+:::message
+ここで紹介した公式ドキュメントのリンクは，最新の stable バージョンについて書かれたものです．一方 AtCoder の環境は Rust 1.42.0 なので，差異があるかもしれません．その場合は[バージョン 1.42.0 のドキュメント](https://doc.rust-lang.org/1.42.0/std)を参照しましょう．
+:::
+
 # 練習問題
 - [ABC189 B - Alcoholic](https://atcoder.jp/contests/abc189/tasks/abc189_b) / `main` 関数の中でも `return` 式が使えます．[解答例](https://atcoder.jp/contests/abc189/submissions/19690590)
