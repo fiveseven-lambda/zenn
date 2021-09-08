@@ -79,18 +79,18 @@ let p: Point = Point::<i32>(1, 5);
 struct Point<T>(T, T);
 
 impl Point<i32> {
-    fn abscissa(self) -> i32 {
-        self.0
+    fn abscissa(&self) -> &i32 {
+        &self.0
     }
 }
 ```
 と書くと，`Point<i32>` 型の変数 `p` に対し `p.abscissa()` と書いて $x$ 座標を取り出すことができるようになります．
 ```rust
 let p = Point(5, 2);
-assert_eq!(p.abscissa(), 5);
+assert_eq!(*p.abscissa(), 5);
 ```
 
-この場合 `p.abscissa()` は `Point::<i32>::abscissa(p)` と同じ意味です（これも `<i32>` ではなく `::<i32>` と書く必要があります．ただしこの `i32` は推論できるので `Point::abscissa(p)` でも構いません）．
+この場合 `p.abscissa()` は `Point::<i32>::abscissa(&p)` と同じ意味です（これも `<i32>` ではなく `::<i32>` と書く必要があります．ただしこの `i32` は推論できるので `Point::abscissa(&p)` でも構いません）．
 
 `abscissa()` は `Point<i32>` にしか実装されていないため，たとえば `Point<i64>` 型の値に対して `abscissa()` を呼び出すことはできません．
 ```rust:コンパイルエラー
@@ -102,19 +102,19 @@ Point::<i64>(5, 2).abscissa();
 struct Point<T>(T, T);
 
 impl Point<i32> {
-    fn abscissa(self) -> i32 {
-        self.0
+    fn abscissa(&self) -> &i32 {
+        &self.0
     }
 }
 impl Point<i64> {
-    fn abscissa(self) -> i64 {
-        self.0
+    fn abscissa(&self) -> &i64 {
+        &self.0
     }
 }
 
 fn main() {
-    assert_eq!(Point::<i32>(5, 2).abscissa(), 5);
-    assert_eq!(Point::<i64>(5, 2).abscissa(), 5);
+    assert_eq!(*Point::<i32>(5, 2).abscissa(), 5);
+    assert_eq!(*Point::<i64>(5, 2).abscissa(), 5);
 }
 ```
 
@@ -125,14 +125,14 @@ fn main() {
 struct Point<T>(T, T);
 
 impl<T> Point<T> {
-    fn abscissa(self) -> T {
-        self.0
+    fn abscissa(&self) -> &T {
+        &self.0
     }
 }
 
 fn main() {
-    assert_eq!(Point::<i32>(5, 2).abscissa(), 5);
-    assert_eq!(Point::<i64>(5, 2).abscissa(), 5);
+    assert_eq!(*Point::<i32>(5, 2).abscissa(), 5);
+    assert_eq!(*Point::<i64>(5, 2).abscissa(), 5);
 }
 ```
 `impl` が `impl<T>` に変わり，`impl Point<i32> { }` や `impl Point<i64> { }` において `i32` や `i64` だった部分が全て `T` に置き換わっています．こうすることで， `T` が `i32` になったときの `impl`， `T` が `i64` になったときの `impl`， `T` が `f64` になったときの `impl` などが全ての型 `T` について一斉に実装されます．そのため，`Point<i32>` 型の値に対しても `Point<i64>` 型の値に対しても同じように `abscissa()` が呼べています．
