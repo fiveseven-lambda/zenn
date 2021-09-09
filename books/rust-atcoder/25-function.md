@@ -499,7 +499,7 @@ fn min(x: i32, y: i32) -> i32 {
 ## 公式ドキュメント
 [公式ドキュメント](https://doc.rust-lang.org/std)には，標準ライブラリに含まれる*全ての*型，関数，マクロ（そして今後登場する構造体，列挙体，トレイト）が載っています．英語で書かれているため，英語を読むのが難しい場合は機械翻訳などを使って読むと良いでしょう．
 
-公式ドキュメントで `std::cmp::max` の説明を見てみましょう．この関数は標準ライブラリの中で `cmp` という分類に属していると言いましたが，この分類を**モジュール**と呼びます．公式ドキュメントのページをスクロールすると[モジュールの一覧](https://doc.rust-lang.org/stable/std/#modules)が出てくるので，ここから `cmp` を探してクリックすると [`cmp` モジュールの中身の一覧](https://doc.rust-lang.org/stable/std/cmp/index.html)に飛ぶことができます．このページを下の方にスクロールすると[関数の一覧](https://doc.rust-lang.org/stable/std/cmp/index.html#functions)があり，その中に先ほどの [`std::cmp::max`](https://doc.rust-lang.org/stable/std/cmp/fn.max.html) があります．ここにある説明を読んでみましょう．
+公式ドキュメントで `std::cmp::max` の説明を見てみましょう．この関数は標準ライブラリの中で `cmp` という分類に属していると言いましたが，この分類を**モジュール**と呼びます．公式ドキュメントのページをスクロールすると[モジュールの一覧](https://doc.rust-lang.org/std/#modules)が出てくるので，ここから `cmp` を探してクリックすると [`cmp` モジュールの中身の一覧](https://doc.rust-lang.org/std/cmp/index.html)に飛ぶことができます．このページを下の方にスクロールすると[関数の一覧](https://doc.rust-lang.org/std/cmp/index.html#functions)があり，その中に先ほどの [`std::cmp::max`](https://doc.rust-lang.org/std/cmp/fn.max.html) があります．ここにある説明を読んでみましょう．
 
 > Compares and returns the maximum of two values.
 

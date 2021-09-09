@@ -1,0 +1,1731 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="option-path-dp.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.5"
+     inkscape:cx="-2904"
+     inkscape:cy="1394"
+     inkscape:window-width="1918"
+     inkscape:window-height="1057"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker28794"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="DotL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(7.4, 1)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         id="path28792" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotM"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="DotM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) translate(7.4, 1)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         id="path27804" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotL"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="DotL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(7.4, 1)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         id="path27801" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker28125"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path28123" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path27743" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotL-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotL"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,5.92,0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path27801-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path27743-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker28794-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotL"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,5.92,0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path28792-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker28125-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path28123-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotL-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotL"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,5.92,0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path27801-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path27743-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker28794-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotL"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,5.92,0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path28792-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker28125-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path28123-0" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect846"
+       width="48.803062"
+       height="48.803062"
+       x="-409.18253"
+       y="28.315704"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9"
+       width="48.803062"
+       height="48.803062"
+       x="-360.37946"
+       y="28.315704"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8"
+       width="48.803062"
+       height="48.803062"
+       x="-311.57639"
+       y="28.315704"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1"
+       width="48.803062"
+       height="48.803062"
+       x="-262.77332"
+       y="28.315704"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-0"
+       width="48.803062"
+       height="48.803062"
+       x="-409.18253"
+       y="77.118767"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-8"
+       width="48.803062"
+       height="48.803062"
+       x="-360.37946"
+       y="77.118767"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8-8"
+       width="48.803062"
+       height="48.803062"
+       x="-311.57639"
+       y="77.118767"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-5"
+       width="48.803062"
+       height="48.803062"
+       x="-262.77332"
+       y="77.118767"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-09"
+       width="48.803062"
+       height="48.803062"
+       x="-409.18253"
+       y="125.92183"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-6"
+       width="48.803062"
+       height="48.803062"
+       x="-360.37946"
+       y="125.92183"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8-3"
+       width="48.803062"
+       height="48.803062"
+       x="-311.57639"
+       y="125.92183"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-8"
+       width="48.803062"
+       height="48.803062"
+       x="-262.77332"
+       y="125.92183"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-395.31018"
+       y="64.475182"
+       id="text4174"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-395.31018"
+         y="64.475182">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-347.59879"
+       y="64.515396"
+       id="text4174-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-347.59879"
+         y="64.515396">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-297.91171"
+       y="64.420357"
+       id="text4174-1"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-297.91171"
+         y="64.420357">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-248.49094"
+       y="64.483528"
+       id="text4174-1-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-248.49094"
+         y="64.483528">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-395.24374"
+       y="114.16938"
+       id="text4174-4"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-8"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-395.24374"
+         y="114.16938">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-347.53235"
+       y="114.20959"
+       id="text4174-6-1"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-0"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-347.53235"
+         y="114.20959">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-248.4245"
+       y="114.17773"
+       id="text4174-1-9-4"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-4"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-248.4245"
+         y="114.17773">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-395.23654"
+       y="163.89894"
+       id="text4174-44"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-7"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-395.23654"
+         y="163.89894">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-347.52515"
+       y="163.93916"
+       id="text4174-6-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-3"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-347.52515"
+         y="163.93916">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-297.83807"
+       y="163.84412"
+       id="text4174-1-1"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-7"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-297.83807"
+         y="163.84412">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-248.4173"
+       y="163.90729"
+       id="text4174-1-9-5"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-9"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-248.4173"
+         y="163.90729">2</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -311.57639,77.118767 48.80307,48.803063"
+       id="path26895"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -262.77332,77.118765 -48.80308,48.803065 v 0"
+       id="path27010"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotL);marker-end:url(#Arrow1Lend)"
+       d="m -371.45601,36.773582 148.1204,-0.01466 0.32843,109.080978"
+       id="path27606"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker28794);marker-end:url(#marker28125)"
+       d="m -401.61072,67.13325 0.11335,51.19646 49.3256,0.29891 0.0439,48.88395 108.38962,-0.38219"
+       id="path28425"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="path28919"
+       style="fill:none;fill-rule:evenodd;stroke:#000000"
+       d="m -217.5192,208.83567 c 0,11.02865 -14.52359,19.96914 -32.43936,19.96914 -17.91577,0 -32.43936,-8.94049 -32.43936,-19.96914 0,-4.61611 2.54439,-8.8664 6.81692,-12.24841 1.957,-1.54909 -2.56629,-16.49871 -2.56629,-16.49871 0,0 14.55912,10.52398 17.42339,9.9039 3.36861,-0.72926 6.99173,-1.12591 10.76534,-1.12591 17.91576,0 32.43935,8.94048 32.43936,19.96913 z"
+       sodipodi:nodetypes="sssscsss"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-267.0405"
+       y="217.49799"
+       id="text37354"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan37352"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-267.0405"
+         y="217.49799">12</tspan></text>
+    <path
+       id="path28919-5"
+       style="fill:none;fill-rule:evenodd;stroke:#000000"
+       d="m -136.90021,87.614475 c 0,11.02865 -14.5236,19.969145 -32.43937,19.969145 -4.48795,0 -8.76304,-0.56103 -12.65028,-1.57538 -2.97427,-0.77611 -25.883,4.75926 -25.883,4.75926 0,0 12.96026,-10.69598 11.16734,-12.425575 -3.21203,-3.09859 -5.07342,-6.77921 -5.07342,-10.72745 0,-11.028651 14.5236,-19.969138 32.43936,-19.969139 17.91577,-3e-6 32.43937,8.940486 32.43937,19.969139 z"
+       sodipodi:nodetypes="ssscssss"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-186.42151"
+       y="96.276794"
+       id="text37354-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan37352-7"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-186.42151"
+         y="96.276794">11</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-5"
+       width="48.803062"
+       height="48.803062"
+       x="-338.76276"
+       y="261.75467"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-61"
+       width="48.803062"
+       height="48.803062"
+       x="-289.95969"
+       y="261.75467"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8-1"
+       width="48.803062"
+       height="48.803062"
+       x="-241.15662"
+       y="261.75467"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-59"
+       width="48.803062"
+       height="48.803062"
+       x="-192.35355"
+       y="261.75467"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-0-8"
+       width="48.803062"
+       height="48.803062"
+       x="-338.76276"
+       y="310.55774"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-8-4"
+       width="48.803062"
+       height="48.803062"
+       x="-289.95969"
+       y="310.55774"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8-8-8"
+       width="48.803062"
+       height="48.803062"
+       x="-241.15662"
+       y="310.55774"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-5-1"
+       width="48.803062"
+       height="48.803062"
+       x="-192.35355"
+       y="310.55774"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-09-0"
+       width="48.803062"
+       height="48.803062"
+       x="-338.76276"
+       y="359.36081"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-6-3"
+       width="48.803062"
+       height="48.803062"
+       x="-289.95969"
+       y="359.36081"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8-3-0"
+       width="48.803062"
+       height="48.803062"
+       x="-241.15662"
+       y="359.36081"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-8-4"
+       width="48.803062"
+       height="48.803062"
+       x="-192.35355"
+       y="359.36081"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-322.55923"
+       y="296.33679"
+       id="text4174-444"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-76"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-322.55923"
+         y="296.33679">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-274.84784"
+       y="296.37701"
+       id="text4174-6-3"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-1"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-274.84784"
+         y="296.37701">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-225.16075"
+       y="296.28198"
+       id="text4174-1-7"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-5"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-225.16075"
+         y="296.28198">6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-175.73997"
+       y="296.34515"
+       id="text4174-1-9-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-6"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-175.73997"
+         y="296.34515">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-322.42581"
+       y="344.91351"
+       id="text4174-4-2"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-8-1"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-322.42581"
+         y="344.91351">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-274.71442"
+       y="344.9537"
+       id="text4174-6-1-7"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-0-8"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-274.71442"
+         y="344.9537">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-175.60655"
+       y="344.92184"
+       id="text4174-1-9-4-5"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-4-7"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-175.60655"
+         y="344.92184">9</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-322.52243"
+       y="394.45239"
+       id="text4174-44-4"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-7-1"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-322.52243"
+         y="394.45239">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-274.81104"
+       y="394.49261"
+       id="text4174-6-6-8"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-3-5"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-274.81104"
+         y="394.49261">9</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-233.49036"
+       y="394.33932"
+       id="text4174-1-1-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-7-7"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-233.49036"
+         y="394.33932">10</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-183.60835"
+       y="394.51865"
+       id="text4174-1-9-5-5"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-9-3"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-183.60835"
+         y="394.51865">12</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -241.15662,310.55775 48.80307,48.80306"
+       id="path26895-8"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -192.35355,310.55774 -48.80308,48.80307 v 0"
+       id="path27010-8"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="path46321"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000"
+       d="m -153.65987,436.42269 c 1e-5,10.6911 -27.55002,19.35795 -61.53471,19.35795 -33.98468,0 -61.5347,-8.66685 -61.5347,-19.35795 0,-5.41222 7.06039,-10.30568 18.44175,-13.81859 2.93011,-0.90439 -3.5713,-20.82649 -3.5713,-20.82649 0,0 20.70541,17.03411 24.81405,16.54304 6.79009,-0.81156 14.1552,-1.2559 21.8502,-1.2559 33.98468,0 61.5347,8.66684 61.53471,19.35794 z"
+       sodipodi:nodetypes="sssscsss"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-256.23111"
+       y="444.4942"
+       id="text48231"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan48229"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-256.23111"
+         y="444.4942">8,8,9 </tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-8-4-7"
+       width="48.803062"
+       height="48.803062"
+       x="85.725006"
+       y="367.12195"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-09-0-7"
+       width="48.803062"
+       height="48.803062"
+       x="36.921932"
+       y="415.92502"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-6-3-6"
+       width="48.803062"
+       height="48.803062"
+       x="85.725006"
+       y="415.92502"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="100.97028"
+       y="401.51791"
+       id="text4174-6-1-7-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-0-8-3"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="100.97028"
+         y="401.51791">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="53.162258"
+       y="451.0166"
+       id="text4174-44-4-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-7-1-9"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="53.162258"
+         y="451.0166">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="100.87366"
+       y="451.05682"
+       id="text4174-6-6-8-2"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-3-5-5"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="100.87366"
+         y="451.05682">?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="89.621498"
+       y="376.54803"
+       id="text67369"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan67367"
+         style="stroke-width:0.264583"
+         x="89.621498"
+         y="376.54803">2行目2列目</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="89.831413"
+       y="425.42923"
+       id="text67369-4"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan67367-0"
+         style="stroke-width:0.264583"
+         x="89.831413"
+         y="425.42923">3行目2列目</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="40.873199"
+       y="425.3139"
+       id="text67369-5"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan67367-9"
+         style="stroke-width:0.264583"
+         x="40.873199"
+         y="425.3139">3行目1列目</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker28125)"
+       d="m 127.70976,390.03867 0.24461,53.79926"
+       id="path74444"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#f70000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker28125)"
+       d="m 50.621298,456.01813 54.441022,0.0281"
+       id="path74658"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-5-4"
+       width="48.803062"
+       height="48.803062"
+       x="-369.25888"
+       y="626.50702"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-61-6"
+       width="48.803062"
+       height="48.803062"
+       x="-320.45581"
+       y="626.50702"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8-1-9"
+       width="48.803062"
+       height="48.803062"
+       x="-271.65274"
+       y="626.50702"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-59-2"
+       width="48.803062"
+       height="48.803062"
+       x="-222.84967"
+       y="626.50702"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-0-8-2"
+       width="48.803062"
+       height="48.803062"
+       x="-369.25888"
+       y="675.31012"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-8-4-4"
+       width="48.803062"
+       height="48.803062"
+       x="-320.45581"
+       y="675.31012"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8-8-8-7"
+       width="48.803062"
+       height="48.803062"
+       x="-271.65274"
+       y="675.31012"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-5-1-7"
+       width="48.803062"
+       height="48.803062"
+       x="-222.84967"
+       y="675.31012"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-09-0-5"
+       width="48.803062"
+       height="48.803062"
+       x="-369.25888"
+       y="724.11316"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-6-3-4"
+       width="48.803062"
+       height="48.803062"
+       x="-320.45581"
+       y="724.11316"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8-3-0-8"
+       width="48.803062"
+       height="48.803062"
+       x="-271.65274"
+       y="724.11316"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-8-4-1"
+       width="48.803062"
+       height="48.803062"
+       x="-222.84967"
+       y="724.11316"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-353.05536"
+       y="661.08917"
+       id="text4174-444-2"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-76-8"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-353.05536"
+         y="661.08917">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-305.34396"
+       y="661.12939"
+       id="text4174-6-3-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-1-3"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-305.34396"
+         y="661.12939">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-255.65688"
+       y="661.03436"
+       id="text4174-1-7-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-5-8"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-255.65688"
+         y="661.03436">6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-352.92194"
+       y="709.66589"
+       id="text4174-4-2-1"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-8-1-0"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-352.92194"
+         y="709.66589">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-305.21054"
+       y="709.70605"
+       id="text4174-6-1-7-5"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-0-8-1"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-305.21054"
+         y="709.70605">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-206.10268"
+       y="709.67419"
+       id="text4174-1-9-4-5-1"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-4-7-0"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-206.10268"
+         y="709.67419">9</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-305.30716"
+       y="759.245"
+       id="text4174-6-6-8-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-3-5-6"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-305.30716"
+         y="759.245">9</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-263.98648"
+       y="759.09167"
+       id="text4174-1-1-9-4"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-7-7-6"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-263.98648"
+         y="759.09167">10</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-214.10448"
+       y="759.271"
+       id="text4174-1-9-5-5-2"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-9-3-5"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-214.10448"
+         y="759.271">12</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-59-2-2"
+       width="48.803062"
+       height="48.803062"
+       x="-418.06195"
+       y="626.50702"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-5-1-7-8"
+       width="48.803062"
+       height="48.803062"
+       x="-418.06195"
+       y="675.31012"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-8-4-1-4"
+       width="48.803062"
+       height="48.803062"
+       x="-418.06195"
+       y="724.11316"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-401.44836"
+       y="661.09753"
+       id="text4174-1-9-9-0-7"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-6-2-2"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-401.44836"
+         y="661.09753">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-401.31494"
+       y="709.67419"
+       id="text4174-1-9-4-5-1-4"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-4-7-0-0"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-401.31494"
+         y="709.67419">9</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-409.31674"
+       y="759.271"
+       id="text4174-1-9-5-5-2-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-9-3-5-2"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-409.31674"
+         y="759.271">12</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -271.65275,675.3101 48.80307,48.80306"
+       id="path26895-8-8"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -222.84968,675.31009 -48.80308,48.80307 v 0"
+       id="path27010-8-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -222.84967,626.50706 48.80307,48.80306"
+       id="path26895-8-8-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -174.0466,626.50705 -48.80308,48.80307 v 0"
+       id="path27010-8-6-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -369.25887,724.11315 48.80307,48.80305"
+       id="path26895-8-8-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -320.4558,724.11313 -48.80308,48.80307 v 0"
+       id="path27010-8-6-8"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-3"
+       width="48.803062"
+       height="48.803062"
+       x="-944.27283"
+       y="346.95374"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-9"
+       width="48.803062"
+       height="48.803062"
+       x="-895.46973"
+       y="346.95374"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8-19"
+       width="48.803062"
+       height="48.803062"
+       x="-846.66669"
+       y="346.95374"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-6"
+       width="48.803062"
+       height="48.803062"
+       x="-797.86359"
+       y="346.95374"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-0-9"
+       width="48.803062"
+       height="48.803062"
+       x="-944.27283"
+       y="395.75681"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-8-3"
+       width="48.803062"
+       height="48.803062"
+       x="-895.46973"
+       y="395.75681"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8-8-3"
+       width="48.803062"
+       height="48.803062"
+       x="-846.66669"
+       y="395.75681"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-5-8"
+       width="48.803062"
+       height="48.803062"
+       x="-797.86359"
+       y="395.75681"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-09-05"
+       width="48.803062"
+       height="48.803062"
+       x="-944.27283"
+       y="444.55988"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-6-6"
+       width="48.803062"
+       height="48.803062"
+       x="-895.46973"
+       y="444.55988"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-8-3-6"
+       width="48.803062"
+       height="48.803062"
+       x="-846.66669"
+       y="444.55988"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-8-40"
+       width="48.803062"
+       height="48.803062"
+       x="-797.86359"
+       y="444.55988"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-930.40045"
+       y="383.11322"
+       id="text4174-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-4"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-930.40045"
+         y="383.11322">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-882.68909"
+       y="383.15344"
+       id="text4174-6-62"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-6"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-882.68909"
+         y="383.15344">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-833.00201"
+       y="383.05841"
+       id="text4174-1-75"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-6"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-833.00201"
+         y="383.05841">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-930.33405"
+       y="432.80743"
+       id="text4174-4-28"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-8-2"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-930.33405"
+         y="432.80743">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-882.62262"
+       y="432.84763"
+       id="text4174-6-1-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-0-9"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-882.62262"
+         y="432.84763">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-783.51477"
+       y="432.81577"
+       id="text4174-1-9-4-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-4-0"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-783.51477"
+         y="432.81577">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-882.61542"
+       y="482.57721"
+       id="text4174-6-6-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-1-3-1"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-882.61542"
+         y="482.57721">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-832.92834"
+       y="482.48215"
+       id="text4174-1-1-3"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-7-2"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-832.92834"
+         y="482.48215">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-783.50757"
+       y="482.54532"
+       id="text4174-1-9-5-1"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-9-5"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-783.50757"
+         y="482.54532">1</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-6-9"
+       width="48.803062"
+       height="48.803062"
+       x="-993.07587"
+       y="346.95374"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-5-8-1"
+       width="48.803062"
+       height="48.803062"
+       x="-993.07587"
+       y="395.75681"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19694;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect846-9-1-8-40-0"
+       width="48.803062"
+       height="48.803062"
+       x="-993.07587"
+       y="444.55988"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-978.79352"
+       y="383.12158"
+       id="text4174-1-9-98-7"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-7-5"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-978.79352"
+         y="383.12158">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-978.72705"
+       y="432.8158"
+       id="text4174-1-9-4-6-8"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-4-0-7"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-978.72705"
+         y="432.8158">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2778px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-978.71985"
+       y="482.54535"
+       id="text4174-1-9-5-1-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan4172-5-8-9-5-4"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="-978.71985"
+         y="482.54535">4</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -846.66667,395.75681 48.80307,48.80306"
+       id="path26895-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -797.8636,395.7568 -48.80308,48.80307 v 0"
+       id="path27010-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -797.86362,346.95375 48.80307,48.80306"
+       id="path26895-9-8"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -749.06055,346.95374 -48.80308,48.80307 v 0"
+       id="path27010-9-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -944.2728,444.55989 48.80307,48.80306"
+       id="path26895-9-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -895.46973,444.55988 -48.80308,48.80307 v 0"
+       id="path27010-9-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/option-path-dp4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
