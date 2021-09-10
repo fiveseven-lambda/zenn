@@ -138,5 +138,17 @@ fn main() {
 `impl` が `impl<T>` に変わり，`impl Point<i32> { }` や `impl Point<i64> { }` において `i32` や `i64` だった部分が全て `T` に置き換わっています．こうすることで， `T` が `i32` になったときの `impl`， `T` が `i64` になったときの `impl`， `T` が `f64` になったときの `impl` などが全ての型 `T` について一斉に実装されます．そのため，`Point<i32>` 型の値に対しても `Point<i64>` 型の値に対しても同じように `abscissa()` が呼べています．
 
 :::message
+`abscissa()` の定義を変えて，参照 `&T` ではなく値 `T` そのものを返すようにしてみます．
+```rust
+impl<T> Point<T> {
+    fn abscissa(&self) -> T {
+        self.0
+    }
+}
+```
+これはコンパイルできるでしょうか？また，できないとすれば，どんな `T` のときに不都合が生じるでしょうか？
+:::
+
+:::message
 標準ライブラリの [Vec](https://doc.rust-lang.org/std/vec/struct.Vec.html) 構造体も，ジェネリクスを用いて定義されています．`Vec<i32>` は型パラメータとして `i32` を与えたものであり，`Vec::<i32>::new()` はその関連関数です． `vec.push(10)` や `vec.pop()` はメソッドの呼び出し `Vec::<i32>::push(&mut v, 10)`，`Vec::<i32>::pop(&mut v)` に他なりません．
 :::
