@@ -15,7 +15,7 @@ enum Option<T> {
 ただし，上の定義にくわえて以下のことが可能です．
 - `Option::Some`，`Option::None` を単に `Some`，`None` と書くことができます．
   ```rust
-  let x = Some(10); // Option::Some(i) と書かなくてよい
+  let x = Some(10); // Option::Some(10) と書かなくてよい
   let y = None; // Option::None と書かなくてよい
   let z: i32 = match y {
       Some(i) => i, // Option::Some(i) と書かなくてよい
