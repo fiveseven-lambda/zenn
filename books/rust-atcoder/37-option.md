@@ -15,8 +15,8 @@ enum Option<T> {
 ただし，上の定義にくわえて以下のことが可能です．
 - `Option::Some`，`Option::None` を単に `Some`，`None` と書くことができます．
   ```rust
-  let x = Some(10);
-  let y = None;
+  let x = Some(10); // Option::Some(i) と書かなくてよい
+  let y = None; // Option::None と書かなくてよい
   let z: i32 = match y {
       Some(i) => i, // Option::Some(i) と書かなくてよい
       None => -1,   // Option::None と書かなくてよい
@@ -210,6 +210,11 @@ println!("{}", table[h - 1][w - 1].unwrap_or(0));
 返り値として `Option` を返すメソッドもあります．
 ## `Vec` の `pop()`
 `Vec` の末尾の要素を削除する [`pop()`](https://doc.rust-lang.org/std/vec/struct.Vec.html#method.pop) 関数は，削除した末尾の要素を `Some` に包んで返します．もし `Vec` が空でこれ以上削除できなければ，`None` を返します．
+```rust
+let mut v = vec![10];
+assert_eq!(v.pop(), Some(10));
+assert_eq!(v.pop(), None);
+```
 ## スライスの `get()`
 配列，ベクタ，スライスに `[i]` を付けると要素にアクセスできますが，範囲外アクセスのとき panic します．一方，[`get()`](https://doc.rust-lang.org/std/primitive.slice.html#method.get) メソッドを使うと範囲外アクセスのとき `None` を返します．
 ```rust
