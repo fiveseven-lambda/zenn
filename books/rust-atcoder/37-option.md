@@ -44,7 +44,8 @@ enum Option<T> {
   let copied = x;
   assert_eq!(x, Some(10)); // x が使える
   ```
-この章では，`Option` がどのような場面で使えるのか紹介します．
+
+[公式ドキュメントの解説](https://doc.rust-lang.org/std/option/)では，`Option` がどんな場面で役に立つのか詳しく書かれています．本章では，例題を 1 問解きながら `Option` の使いどころを見てみます．
 # 例題
 以下の問題を考えます．
 ## 問題文
