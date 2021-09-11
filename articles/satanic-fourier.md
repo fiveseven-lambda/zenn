@@ -162,8 +162,8 @@ void fft(std::vector<std::complex<double>> &x, const unsigned bit){
 		for(std::size_t j = 0; j < n; ++j){
 			std::size_t lower = j & mask2; // イオタの部分
 			std::size_t upper = j ^ lower; // k の部分
-			std::size_t shift = upper << 1 & mask1;
-			tmp[j] = x[shift | lower] + zeta[upper] * x[shift | mask2 + 1 | lower];
+			std::size_t shifted = upper << 1 & mask1;
+			tmp[j] = x[shifted | lower] + zeta[upper] * x[shifted | mask2 + 1 | lower];
 		}
 		x = std::move(tmp);
 	}
@@ -185,8 +185,8 @@ def fft(x, bit):
         for j in range(n):
             lower = j & mask2 # イオタの部分
             upper = j ^ lower # k の部分
-            shift = upper << 1 & mask1
-            tmp.append(x[shift | lower] + zeta[upper] * x[shift | mask2 + 1 | lower])
+            shifted = upper << 1 & mask1
+            tmp.append(x[shifted | lower] + zeta[upper] * x[shifted | mask2 + 1 | lower])
         x = tmp
     return x
 ```
@@ -208,8 +208,8 @@ fn fft(x: &mut Vec<Complex64>, bit: u32) {
             .map(|j| {
                 let lower = j & mask2; // イオタの部分
                 let upper = j ^ lower; // k の部分
-                let shift = upper << 1 & mask1;
-                x[shift | lower] + zeta[upper] * x[shift | mask2 + 1 | lower]
+                let shifted = upper << 1 & mask1;
+                x[shifted | lower] + zeta[upper] * x[shifted | mask2 + 1 | lower]
             })
             .collect();
     }
