@@ -3,7 +3,7 @@ title: "軽実装！左結合中置演算子（優先順位付）のパース"
 emoji: "➗"
 type: "tech"
 topics: ["構文解析", "cpp"]
-published: false
+published: true
 ---
 
 中置演算子の構文解析が面倒みたいに言っている人を見かけたので，そんなことないよ〜という記事です．使う言語は C++17 です．
