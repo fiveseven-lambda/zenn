@@ -42,7 +42,6 @@ class Id : public Expr {
 	char name; // 変数名
 public:
 	Id(char name): name(name) {}
-	~Id() = default;
 };
 
 // 2 項演算子
@@ -66,7 +65,6 @@ public:
 		left(std::move(left)),
 		right(std::move(right)),
 		op(op) {}
-	~Binary() = default;
 };
 ```
 # 確認用の出力
@@ -241,7 +239,6 @@ class Id : public Expr {
 	char name;
 public:
 	Id(char name): name(name) {}
-	~Id() = default;
 	void print(int) override;
 };
 
@@ -261,7 +258,6 @@ public:
 		left(std::move(left)),
 		right(std::move(right)),
 		op(op) {}
-	~Binary() = default;
 	void print(int) override;
 };
 
