@@ -218,3 +218,6 @@ fn fft(x: &mut Vec<Complex64>, bit: u32) {
 
 # 終わりに
 この記事で扱った実装方法は [satanic さんの github.io](https://satanic0258.github.io/snippets/math/FFT.html) に載っていたもので，[るまさんのブログ](https://tomorinao.blogspot.com/2018/10/various-fft.html)でも解説されています．私は勝手に **satanic FFT** などと呼んでいます．
+
+# 追記 (2021/10/12)
+[同様の手法で実装した NTT](https://judge.yosupo.jp/submission/63348) です．
