@@ -1,5 +1,5 @@
 title: "RustCoder ―― AtCoder と Rust で始める競技プログラミング入門"
-summary: "これから競技プログラミングを始める人や，既に他の言語で競技プログラミングをしているが Rust でもやってみたいという人のために，プログラミング言語 Rust について解説しています．更新履歴は github ( https://github.com/fiveseven-lambda/zenn/commits/main/books/rust-atcoder ) から見られます．内容に関する意見や指摘などは twitter ( https://twitter.com/57tggx ) あるいは misskey ( https://misskey.io/@five_seven ) までお願いします．カバー画像： GRAPHY 筧様"
+summary: "これから競技プログラミングを始める人や，既に他の言語で競技プログラミングをしているが Rust でもやってみたいという人のために，プログラミング言語 Rust について解説しています．更新履歴は github ( https://github.com/fiveseven-lambda/zenn/commits/main/books/rust-atcoder ) から見られます．内容に関するご意見やご指摘などは，プルリクエストか twitter ( https://twitter.com/57tggx ) で遠慮なくお願いします．カバー画像： GRAPHY 筧様"
 topics: ["rust", "競技プログラミング", "atcoder"]
 published: true
 price: 0
