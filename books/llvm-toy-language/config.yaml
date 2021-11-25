@@ -6,3 +6,5 @@ price: 0
 chapters:
   - specification
   - error
+  - token
+  - lexer

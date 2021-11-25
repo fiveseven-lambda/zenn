@@ -80,7 +80,7 @@ namespace pos {
 ```
 中身は省略．好みで出力する．
 
-`Range::eprint()` の中で `Pos` の private メンバ `line` `byte` を使いたいかもしれない．その場合たとえば `std::pair<std::size_t, std::size_t> Pos::into_inner() const;` を用意するなりなんなりすればいい．
+`Range::eprint()` の中で `Pos` の private メンバ `line` `byte` を使いたいかもしれない．その場合たとえば `std::pair<std::size_t, std::size_t> Pos::into_inner() const` を用意するなりなんなりすればいい．
 
 # Error
 エラーはいろんなエラーがある．持ちたいメンバも，エラーの種類ごとに違いそうだ．
@@ -90,9 +90,16 @@ namespace pos {
 namespace error {
     class Error {
     public:
-        void virtual eprint(const std::vector<std::string> &) const = 0;
         virtual ~Error();
+        void virtual eprint(const std::vector<std::string> &) const = 0;
     };
+}
+```
+```cpp:error.cpp
+#include "error.hpp"
+
+namespace error {
+    Error::~Error() = default;
 }
 ```
 `void eprint(const std::vector<std::string> &)` がエラーメッセージを stderr に出力する関数．メンバとして `Pos` や `Range` を持っているエラーであれば，引数の `std::vector<std::string>` をそいつに渡して場所を出力させるだろう．
