@@ -1,0 +1,8 @@
+title: "LLVM 初心者が JIT コンパイラに挑戦"
+summary: "挑戦してみます．これはほぼ自分用のメモとして書いてます．気長にやります．"
+topics: [cpp, llvm]
+published: true
+price: 0
+chapters:
+  - specification
+  - error
