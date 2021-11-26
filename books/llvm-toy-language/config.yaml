@@ -7,3 +7,4 @@ chapters:
   - specification
   - error
   - token
+  - lexer
