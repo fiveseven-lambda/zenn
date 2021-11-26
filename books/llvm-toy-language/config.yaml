@@ -1,10 +1,11 @@
 title: "LLVM 初心者が JIT コンパイラに挑戦"
-summary: "挑戦してみます．これはほぼ自分用のメモとして書いてます．コード： https://github.com/fiveseven-lambda/toy_language 気長にやります．"
+summary: "挑戦してみます．"
 topics: [cpp, llvm]
 published: true
 price: 0
 chapters:
-  - specification
-  - error
-  - token
-  - lexer
+  - 01-intro
+  - 02-error
+  - 03-token
+  - 04-lexer
+  - 05-syntax
