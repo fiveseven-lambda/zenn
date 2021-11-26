@@ -205,4 +205,28 @@ void Inner::run(
         queue.emplace(pos::Range(line_num, start, cursor), std::move(token));
 ```
 
+最後の `error::UnexpectedCharacter` は次のように定義しておく．
+```cpp:error.hpp
+#include "pos.hpp"
+
+namespace error {
+    class UnexpectedCharacter : public Error {
+        pos::Pos pos;
+    public:
+        UnexpectedCharacter(pos::Pos &&);
+        void eprint(const std::vector<std::string> &) const override;
+    };
+}
+```
+```cpp:error.cpp
+namespace error {
+    UnexpectedCharacter::UnexpectedCharacter(pos::Pos &&pos):
+        pos(std::move(pos)) {}
+    void UnexpectedCharacter::eprint(const std::vector<std::string> &log) const {
+        std::cerr << "unexpected character at " << pos << std::endl;
+        pos.eprint(log);
+    }
+}
+```
+
 これで字句解析ができた．

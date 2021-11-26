@@ -17,7 +17,7 @@ namespace pos {
         Pos();
         Pos(std::size_t, std::size_t);
         std::pair<std::size_t, std::size_t> into_inner() const;
-        friend std::ostream &operator<<(std::ostream &os, const Pos &);
+        friend std::ostream &operator<<(std::ostream &, const Pos &);
     };
 }
 ```
@@ -55,7 +55,7 @@ namespace pos {
     public:
         Range();
         Range(std::size_t, std::size_t, std::size_t);
-        friend std::ostream &operator<<(std::ostream &os, const Range &);
+        friend std::ostream &operator<<(std::ostream &, const Range &);
     };
 }
 ```
