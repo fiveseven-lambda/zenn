@@ -229,4 +229,142 @@ namespace error {
 }
 ```
 
-これで字句解析ができた．
+# コメント
+`//` から行末までのラインコメント，`/*` で始まり `*/` で終わるブロックコメントを実装する．
+
+ラインコメントは，さっきの `Lexer::inner()` を少し書き換えて，`/` で始まるトークンの部分を
+```cpp:lexer.cpp
+        }else if(advance_if('/')){
+            if(advance_if('=')){
+                token = std::make_unique<token::SlashEqual>();
+            }else if(str[cursor] == '/'){
+                // 以降は全てラインコメントなので，
+                // return で字句解析を終える
+                return;
+            }else{
+                token = std::make_unique<token::Slash>();
+            }
+        }else if(advance_if('%')){ /* ... */
+```
+とすればいい．
+
+一方複数行にわたるブロックコメントの方はどうすればいいか．ある行でブロックコメントが始まって，次の行まで続く場合，`Inner::run()` は前の行からコメントが続いていることを知らなければならない．よって，コメント中という情報を `Inner` にメンバとしてもたせる必要がある．
+
+また，ブロックコメントの途中で EOF に達してしまった場合は，エラーとしたい．エラーメッセージには，コメントがどこから始まったのかも書くと親切だろう．よって，コメントの開始場所も覚えておく．
+
+ブロックコメントはネスト可能にもしたい．
+
+そうすると，`Inner` には `std::vector<pos::Pos>` をもたせておこうとなる．
+```cpp:lexer.hpp
+#include <vector>
+
+namespace lexer {
+    class Inner {
+        std::vector<pos::Pos> comment;
+        /* 略 */
+    };
+}
+```
+
+コメントが始まったら，その位置を `comment` に push back する．コメントを抜けたら pop back する．`comment` が空でなければコメントの途中だと分かる．
+
+push back はどこに書くかというと，さっきのラインコメントの開始と同じ場所．
+```cpp:lexer.cpp
+        }else if(advance_if('/')){
+            if(advance_if('=')){
+                token = std::make_unique<token::SlashEqual>();
+            }else if(str[cursor] == '/'){
+                return;
+            }else if(advance_if('*')){
+                // ブロックコメントの開始
+                comment.emplace_back(line_num, start);
+                continue;
+            }else{
+                token = std::make_unique<token::Slash>();
+            }
+        }else if(advance_if('%')){
+```
+`continue;` しないと，無のトークンをキューに追加する操作が走ってしまう．
+
+また，ここで `advance_if('*')` の代わりに `str[cursor] == '*'` としてしまうと，`/*/` が正しく読めない（コメントが即座に終わってしまう）．
+
+`*/` が来るまでコメントとして読み飛ばす処理はどこに書くかというと，空白を読み飛ばすのに使っていた `while` 文．
+```cpp:lexer.cpp
+        // 空白を読み飛ばす
+        // コメントも読み飛ばす
+        while(true){
+            if(cursor == str.size()) return;
+            if(!comment.empty()){
+                // コメント中．
+                // もし残り 2 文字以上あれば，
+                if(cursor < str.size() - 1){
+                    // コメントが開始したり終了したりしないか調べる
+                    if(str[cursor] == '*' && str[cursor + 1] == '/'){
+                        // コメントの終了
+                        comment.pop_back();
+                        // 2 文字（ `*/` の分）読み進める
+                        cursor += 2;
+                        continue;
+                    }else if(str[cursor] == '/' && str[cursor + 1] == '*'){
+                        // ネストされたコメントの開始．
+                        comment.emplace_back(line_num, cursor);
+                        // 2 文字（ `/*` の分）読み進める
+                        cursor += 2;
+                        continue;
+                    }
+                }
+            }else if(!std::isspace(str[cursor])) break;
+            ++cursor;
+        }
+```
+`/*` や `*/` が現れたときには，ちゃんとそれらの文字数ぶんカーソルを進めなければいけない．
+
+コメントの途中で EOF に達したらエラーだ．
+```cpp:error.hpp
+namespace error {
+    class UnterminatedComment : public Error {
+        std::vector<pos::Pos> poss;
+    public:
+        UnterminatedComment(std::vector<pos::Pos> &&);
+        void eprint(const std::vector<std::string> &) const override;
+    };
+}
+```
+中身は省略する．
+
+EOF はどこで判明するかというと，`Lexer::peek()` の中．ここで，EOF のときの処理を `Inner` に頼む．
+```cpp:lexer.cpp
+namespace lexer {
+    token::TokenWithPos &Lexer::peek(){
+        while(tokens.empty()){
+            if(source){
+                /* 略 */
+            }else{
+                inner.deal_with_eof();
+                tokens.emplace();
+            }
+        }
+        return tokens.front();
+    }
+}
+```
+EOF の処理をする関数 `deal_with_eof()` を `Inner` に追加して，
+```cpp:lexer.hpp
+namespace lexer {
+    class Inner {
+        /* 略 */
+    public:
+        void deal_with_eof();
+    };
+}
+```
+その中で `comment` が空かどうかチェックする．
+```cpp:lexer.cpp
+namespace lexer {
+    void Inner::deal_with_eof(){
+        if(!comment.empty()){
+            throw error::make<error::UnterminatedComment>(std::move(comment));
+        }
+    }
+}
+```

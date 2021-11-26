@@ -104,6 +104,7 @@ namespace token {
     void token::debug_print(){ \
         std::cout << #token << std::endl; \
     }
+
 namespace token {
     define_debug_print(Plus)
     define_debug_print(Hyphen)
