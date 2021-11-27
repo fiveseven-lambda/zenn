@@ -186,7 +186,7 @@ namespace syntax {
         right(std::move(right)) {}
 }
 ```
-## 関数呼び出し
+## Invocation
 関数の呼び出しは，呼び出される関数と，引数の `std::vector` の組として表す．
 ```cpp:syntax.hpp
 namespace syntax {
@@ -207,5 +207,39 @@ namespace syntax {
     ):
         function(std::move(function)),
         arguments(std::move(arguments)) {}
+}
+```
+# 文
+# 型
+## Type
+型の基底クラス．
+```cpp:syntax.hpp
+namespace syntax {
+    class Type {
+    public:
+        virtual ~Type();
+        virtual void debug_print() const = 0;
+    };
+}
+```
+## Primitive
+プリミティブ型．
+```cpp:syntax.hpp
+namespace syntax {
+    enum class PrimitiveType {
+        Integer,
+        Boolean
+    };
+    class Primitive : Type {
+        PrimitiveType type;
+    public:
+        Primitive(PrimitiveType);
+        void debug_print() const override;
+    };
+}
+```
+```cpp:syntax.cpp
+namespace syntax {
+    Primitive::Primitive(PrimitiveType type): type(type) {}
 }
 ```
