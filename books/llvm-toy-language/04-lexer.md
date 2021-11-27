@@ -213,14 +213,14 @@ namespace error {
     class UnexpectedCharacter : public Error {
         pos::Pos pos;
     public:
-        UnexpectedCharacter(pos::Pos &&);
+        UnexpectedCharacter(pos::Pos);
         void eprint(const std::vector<std::string> &) const override;
     };
 }
 ```
 ```cpp:error.cpp
 namespace error {
-    UnexpectedCharacter::UnexpectedCharacter(pos::Pos &&pos):
+    UnexpectedCharacter::UnexpectedCharacter(pos::Pos pos):
         pos(std::move(pos)) {}
     void UnexpectedCharacter::eprint(const std::vector<std::string> &log) const {
         std::cerr << "unexpected character at " << pos << std::endl;
@@ -325,7 +325,7 @@ namespace error {
     class UnterminatedComment : public Error {
         std::vector<pos::Pos> poss;
     public:
-        UnterminatedComment(std::vector<pos::Pos> &&);
+        UnterminatedComment(std::vector<pos::Pos>);
         void eprint(const std::vector<std::string> &) const override;
     };
 }

@@ -17,7 +17,7 @@ namespace token {
     class Token {
     public:
         virtual ~Token();
-        virtual void debug_print() = 0;
+        virtual void debug_print() const = 0;
     };
     using TokenWithPos = std::pair<pos::Range, std::unique_ptr<Token>>;
 }
@@ -42,15 +42,17 @@ namespace token {
     class Identifier : public Token {
         std::string name;
     public:
-        Identifier(std::string &&);
-        void debug_print() override;
+        Identifier(std::string);
+        void debug_print() const override;
     };
 }
 ```
 ```cpp:token.cpp
+#include <iostream>
+
 namespace token {
-    Identifier::Identifier(std::string &&name): name(std::move(name)) {}
-    void Identifier::debug_print(){
+    Identifier::Identifier(std::string name): name(std::move(name)) {}
+    void Identifier::debug_print() const {
         std::cout << "Identifier(" << name << ")" << std::endl;
     }
 }
@@ -66,15 +68,15 @@ namespace token {
     class Integer : public Token {
         std::string value;
     public:
-        Integer(std::string &&);
-        void debug_print() override;
+        Integer(std::string);
+        void debug_print() const override;
     };
 }
 ```
 ```cpp:token.cpp
 namespace token {
-    Integer::Integer(std::string &&value): value(std::move(value)) {}
-    void Integer::debug_print(){
+    Integer::Integer(std::string value): value(std::move(value)) {}
+    void Integer::debug_print() const {
         std::cout << "Integer(" << value << ")" << std::endl;
     }
 }
@@ -82,26 +84,26 @@ namespace token {
 # 記号類
 何があるといい？
 - 四則演算 `+` `-` `*` `/` `%`
-- ビット演算 `&` `|` `^` `~` `<<` `>>`
-- 代入 `=` `+=` `-=` `*=` `/=` `%=` `&=` `|=` `^=` `<<=` `>>=`
-- 論理演算 `&&` `||` `!`
+- ビット演算 `~` `<<` `>>` `&` `|` `^`
 - 比較 `==` `!=` `<` `>` `<=` `>=`
+- 論理演算 `&&` `||` `!`
+- 代入 `=` `+=` `-=` `*=` `/=` `%=` `<<=` `>>=` `&=` `|=` `^=`
 - 括弧 `(` `)` `{` `}` `[` `]`
 - 区切り文字 `.` `:` `;` `,`
 ```cpp:token.hpp
 namespace token {
     class Plus : public Token {
-        void debug_print() override;
+        void debug_print() const override;
     };
     class Hyphen : public Token {
-        void debug_print() override;
+        void debug_print() const override;
     };
     /* 以下略 */
 }
 ```
 ```cpp:token.cpp
 #define define_debug_print(token) \
-    void token::debug_print(){ \
+    void token::debug_print() const { \
         std::cout << #token << std::endl; \
     }
 

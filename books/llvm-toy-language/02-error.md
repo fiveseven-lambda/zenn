@@ -25,7 +25,7 @@ namespace pos {
 #include "pos.hpp"
 
 namespace pos {
-    Pos::Pos(): line(0), byte(0) {}
+    Pos::Pos() = default;
     Pos::Pos(std::size_t line, std::size_t byte): line(line), byte(byte) {}
 
     std::pair<std::size_t, std::size_t> Pos::into_inner() const {
@@ -101,8 +101,6 @@ namespace pos {
 }
 ```
 中身は省略．好みで出力する．
-
-`Range::eprint()` の中で `Pos` の private メンバ `line` `byte` を使いたいかもしれない．その場合たとえば `std::pair<std::size_t, std::size_t> Pos::into_inner() const` を用意するなりなんなりすればいい．
 
 # Error
 エラーはいろんなエラーがある．持ちたいメンバも，エラーの種類ごとに違いそうだ．
