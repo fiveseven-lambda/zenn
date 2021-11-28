@@ -28,7 +28,7 @@ namespace lexer {
         void run(
             std::size_t,
             const std::string &,
-            std::queue<token::TokenWithPos> &
+            std::queue<std::unique_ptr<token::Token>> &
         );
     };
 }
@@ -40,7 +40,7 @@ namespace lexer {
     void Inner::run(
         std::size_t line_num,
         const std::string &str,
-        std::queue<token::TokenWithPos> &queue
+        std::queue<std::unique_ptr<token::Token>> &queue
     ){
         /* queue にトークンを追加 */
     }
@@ -50,7 +50,7 @@ namespace lexer {
 `Inner::run()` は，引数として
 - `line_num`（`std::size_t`）：今見ている行番号
 - `str`（`const std::string &`）：今見ている行
-- `queue`（`std::queue<token::TokenWithPos> &`）：分解したトークンの保存先
+- `queue`（`std::queue<std::unique_ptr<token::Token>> &`）：分解したトークンの保存先
 
 を受け取る．`Lexer` が入力を 1 行読み，`Inner` に「この queue に追加しておいてね〜」というと，`Inner` はその行をトークンに分解して queue に格納するわけだ．
 
@@ -68,12 +68,12 @@ namespace lexer {
         bool prompt;
         Inner inner;
         std::vector<std::string> log;
-        std::queue<token::TokenWithPos> tokens;
+        std::queue<std::unique_ptr<token::Token>> tokens;
     public:
         Lexer();
         Lexer(std::ifstream &);
         const std::vector<std::string> &get_log() const;
-        token::TokenWithPos next(), &peek();
+        std::unique_ptr<token::Token> next(), &peek();
     };
 }
 ```
@@ -101,10 +101,10 @@ namespace lexer {
     }
 }
 ```
-`next()`，`peek()` は `Lexer` がイテレータとして働くための関数．EOF に達したら，返り値の `.second` が `nullptr` になる．
+`next()`，`peek()` は `Lexer` がイテレータとして働くための関数．EOF に達したら，`nullptr` を返す．
 ```cpp:lexer.cpp
 namespace lexer {
-    token::TokenWithPos &Lexer::peek(){
+    std::unique_ptr<token::Token> &Lexer::peek(){
         while(tokens.empty()){
             if(source){
                 // 次に読むのは何行目か (0-indexed)
@@ -124,7 +124,7 @@ namespace lexer {
         }
         return tokens.front();
     }
-    token::TokenWithPos Lexer::next(){
+    std::unique_ptr<token::Token> Lexer::next(){
         auto ret = std::move(peek());
         tokens.pop();
         return ret;
@@ -137,7 +137,7 @@ namespace lexer {
 void Inner::run(
     std::size_t line_num,
     const std::string &str,
-    std::queue<token::TokenWithPos> &queue
+    std::queue<std::unique_ptr<token::Token>> &queue
 ){
     /* 中身 */
 }
@@ -201,8 +201,10 @@ void Inner::run(
             // 知らない文字が現れたらエラー
             throw error::make<error::UnexpectedCharacter>(pos::Pos(line_num, cursor));
         }
-        // pos::Range と一緒に queue に追加
-        queue.emplace(pos::Range(line_num, start, cursor), std::move(token));
+        // pos を設定
+        token->pos = pos::Range(line_num, start, cursor);
+        // queue に追加
+        queue.push(std::move(token));
 ```
 
 最後の `error::UnexpectedCharacter` は次のように定義しておく．

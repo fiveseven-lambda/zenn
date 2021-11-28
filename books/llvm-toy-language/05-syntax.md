@@ -1,11 +1,12 @@
 ---
-title: "構文木"
+title: "構文木 (式)"
 ---
 
-構文解析のために，まずは AST を定義する．
+構文解析は，式の解析から始める．
 
-# 式 (expression)
-## Expression
+準備としてまず AST を定義する．
+
+# Expression
 まずは基底クラスから作る．
 ```cpp:syntax.hpp
 #include <memory>
@@ -16,10 +17,10 @@ title: "構文木"
 namespace syntax {
     class Expression {
     public:
+        pos::Range pos;
         virtual ~Expression();
         virtual void debug_print(int depth = 0) const = 0;
     };
-    using ExpressionWithPos = std::pair<pos::Range, std::unique_ptr<Expression>>;
 }
 ```
 ```cpp:syntax.cpp
@@ -51,7 +52,7 @@ Mul
 ```
 みたくなってほしい．
 
-## Identifier
+# Identifier
 単一の識別子は，式．
 ```cpp:syntax.hpp
 #include <string>
@@ -76,7 +77,7 @@ namespace syntax {
     }
 }
 ```
-## Integer
+# Integer
 単一の整数リテラルも，式．
 ```cpp:syntax.hpp
 #include <cstddef>
@@ -99,7 +100,7 @@ namespace syntax {
     }
 }
 ```
-## Unary
+# Unary
 式の前に単項演算子が付いたものも式．
 
 まずは演算子を表す `enum class` を定義して，
@@ -148,7 +149,7 @@ namespace syntax {
 }
 ```
 `debug_print()` の実装は以後省略．
-## Binary
+# Binary
 二項演算子も同様に定義する．
 ```cpp:syntax.hpp
 namespace syntax {
@@ -186,7 +187,7 @@ namespace syntax {
         right(std::move(right)) {}
 }
 ```
-## Invocation
+# Invocation
 関数の呼び出しは，呼び出される関数と，引数の `std::vector` の組として表す．
 ```cpp:syntax.hpp
 namespace syntax {
@@ -207,39 +208,5 @@ namespace syntax {
     ):
         function(std::move(function)),
         arguments(std::move(arguments)) {}
-}
-```
-# 文
-# 型
-## Type
-型の基底クラス．
-```cpp:syntax.hpp
-namespace syntax {
-    class Type {
-    public:
-        virtual ~Type();
-        virtual void debug_print() const = 0;
-    };
-}
-```
-## Primitive
-プリミティブ型．
-```cpp:syntax.hpp
-namespace syntax {
-    enum class PrimitiveType {
-        Integer,
-        Boolean
-    };
-    class Primitive : Type {
-        PrimitiveType type;
-    public:
-        Primitive(PrimitiveType);
-        void debug_print() const override;
-    };
-}
-```
-```cpp:syntax.cpp
-namespace syntax {
-    Primitive::Primitive(PrimitiveType type): type(type) {}
 }
 ```

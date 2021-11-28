@@ -16,10 +16,10 @@ title: "トークン"
 namespace token {
     class Token {
     public:
+        pos::Range pos;
         virtual ~Token();
         virtual void debug_print() const = 0;
     };
-    using TokenWithPos = std::pair<pos::Range, std::unique_ptr<Token>>;
 }
 ```
 ```cpp:token.cpp
@@ -31,7 +31,7 @@ namespace token {
 ```
 `debug_print()` はデバッグ出力用の関数だ．いずれ消す．
 
-トークンは複数文字にわたるので，位置を表すのに `pos::Range` を使う．たぶんけっこうな頻度で `pos::Range` と一緒に使うので，`TokenWithPos` も定義しておく．`Token` に `pos::Range` をメンバとして持たせない理由は，後で字句解析の様子を見ると分かる．
+トークンは複数文字にわたるので，位置を表すのに `pos::Range` を使う．
 # Identifier
 識別子は，正規表現 `[A-Za-z_][A-Za-z_0-9]*` に合致するものとする．
 
