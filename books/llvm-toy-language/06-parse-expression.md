@@ -65,14 +65,13 @@ namespace parser {
 
 namespace token {
     class Token {
-        /* 略 */
+        // 略
     public:
         virtual std::optional<std::string> identifier();
     };
     
     class Identifier : public Token {
-        /* 略 */
-    public:
+        // 略
         std::optional<std::string> identifier() override;
     };
 }
@@ -127,14 +126,13 @@ std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
 
 namespace token {
     class Token {
-        /* 略 */
+        // 略
     public:
         virtual std::optional<std::int32_t> positive_integer();
     };
     
-    class Identifier : public Token {
-        /* 略 */
-    public:
+    class Integer : public Token {
+        // 略
         std::optional<std::int32_t> positive_integer() override;
     };
 }
@@ -142,6 +140,8 @@ namespace token {
 オーバーフローの検出には Boost の Safe Numerics を使う．
 ```cpp:token.cpp
 #include <boost/safe_numerics/safe_integer.hpp>
+
+#include "error.hpp"
 
 namespace token {
     using safe_i32 = boost::safe_numerics::safe<std::int32_t>;
@@ -170,6 +170,7 @@ namespace error {
         InvalidIntegerLiteral(std::exception &, pos::Range);
         void eprint(const std::vector<std::string> &) const override;
     };
+}
 ```
 
 これを用いて，上と同様に `parse_factor()` に 2 個目の規則を追加．
@@ -186,6 +187,8 @@ std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
         // 1 個目のトークンは整数リテラルだった
         pos = lexer.next()->pos;
         ret = std::make_unique<syntax::Integer>(value.value());
+    }else{
+        // 残りの規則
     }
     ret->pos = pos;
     return ret;
@@ -288,6 +291,8 @@ std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
         pos += operand->pos;
 
         ret = std::make_unique<syntax::Unary>(prefix.value(), std::move(operand));
+    }else{
+        // 残りの規則
     }
     ret->pos = pos;
     return ret;
@@ -308,7 +313,7 @@ namespace token {
         virtual std::optional<std::int32_t> negative_integer();
     };
     
-    class Identifier : public Token {
+    class Integer : public Token {
         /* 略 */
     public:
         std::optional<std::int32_t> negative_integer() override;

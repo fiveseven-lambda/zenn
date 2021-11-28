@@ -8,5 +8,5 @@ chapters:
   - 02-error
   - 03-token
   - 04-lexer
-  - 05-syntax
+  - 05-syntax-expression
   - 06-parse-expression
