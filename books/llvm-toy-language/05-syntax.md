@@ -72,7 +72,9 @@ namespace syntax {
 namespace syntax {
     Identifier::Identifier(std::string name): name(std::move(name)) {}
 
+    static constexpr char INDENT[] = "    ";
     void Identifier::debug_print(int) const {
+        for(int i = 0; i < depth; ++i) std::cout << INDENT;
         std::cout << "Identifier(" << name << ")" << std::endl;
     }
 }
@@ -96,6 +98,7 @@ namespace syntax {
     Integer::Integer(std::int32_t value): value(value) {}
 
     void Integer::debug_print(int) const {
+        for(int i = 0; i < depth; ++i) std::cout << INDENT;
         std::cout << "Integer(" << value << ")" << std::endl;
     }
 }
@@ -108,7 +111,7 @@ namespace syntax {
 namespace syntax {
     enum class UnaryOperator {
         Plus, Minus,
-        Not, BitNot
+        LogicalNot, BitNot
     };
 }
 ```
@@ -133,13 +136,12 @@ namespace syntax {
         unary_operator(unary_operator),
         operand(std::move(operand)) {}
 
-    static constexpr char INDENT[] = "    ";
     void Unary::debug_print(int depth) const {
         std::string_view name;
         switch(unary_operator){
             case UnaryOperator::Plus: name = "plus"; break;
             case UnaryOperator::Minus: name = "minus"; break;
-            case UnaryOperator::Not: name = "not"; break;
+            case UnaryOperator::LogicalNot: name = "logical not"; break;
             case UnaryOperator::BitNot: name = "bitwise not";
         }
         for(int i = 0; i < depth; ++i) std::cout << INDENT;
