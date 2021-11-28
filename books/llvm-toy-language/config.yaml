@@ -9,3 +9,4 @@ chapters:
   - 03-token
   - 04-lexer
   - 05-syntax
+  - 06-parse-expression
