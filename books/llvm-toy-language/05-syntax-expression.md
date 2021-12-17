@@ -8,13 +8,13 @@ title: "構文木 (式)"
 
 # Expression
 まずは基底クラスから作る．
-```cpp:syntax.hpp
+```cpp:expression.hpp
 #include <memory>
 #include <utility>
 
 #include "pos.hpp"
 
-namespace syntax {
+namespace expression {
     class Expression {
     public:
         pos::Range pos;
@@ -23,10 +23,10 @@ namespace syntax {
     };
 }
 ```
-```cpp:syntax.cpp
-#include "syntax.hpp"
+```cpp:expression.cpp
+#include "expression.hpp"
 
-namespace syntax {
+namespace expression {
     Expression::~Expression() = default;
 }
 ```
@@ -54,10 +54,10 @@ Mul
 
 # Identifier
 単一の識別子は，式．
-```cpp:syntax.hpp
+```cpp:expression.hpp
 #include <string>
 
-namespace syntax {
+namespace expression {
     class Identifier : public Expression {
         std::string name;
     public:
@@ -66,26 +66,26 @@ namespace syntax {
     };
 }
 ```
-```cpp:syntax.cpp
+```cpp:expression.cpp
 #include <iostream>
 #include <string_view>
 
-namespace syntax {
+namespace expression {
     Identifier::Identifier(std::string name): name(std::move(name)) {}
 
     static constexpr std::string_view INDENT = "    ";
     void Identifier::debug_print(int depth) const {
         for(int i = 0; i < depth; ++i) std::cout << INDENT;
-        std::cout << "Identifier(" << name << ")" << std::endl;
+        std::cout << pos << ": Identifier(" << name << ")" << std::endl;
     }
 }
 ```
 # Integer
 単一の整数リテラルも，式．
-```cpp:syntax.hpp
+```cpp:expression.hpp
 #include <cstddef>
 
-namespace syntax {
+namespace expression {
     class Integer : public Expression {
         std::int32_t value;
     public:
@@ -94,13 +94,13 @@ namespace syntax {
     };
 }
 ```
-```cpp:syntax.cpp
-namespace syntax {
+```cpp:expression.cpp
+namespace expression {
     Integer::Integer(std::int32_t value): value(value) {}
 
     void Integer::debug_print(int depth) const {
         for(int i = 0; i < depth; ++i) std::cout << INDENT;
-        std::cout << "Integer(" << value << ")" << std::endl;
+        std::cout << pos << ": Integer(" << value << ")" << std::endl;
     }
 }
 ```
@@ -108,8 +108,8 @@ namespace syntax {
 式の前に単項演算子が付いたものも式．
 
 まずは演算子を表す `enum class` を定義して，
-```cpp:syntax.hpp
-namespace syntax {
+```cpp:expression.hpp
+namespace expression {
     enum class UnaryOperator {
         Plus, Minus,
         LogicalNot, BitNot
@@ -117,8 +117,8 @@ namespace syntax {
 }
 ```
 演算子と式の組として定義する．
-```cpp:syntax.hpp
-namespace syntax {
+```cpp:expression.hpp
+namespace expression {
     class Unary : public Expression {
         UnaryOperator unary_operator;
         std::unique_ptr<Expression> operand;
@@ -128,8 +128,8 @@ namespace syntax {
     };
 }
 ```
-```cpp:syntax.cpp
-namespace syntax {
+```cpp:expression.cpp
+namespace expression {
     Unary::Unary(
         UnaryOperator unary_operator,
         std::unique_ptr<Expression> operand
@@ -146,7 +146,7 @@ namespace syntax {
             case UnaryOperator::BitNot: name = "bitwise not";
         }
         for(int i = 0; i < depth; ++i) std::cout << INDENT;
-        std::cout << "Unary(" << name << ")" << std::endl;
+        std::cout << pos << ": Unary(" << name << ")" << std::endl;
         operand->debug_print(depth + 1);
     }
 }
@@ -154,8 +154,8 @@ namespace syntax {
 `debug_print()` の実装は以後省略．
 # Binary
 二項演算子も同様に定義する．
-```cpp:syntax.hpp
-namespace syntax {
+```cpp:expression.hpp
+namespace expression {
     enum class BinaryOperator {
         Mul, Div, Rem,
         Add, Sub,
@@ -178,8 +178,8 @@ namespace syntax {
     };
 }
 ```
-```cpp:syntax.cpp
-namespace syntax {
+```cpp:expression.cpp
+namespace expression {
     Binary::Binary(
         BinaryOperator binary_operator,
         std::unique_ptr<Expression> left,
@@ -192,8 +192,8 @@ namespace syntax {
 ```
 # Invocation
 関数の呼び出しは，呼び出される関数と，引数の `std::vector` の組として表す．
-```cpp:syntax.hpp
-namespace syntax {
+```cpp:expression.hpp
+namespace expression {
     class Invocation : public Expression {
         std::unique_ptr<Expression> function;
         std::vector<std::unique_ptr<Expression>> arguments;
@@ -203,8 +203,8 @@ namespace syntax {
     };
 }
 ```
-```cpp:syntax.cpp
-namespace syntax {
+```cpp:expression.cpp
+namespace expression {
     Invocation::Invocation(
         std::unique_ptr<Expression> function,
         std::vector<std::unique_ptr<Expression>> arguments

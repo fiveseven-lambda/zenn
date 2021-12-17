@@ -9,9 +9,7 @@ title: "字句解析"
 # Inner（ヘルパ）
 字句解析は，`Lexer` 構造体が担う．
 ```cpp:lexer.hpp
-namespace lexer {
-    class Lexer;
-}
+class Lexer;
 ```
 ……わけなのだが，`Lexer` は入出力とか peek だけを扱い，実際に文字列からトークンへの分解を行う部分は `Inner` 構造体に任せる．
 
@@ -22,28 +20,24 @@ namespace lexer {
 
 #include "token.hpp"
 
-namespace lexer {
-    class Inner {
-    public:
-        void run(
-            std::size_t,
-            const std::string &,
-            std::queue<std::unique_ptr<token::Token>> &
-        );
-    };
-}
+class Inner {
+public:
+    void run(
+        std::size_t,
+        const std::string &,
+        std::queue<std::unique_ptr<token::Token>> &
+    );
+};
 ```
 ```cpp:lexer.cpp
 #include "lexer.hpp"
 
-namespace lexer {
-    void Inner::run(
-        std::size_t line_num,
-        const std::string &str,
-        std::queue<std::unique_ptr<token::Token>> &queue
-    ){
-        /* queue にトークンを追加 */
-    }
+void Inner::run(
+    std::size_t line_num,
+    const std::string &str,
+    std::queue<std::unique_ptr<token::Token>> &queue
+){
+    /* queue にトークンを追加 */
 }
 ```
 
@@ -62,73 +56,65 @@ namespace lexer {
 #include <fstream>
 #include <vector>
 
-namespace lexer {
-    class Lexer {
-        std::istream &source;
-        bool prompt;
-        Inner inner;
-        std::vector<std::string> log;
-        std::queue<std::unique_ptr<token::Token>> tokens;
-    public:
-        Lexer();
-        Lexer(std::ifstream &);
-        const std::vector<std::string> &get_log() const;
-        std::unique_ptr<token::Token> next(), &peek();
-    };
-}
+class Lexer {
+    std::istream &source;
+    bool prompt;
+    Inner inner;
+    std::vector<std::string> log;
+    std::queue<std::unique_ptr<token::Token>> tokens;
+public:
+    Lexer();
+    Lexer(std::ifstream &);
+    const std::vector<std::string> &get_log() const;
+    std::unique_ptr<token::Token> next(), &peek();
+};
 ```
 対話環境では `> ` みたいなプロンプトが出るとうれしい．それを出すかどうかはメンバ変数 `prompt` で切り替える．
 
 コンストラクタは，対話環境用とファイルからの入力用の 2 つを用意する．
 
 ```cpp:lexer.cpp
-namespace lexer {
-    Lexer::Lexer():
-        source(std::cin),
-        prompt(true) {}
-    Lexer::Lexer(std::ifstream &source):
-        source(source),
-        prompt(false) {}
-}
+Lexer::Lexer():
+    source(std::cin),
+    prompt(true) {}
+Lexer::Lexer(std::ifstream &source):
+    source(source),
+    prompt(false) {}
 ```
 
 受け取った入力は `log` に保存しておいて，`get_log()` で手に入るようにする．
 
 ```cpp:lexer.cpp
-namespace lexer {
-    const std::vector<std::string> &Lexer::get_log() const {
-        return log;
-    }
+const std::vector<std::string> &Lexer::get_log() const {
+    return log;
 }
 ```
 `next()`，`peek()` は `Lexer` がイテレータとして働くための関数．EOF に達したら，`nullptr` を返す．
 ```cpp:lexer.cpp
-namespace lexer {
-    std::unique_ptr<token::Token> &Lexer::peek(){
-        while(tokens.empty()){
-            if(source){
-                // 次に読むのは何行目か (0-indexed)
-                auto line_num = log.size();
-                // 空の行を追加
-                log.emplace_back();
-                // 対話環境ならプロンプトを出す
-                if(prompt) std::cout << "> ";
-                // 1 行読む
-                std::getline(source, log.back());
-                // トークンに分解
-                inner.run(line_num, log.back(), tokens);
-            }else{
-                // EOF に達したので nullptr を追加
-                tokens.emplace();
-            }
+std::unique_ptr<token::Token> &Lexer::peek(){
+    while(tokens.empty()){
+        if(source){
+            // 次に読むのは何行目か (0-indexed)
+            auto line_num = log.size();
+            // 空の行を追加
+            log.emplace_back();
+            // 対話環境ならプロンプトを出す
+            if(prompt) std::cout << "> ";
+            // 1 行読む
+            std::getline(source, log.back());
+            // トークンに分解
+            inner.run(line_num, log.back(), tokens);
+        }else{
+            // EOF に達したので nullptr を追加
+            tokens.emplace();
         }
-        return tokens.front();
     }
-    std::unique_ptr<token::Token> Lexer::next(){
-        auto ret = std::move(peek());
-        tokens.pop();
-        return ret;
-    }
+    return tokens.front();
+}
+std::unique_ptr<token::Token> Lexer::next(){
+    auto ret = std::move(peek());
+    tokens.pop();
+    return ret;
 }
 ```
 # `Inner::run()`
@@ -260,12 +246,10 @@ namespace error {
 ```cpp:lexer.hpp
 #include <vector>
 
-namespace lexer {
-    class Inner {
-        std::vector<pos::Pos> comment;
-        /* 略 */
-    };
-}
+class Inner {
+    std::vector<pos::Pos> comment;
+    /* 略 */
+};
 ```
 
 コメントが始まったら，その位置を `comment` に push back する．コメントを抜けたら pop back する．`comment` が空でなければコメントの途中だと分かる．
@@ -336,37 +320,31 @@ namespace error {
 
 EOF はどこで判明するかというと，`Lexer::peek()` の中．ここで，EOF のときの処理を `Inner` に頼む．
 ```cpp:lexer.cpp
-namespace lexer {
-    token::TokenWithPos &Lexer::peek(){
-        while(tokens.empty()){
-            if(source){
-                /* 略 */
-            }else{
-                inner.deal_with_eof();
-                tokens.emplace();
-            }
+token::TokenWithPos &Lexer::peek(){
+    while(tokens.empty()){
+        if(source){
+            /* 略 */
+        }else{
+            inner.deal_with_eof();
+            tokens.emplace();
         }
-        return tokens.front();
     }
+    return tokens.front();
 }
 ```
 EOF の処理をする関数 `deal_with_eof()` を `Inner` に追加して，
 ```cpp:lexer.hpp
-namespace lexer {
-    class Inner {
-        /* 略 */
-    public:
-        void deal_with_eof();
-    };
-}
+class Inner {
+    /* 略 */
+public:
+    void deal_with_eof();
+};
 ```
 その中で `comment` が空かどうかチェックする．
 ```cpp:lexer.cpp
-namespace lexer {
-    void Inner::deal_with_eof(){
-        if(!comment.empty()){
-            throw error::make<error::UnterminatedComment>(std::move(comment));
-        }
+void Inner::deal_with_eof(){
+    if(!comment.empty()){
+        throw error::make<error::UnterminatedComment>(std::move(comment));
     }
 }
 ```
