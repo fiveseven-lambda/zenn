@@ -2,35 +2,29 @@
 title: "構文解析 (式)"
 ---
 
-式はこんな感じの BNF で表される．
+式はこんな感じの（なんちゃって）BNF で表される．
 ```
 <factor> ::= <identifier>
            | <integer>
            | <unary operator> <factor>
            | `(` <expression> `)`
-           | <factor> `(` <arguments list> `)`
+           | <factor> `(` <expression list> `)`
 <expression> ::= <factor>
                | <expression> <binary operator> <factor>
-<arguments list> ::= ε
+<expression list> ::= ε
                    | <expression>
                    | <expression> `,` <arguments list>
 ```
+（どこがなんちゃってかというと，優先順位の話をしていない）
+
 これをパースする関数を作っていく．
 ```cpp:parser.hpp
 #include <memory>
-#include <vector>
 
-#include "syntax.hpp"
 #include "lexer.hpp"
+#include "expression.hpp"
 
-namespace parser {
-    std::unique_ptr<syntax::Expression>
-        parse_factor(lexer::Lexer &),
-        parse_binary_operator(lexer::Lexer &),
-        parse_expression(lexer::Lexer &);
-    std::vector<std::unique_ptr<syntax::Expression>>
-        parse_arguments(lexer::Lexer &);
-}
+std::unique_ptr<expression::Expression> parse_expression(Lexer &);
 ```
 
 # factor
@@ -40,15 +34,13 @@ namespace parser {
 ```cpp:parser.cpp
 #include "parser.hpp"
 
-namespace parser {
-    std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
-        auto &token_ref = lexer.peek();
+static std::unique_ptr<expression::Expression> parse_factor(lexer::Lexer &lexer){
+    auto &token_ref = lexer.peek();
 
-        // EOF に達した場合
-        if(!token_ref) return nullptr;
+    // EOF に達した場合
+    if(!token_ref) return nullptr;
 
-        /* ここで factor を返す */
-    }
+    /* ここで factor を返す */
 }
 ```
 
@@ -88,11 +80,11 @@ namespace token {
 ```
 これを用いて `parse_factor()` に 1 つめの規則を追加する．
 ```cpp:parser.cpp
-std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
+std::unique_ptr<expression::Expression> parse_factor(lexer::Lexer &lexer){
     auto &token_ref = lexer.peek();
     if(!token_ref) return nullptr;
 
-    std::unique_ptr<syntax::Expression> ret;
+    std::unique_ptr<expression::Expression> ret;
     pos::Range pos;
     if(auto name = token_ref->identifier()){
         // peek した 1 個目のトークンは識別子だった．
@@ -100,8 +92,8 @@ std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
         // peek していたものを読むと同時に，位置情報 pos をもらう
         pos = lexer.next()->pos;
 
-        // syntax::Identifier を作り，返り値に代入
-        ret = std::make_unique<syntax::Identifier>(std::move(name).value());
+        // expression::Identifier を作り，返り値に代入
+        ret = std::make_unique<expression::Identifier>(std::move(name).value());
     }else{
         // 残り 4 つの規則
     }
@@ -175,18 +167,18 @@ namespace error {
 
 これを用いて，上と同様に `parse_factor()` に 2 個目の規則を追加．
 ```cpp:parser.cpp
-std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
+std::unique_ptr<expression::Expression> parse_factor(lexer::Lexer &lexer){
     auto &token_ref = lexer.peek();
     if(!token_ref) return nullptr;
 
-    std::unique_ptr<syntax::Expression> ret;
+    std::unique_ptr<expression::Expression> ret;
     pos::Range pos;
     if(auto name = token_ref->identifier()){
         // 略
     }else if(auto value = token_ref->positive_integer()){
         // 1 個目のトークンは整数リテラルだった
         pos = lexer.next()->pos;
-        ret = std::make_unique<syntax::Integer>(value.value());
+        ret = std::make_unique<expression::Integer>(value.value());
     }else{
         // 残りの規則
     }
@@ -201,51 +193,51 @@ std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
 ```
 が選ばれる．
 
-`token::Token` に，前置演算子なら対応する `syntax::UnaryOperator` を返すような関数 `prefix()` を追加する．
+`token::Token` に，前置演算子なら対応する `expression::UnaryOperator` を返すような関数 `prefix()` を追加する．
 
 ```cpp:token.hpp
-#include "syntax.hpp"
+#include "expression.hpp"
 
 namespace token {
     class Token {
         // 略
     public:
-        virtual std::optional<syntax::UnaryOperator> prefix();
+        virtual std::optional<expression::UnaryOperator> prefix();
     }
     class Plus : public Token {
         // 略
-        std::optional<syntax::UnaryOperator> prefix() override;
+        std::optional<expression::UnaryOperator> prefix() override;
     };
     class Hyphen : public Token {
         // 略
-        std::optional<syntax::UnaryOperator> prefix() override;
+        std::optional<expression::UnaryOperator> prefix() override;
     };
     class Tilde : public Token {
         // 略
-        std::optional<syntax::UnaryOperator> prefix() override;
+        std::optional<expression::UnaryOperator> prefix() override;
     };
     class Exclamation : public Token {
         // 略
-        std::optional<syntax::UnaryOperator> prefix() override;
+        std::optional<expression::UnaryOperator> prefix() override;
     };
 }
 ```
 ```cpp:token.cpp
 namespace token {
-    std::optional<syntax::UnaryOperator> Token::prefix(){
+    std::optional<expression::UnaryOperator> Token::prefix(){
         return std::nullopt;
     }
-    std::optional<syntax::UnaryOperator> Plus::prefix(){
-        return syntax::UnaryOperator::Plus;
+    std::optional<expression::UnaryOperator> Plus::prefix(){
+        return expression::UnaryOperator::Plus;
     }
-    std::optional<syntax::UnaryOperator> Hyphen::prefix(){
-        return syntax::UnaryOperator::Minus;
+    std::optional<expression::UnaryOperator> Hyphen::prefix(){
+        return expression::UnaryOperator::Minus;
     }
-    std::optional<syntax::UnaryOperator> Tilde::prefix(){
-        return syntax::UnaryOperator::BitNot;
+    std::optional<expression::UnaryOperator> Tilde::prefix(){
+        return expression::UnaryOperator::BitNot;
     }
-    std::optional<syntax::UnaryOperator> Exclamation::prefix(){
-        return syntax::UnaryOperator::LogicalNot;
+    std::optional<expression::UnaryOperator> Exclamation::prefix(){
+        return expression::UnaryOperator::LogicalNot;
     }
 }
 ```
@@ -271,10 +263,10 @@ namespace pos {
 ```
 すると，`parse_factor` の 3 個目の規則は次のように書ける．
 ```cpp:parse.cpp
-std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
+std::unique_ptr<expression::Expression> parse_factor(lexer::Lexer &lexer){
     auto &token_ref = lexer.peek();
     if(!token_ref) return nullptr;
-    std::unique_ptr<syntax::Expression> ret;
+    std::unique_ptr<expression::Expression> ret;
     pos::Range pos;
     if(auto name = token_ref->identifier()){
         // 略
@@ -290,7 +282,7 @@ std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
         // オペランドの位置情報を合わせて，全体の位置情報を得る
         pos += operand->pos;
 
-        ret = std::make_unique<syntax::Unary>(prefix.value(), std::move(operand));
+        ret = std::make_unique<expression::Unary>(prefix.value(), std::move(operand));
     }else{
         // 残りの規則
     }
@@ -339,10 +331,10 @@ namespace token {
 ```
 `-` の直後に整数リテラルが来るときのみこれを使うようにする．
 ```cpp:parse.cpp
-std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
+std::unique_ptr<expression::Expression> parse_factor(lexer::Lexer &lexer){
     auto &token_ref = lexer.peek();
     if(!token_ref) return nullptr;
-    std::unique_ptr<syntax::Expression> ret;
+    std::unique_ptr<expression::Expression> ret;
     pos::Range pos;
     if(auto name = token_ref->identifier()){
         // 略
@@ -351,7 +343,7 @@ std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
     }else if(auto prefix = token_ref->prefix()){
         pos = lexer.next()->pos;
         if(
-            prefix.value() == syntax::UnaryOperator::Minus
+            prefix.value() == expression::UnaryOperator::Minus
             && (value = lexer.peek()->negative_integer())
         ){
             // 整数リテラルを peek 中
@@ -359,11 +351,11 @@ std::unique_ptr<syntax::Expression> parse_factor(lexer::Lexer &lexer){
             // 整数リテラル（オペランド）の位置情報を追加
             pos += lexer.next()->pos;
 
-            ret = std::make_unique<syntax::Integer>(value.value());
+            ret = std::make_unique<expression::Integer>(value.value());
         }else{
             auto operand = parse_factor(lexer);
             pos += operand->pos;
-            ret = std::make_unique<syntax::Unary>(prefix.value(), std::move(operand));
+            ret = std::make_unique<expression::Unary>(prefix.value(), std::move(operand));
         }
     }
     ret->pos = pos;

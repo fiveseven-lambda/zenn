@@ -167,7 +167,8 @@ namespace expression {
         LogicalAnd, LogicalOr,
         Assign,
         MulAssign, DivAssign, RemAssign, AddAssign, SubAssign,
-        BitAndAssign, BitOrAssign, BitXorAssign
+        BitAndAssign, BitOrAssign, BitXorAssign,
+        RightShiftAssign, LeftShiftAssign
     };
     class Binary : public Expression {
         BinaryOperator binary_operator;
