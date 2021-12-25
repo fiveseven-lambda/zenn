@@ -145,7 +145,7 @@ fn main() {
 ```
 これは，標準入力としてたとえば `3` を与えて実行すると，変数 `index` の値が 3 になるため， `array[3]` の値 30 が `ans` に代入され，出力されます．
 
-では，標準入力として `10` を与えたらどうなるでしょうか？ `array` の長さは 6 しかないのに， `array[10]` にアクセスしようとしてしまっています．これは，次のような実行時エラーになります．
+では，標準入力として `10` を与えたらどうなるでしょうか？ `array` の長さは 6 しかないのに， `array[10]` にアクセスしようとしてしまっています．このような場合，パニックが起こります．
 ```
 thread 'main' panicked at 'index out of bounds: the len is 6 but the index is 10', src/main.rs:8:15
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
