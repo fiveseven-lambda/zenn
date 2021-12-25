@@ -120,7 +120,7 @@ fn print<T: std::fmt::Display>(x: T) {
 print(10);
 print("Hello");
 ```
-```-:標準出力
+```:標準出力
 10
 Hello
 ```

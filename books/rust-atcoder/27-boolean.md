@@ -155,7 +155,7 @@ fn fnc2() -> bool {
 `fnc1()` は `false` を返し， `fnc2()` は `true` を返しています．片方が `false` なので， `result` は `false` になります．
 
 また， `fnc1` 関数の中で `fnc1: false` と， `fnc2` 関数の中で `fnc2: true` と出力されるので，全体の出力は
-```-:標準出力
+```:標準出力
 fnc1: false
 fnc2: true
 ```
@@ -179,7 +179,7 @@ fn fnc2() -> bool {
 }
 ```
 今回も `result` は `false` になります．しかし，出力の内容は変化します．
-```-:標準出力
+```:標準出力
 fnc1: false
 ```
 
@@ -222,7 +222,7 @@ fn fnc2() -> bool {
 `fnc1()` は `true` を返し， `fnc2()` は `false` を返しています．片方が `true` なので， `result` は `true` になります．
 
 また， `fnc1` 関数の中で `fnc1: true` と， `fnc2` 関数の中で `fnc2: false` と出力されるので，全体の出力は
-```-:標準出力
+```:標準出力
 fnc1: true
 fnc2: false
 ```
@@ -246,7 +246,7 @@ fn fnc2() -> bool {
 }
 ```
 `&&` 演算子と同様に `||` 演算子も短絡評価を行います． `fnc1()` が `true` だった時点で， `fnc1() || fnc2()` は `true` ということが確定するので， `fnc2` 関数が呼ばれることなく `result` は `true` となります．
-```-:標準出力
+```:標準出力
 fnc1: true
 ```
 ## `^` 演算子

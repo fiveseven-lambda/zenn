@@ -54,7 +54,7 @@ fn main() {
 の 2 つです．
 
 `main` 関数全体を表すブロックも含めて，ブロックの中身は*上から順に*実行されるので，出力は
-```-:標準出力
+```:標準出力
 Good morning
 Good afternoon
 Good evening
