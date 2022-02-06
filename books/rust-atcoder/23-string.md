@@ -96,7 +96,7 @@ fn main() {
     println!("{}, {}!", greeting, world);
 }
 ```
-```:標準出力
+```:stdout
 Hello, world!
 ```
 一方，次のように書くことはできません．
@@ -252,7 +252,7 @@ fn main() {
 Hello, world!
 ```
 であれば，最初の空白までの `Hello,` が `s1` ，次の改行までの `world!` が `s2` に代入されて，出力は
-```:標準出力
+```:stdout
 "Hello,"
 "world!"
 ```
