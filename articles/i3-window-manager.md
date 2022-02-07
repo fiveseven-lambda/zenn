@@ -88,7 +88,7 @@ bindsym --whole-window Mod1+button2 kill
 
 `/etc/i3/config` を見ると， resize というモードが定義されています．
 
-```-:/etc/i3/config
+```:/etc/i3/config
 mode "resize" {
         (略)
         bindsym Left        resize shrink width 10 px or 10 ppt
