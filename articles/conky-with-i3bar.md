@@ -193,3 +193,43 @@ conky.text = '[' .. table.concat(cpu, ',') .. ']'
 最後 `conky.text` に代入している部分では，前後に他のブロックも追加できます．
 
 これでだいぶ自由度の高い設定ができるようになるんじゃないかと思います．
+
+# おまけ
+最後に，私が今回個人的に作って良かったなと思ったやつを紹介します．
+
+定期的にパッケージマネージャによる更新をかけて各々のパッケージを最新の状態に保つのは大事です．私は yay を使っているので定期的に `$ yay -Syu` あるいは単に `$ yay` を打つことで更新をしています．
+
+しかし，たまに数日間更新を忘れてしまうことがあります．別に何かが忙しかったわけではなく，普通に忘れちゃいます．こういうのは無くしたいなと前から思っていました．
+
+そこで，i3bar に「最後に `$ yay` を打ってから経った時間」を表示して，数日経つと色が赤く染まるようにすることを思いつきました．
+
+やり方は簡単です．まず，`yay` を間接的に呼び出しながら時刻を記録するスクリプトを用意しておいて，
+```bash:~/.config/conky/yay
+#!/bin/zsh
+if [ $# -eq 0 ]; then
+    date "+%Y-%m-%d %H:%M:%S" > ~/.config/conky/last-yay
+fi
+yay $@
+```
+`yay` コマンドをこれで差し替えます．
+```bash:~/.zshrc
+alias yay='~/.config/conky/yay'
+```
+あとは，記録された時刻と現在時刻の差をとって出力する処理を python で書いて
+```python:~/.config/conky/time.py
+from datetime import datetime
+diff = datetime.now() - datetime.strptime(input(), '%Y-%m-%d %H:%M:%S')
+seconds = int(diff.total_seconds())
+hours, minutes = divmod(seconds // 60, 60)
+r = min(255, seconds * 256 // (3 * 24 * 60 * 60))
+gb = 255 - r
+print(f'{{"full_text": "{hours}:{minutes:02}", "color": "#{r:02x}{gb:02x}{gb:02x}"}}')
+```
+`conky.conf` 内で `conky.text` に追加すれば終わりです！
+```lua:~/.config/conky/conky.conf
+conky.text = [[ [
+    ${exec python $HOME/.config/conky/time.py < $HOME/.config/conky/last-yay},
+]] .. -- 残りの内容
+```
+
+これでもう更新を忘れない！
