@@ -35,6 +35,14 @@ document(| title = {タイトル}; author = {著者} |)'<
 
 TeX は空行で段落を分けますが，SATySFi は `+p{`〜`}` で段落を表します．
 # 数式
+> 正の整数$n$と実数$a_1, \ldots, a_n$，$b_1, \ldots, b_n$に対し
+>
+> $$
+    \left(\sum_{k=1}^n a_k^2\right)
+    \left(\sum_{k=1}^n b_k^2\right)
+    = \left(\sum_{k = 1}^n a_k b_k\right)^2.
+$$
+
 TeX：
 ```
 正の整数$n$と実数$a_1, \ldots, a_n$，$b_1, \ldots, b_n$に対し
@@ -53,6 +61,7 @@ SATySFi：
     = \paren{\sum_{k=1}^n a_k b_k}^2.
 });
 ```
+
 上付き `^2` 下付き `_1` とか `\sum` あたりはおおよそ同じです．
 
 文中の数式は TeX だと `$`〜`$`，SATySFi だと `${`〜`}`．
@@ -60,6 +69,15 @@ SATySFi：
 別行立て数式は TeX だと `\[`〜`\]` や `equation` 環境を使いますが，SATySFi だと `\eqn(`〜`);` や `+math(`〜`);` を使います．
 
 TeX で `(`〜`)` の大きさを調節するには `\left` `\right` などを使いますが，SATySFi だと `\paren{`〜`}` だけで大きさが自動調節される括弧になります（プリアンブルで azmath を require しておくと `\p{`〜`}`）．
+
+> $$
+\begin{align}
+    \Gamma(z) &= \int_0^\infty t^{z-1} e^{-t} dt \\
+    &= \left[-t^{z-1} e^{-t}\right]_0^\infty
+     + (z-1) \int_0^\infty t^{z-2} e^{-t} dt \\
+    &= (z-1) \Gamma(z-1)
+\end{align}
+$$
 
 TeX：
 ```
@@ -189,6 +207,10 @@ SATySFi は数式コマンドを `let-math` で，インラインコマンド（
 
 SATySFi は OCaml や F# の影響を大きく受けているだけあって，関数型言語の記法ですね．
 # 表
+> | | TeX | SATySFi |
+> |--|:--:|:--:|
+> | 作者 | D. Knuth | gfngfn |
+> | 開発年 | 1978 | 2017 |
 TeX：
 ```
 \documentclass[uplatex]{jsarticle}
