@@ -70,7 +70,16 @@ TeX：
     &= (z-1) \Gamma(z-1)
 \end{align}
 ```
-SATySFi：
+SATySFi（azmath なし）：
+```
+\align[
+    ${| \app{\Gamma}{z} |= \int_0^\infty t^{z-1} e^{-t} \ordd t |};
+    ${||= \sqbracket{-t^{z-1} e^{-t}}_0^\infty
+        + \paren{z-1} \int_0^\infty t^{z-2} e^{-t} \ordd t |};
+    ${||= \paren{z-1} \app{\Gamma}{z-1} |}
+];
+```
+SATySFi（azmath あり）：
 ```
 \align(${
     | \app{\Gamma}{z} |= \int_0^\infty t^{z-1} e^{-t} \ordd t
@@ -81,6 +90,66 @@ SATySFi：
 ```
 
 複数行にわたる数式は，TeX では `align` 環境を使って `&` と `\\` で位置を揃えますが，SATySFi だと `\align(`〜`);` を使って `|` で区切ります．
+
+# 章立て
+TeX（jsarticle）：
+```
+\section{夏休みの宿題}
+\subsection{概要}
+多くの学校では夏休みに宿題が課される．
+\subsection{主な宿題}
+問題集，日記，読書感想文，自由研究などがある．
+\subsection{期限までに出来なかった時にはどうするべきか}
+居残りや親の呼び出しを避けるためになんとか言い訳を考える必要がある．
+```
+SATySFi（stdjabook）：
+```
++section{夏休みの宿題}<
+    +subsection{概要}<
+        +p{
+            多くの学校では夏休みに宿題が課される．
+        }
+    >
+    +subsection{主な宿題}<
+        +p{
+            問題集，日記，読書感想文，自由研究などがある．
+        }
+    >
+    +subsection{期限までに出来なかった時にはどうするべきか}<
+        +p{
+            なんとか言い訳を考える．
+        }
+    >
+>
+```
+大きく違いますね．TeX は章や節の先頭に `\section{}` や `subsection{}` を入れるだけですが，SATySFi は `<`〜`>` を使って章や節の始まりと終わりを明記します．
+
+# 箇条書き
+TeX：
+```
+\begin{itemize}
+    \item ごはん
+    \item 麺
+        \begin{itemize}
+            \item うどん
+            \item そば
+            \item ラーメン
+        \end{itemize}
+    \item パン
+\end{itemize}
+```
+SATySFi：
+```
+\listing{
+    * ごはん
+    * 麺
+        ** うどん
+        ** そば
+        ** ラーメン
+    * パン
+}
+```
+TeX では `itemize` 環境を使って各項目の先頭に `\item` を付けます．一方 SATySFi では `\listing{`〜`}` を使い，各項目の先頭に `*` を付けます．入れ子にするときは，TeX だと新しく `itemize` 環境を始め，SATySFi だと `**` の数を増やします．
 
 # コマンドの定義
 毎回 `\mathbb{R}` と書く代わりに `\bR` を定義しておく．文字を赤くする `\red` を定義しておく．どちらもよくあるコマンド定義です．
