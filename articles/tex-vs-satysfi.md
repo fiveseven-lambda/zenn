@@ -217,6 +217,22 @@ document(| title = {}; author = {} |)'<
 SATySFi は数式コマンドを `let-math` で，インラインコマンド（文中で使うコマンド）を `let-inline` で定義します．TeX はどちらも `\newcommand` です．
 
 SATySFi は OCaml や F# の影響を大きく受けているだけあって，関数型言語の記法ですね．
+
+ちなみに文中の `${\bR}` は（デフォルトの場合）`\math(${\bR});` と同じ意味になっていて，後者を使って書くと以下のようにローカルな（その場だけで有効な）コマンドを定義することもできます．
+```
+@require: stdjareport
+
+document(| title = {}; author = {} |)'<
+    +p{
+        \math(
+            let-math \bR = ${\mathbb{R}} in
+            ${\bR}
+        );を実数全体の集合とする．
+
+        % ここで ${\bR} は使えない
+    }
+>
+```
 # 表
 > | | TeX | SATySFi |
 > |--|:--:|:--:|
