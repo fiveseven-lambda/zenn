@@ -1,25 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
    height="297mm"
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07, custom)"
-   sodipodi:docname="memory.svg">
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="memory.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2">
+    <rect
+       x="-8505.5832"
+       y="15641.292"
+       width="1888.3482"
+       height="478.15918"
+       id="rect158997" />
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient1548">
+       id="linearGradient138771">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop138767" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop138769" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient137935"
+       inkscape:swatch="gradient">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop137931" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop137933" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient135939"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop135937" />
+    </linearGradient>
+    <marker
+       style="overflow:visible;"
+       id="marker62905"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path62647" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1548-4">
       <stop
          style="stop-color:#000000;stop-opacity:1"
          offset="0"
@@ -28,18 +80,6 @@
          style="stop-color:#000000;stop-opacity:0"
          offset="1"
          id="stop1546" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       id="1541">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop1536" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0;"
-         offset="1"
-         id="stop1538" />
     </linearGradient>
     <marker
        style="overflow:visible;"
@@ -83,32 +123,178 @@
        id="rect1145" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient1548"
+       xlink:href="#linearGradient1548-4"
        id="linearGradient1534"
        x1="-1390.5548"
        y1="2988.8804"
        x2="-1292.1713"
        y2="2988.8804"
        gradientUnits="userSpaceOnUse" />
+    <marker
+       style="overflow:visible"
+       id="marker62905-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62647-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker62905-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62647-45" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker62905-9-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62647-4-3" />
+    </marker>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#1541"
-       id="linearGradient1542"
-       x1="281.1559"
-       y1="2988.8804"
-       x2="381.15593"
-       y2="2988.8804"
+       xlink:href="#linearGradient138771"
+       id="linearGradient138773"
+       x1="-2530.2244"
+       y1="2817.0608"
+       x2="-2530.2244"
+       y2="2767.719"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient1548"
-       id="linearGradient1542-3"
-       x1="281.15591"
-       y1="2988.8804"
-       x2="381.15594"
-       y2="2988.8804"
+       xlink:href="#linearGradient138771"
+       id="linearGradient139182"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(1005.1177,-5979.8193)" />
+       x1="-2530.2244"
+       y1="2817.0608"
+       x2="-2530.2244"
+       y2="2767.719"
+       gradientTransform="translate(-9.9140625e-5,-5880.8305)" />
+    <marker
+       style="overflow:visible"
+       id="marker62905-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62647-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker62905-9-07"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62647-4-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker62905-8-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62647-45-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker62905-9-0-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62647-4-3-4" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient138771"
+       id="linearGradient139559"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(38.511675,-6938.2373)"
+       x1="-2530.2244"
+       y1="2817.0608"
+       x2="-2530.2244"
+       y2="2767.719" />
+    <marker
+       style="overflow:visible"
+       id="marker62905-8-6-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62647-45-8-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker62905-9-0-8-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path62647-4-3-4-9" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient138771"
+       id="linearGradient9676"
+       gradientUnits="userSpaceOnUse"
+       x1="-2530.2244"
+       y1="2817.0608"
+       x2="-2530.2244"
+       y2="2767.719"
+       gradientTransform="translate(38.511629,1008.0652)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -118,17 +304,18 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.175"
-     inkscape:cx="-2001.6981"
-     inkscape:cy="10959.087"
+     inkscape:cx="-9591.4286"
+     inkscape:cy="14177.143"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1918"
-     inkscape:window-height="1059"
+     inkscape:window-height="1053"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -287,7 +474,7 @@
     <text
        xml:space="preserve"
        id="text1149"
-       style="line-height:1.25;font-family:'courier new';font-size:10.58333333px;-inkscape-font-specification:'courier new';letter-spacing:0px;white-space:pre;shape-inside:url(#rect1151);" />
+       style="line-height:1.25;font-family:'courier new';font-size:10.58333333px;-inkscape-font-specification:'courier new';letter-spacing:0px;white-space:pre;shape-inside:url(#rect1151)" />
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -298,10 +485,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41568">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10.5833px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
@@ -323,10 +508,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41570">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -337,10 +520,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41572">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -351,10 +532,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41574">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -365,8 +544,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">hoge</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41576">hoge</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:209.811;stroke-width:0.264583"
@@ -376,8 +555,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-844.57477"
-         y="236.0089"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">100</tspan></tspan></text>
+         y="236.0089"
+         id="tspan41578">100</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.806273;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1071-6"
@@ -443,10 +622,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41580">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -457,10 +634,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41582">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -471,10 +646,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41584">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -485,10 +658,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41586">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -499,8 +670,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">hoge</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41588">hoge</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:209.811;stroke-width:0.264583"
@@ -511,8 +682,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-844.57477"
-         y="236.0089"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">100</tspan></tspan></text>
+         y="236.0089"
+         id="tspan41590">100</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m -1451.695,1293.011 210.362,-44.421 0.03,-165.0502 h -210 z"
@@ -698,10 +869,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41592">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -712,10 +881,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41594">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:997.701;stroke-width:0.264583"
@@ -726,8 +893,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">hoge</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41596">hoge</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m -1841.2568,1974.6862 210.362,-44.421 0.03,-165.0502 h -210 z"
@@ -890,10 +1057,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41598">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -904,10 +1069,8 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
-         y="121.18592"><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">（</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">未使用</tspan><tspan
-           style="font-size:42.3333px;text-align:center;text-anchor:middle;stroke-width:0.264583">）</tspan></tspan></text>
+         y="121.18592"
+         id="tspan41600">（未使用）</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m -507.47224,1974.6862 210.36203,-44.421 0.03,-165.0502 h -210.00002 z"
@@ -1007,154 +1170,6 @@
          style="font-size:42.3333px;stroke-width:0.264583"
          id="tspan1973">&amp;演算子によって得られるアドレス</tspan></text>
     <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-2"
-       width="98.383469"
-       height="398.38345"
-       x="-1292.1714"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-9"
-       width="98.383469"
-       height="398.38345"
-       x="-1193.788"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-2-1"
-       width="98.383476"
-       height="398.38345"
-       x="-1095.4044"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-27"
-       width="98.383469"
-       height="398.38345"
-       x="-997.02094"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-2-0"
-       width="98.383476"
-       height="398.38345"
-       x="-898.63751"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-9-9"
-       width="98.383476"
-       height="398.38345"
-       x="-800.25409"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-2-1-3"
-       width="98.383484"
-       height="398.38345"
-       x="-701.87054"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-6"
-       width="98.383469"
-       height="398.38345"
-       x="-603.48706"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-2-06"
-       width="98.383476"
-       height="398.38345"
-       x="-505.10364"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-9-2"
-       width="98.383476"
-       height="398.38345"
-       x="-406.72021"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-2-1-6"
-       width="98.383484"
-       height="398.38345"
-       x="-308.33667"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-27-1"
-       width="98.383476"
-       height="398.38345"
-       x="-209.95325"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-2-0-8"
-       width="98.383484"
-       height="398.38345"
-       x="-111.56982"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-9-9-7"
-       width="98.383484"
-       height="398.38345"
-       x="-13.186401"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-2-1-3-9"
-       width="98.383484"
-       height="398.38345"
-       x="85.197144"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.61654"
-       id="rect1329-9-9-7-2"
-       width="98.383484"
-       height="398.38345"
-       x="183.58063"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:url(#linearGradient1542);stroke-width:1.61654"
-       id="rect1329-2-1-3-9-0"
-       width="98.383484"
-       height="398.38345"
-       x="281.96417"
-       y="2789.6887" />
-    <rect
-       style="fill:#ffffff;stroke:url(#linearGradient1542-3);stroke-width:1.61654"
-       id="rect1329-2-1-3-9-0-9"
-       width="98.383484"
-       height="398.38345"
-       x="1287.0818"
-       y="-3190.1304"
-       transform="rotate(-179.90856)" />
-    <rect
-       style="opacity:0;fill:#000000;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.01430951;fill-opacity:1"
-       id="rect1576"
-       width="491.28146"
-       height="398.38309"
-       x="-1291.5356"
-       y="2789.6892" />
-    <rect
-       style="opacity:0;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.0143095"
-       id="rect1578"
-       width="368.66971"
-       height="307.37784"
-       x="-1267.3073"
-       y="2880.6943" />
-    <rect
-       style="opacity:0;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.0143095"
-       id="rect1580"
-       width="374.30814"
-       height="250.17473"
-       x="-1100.8151"
-       y="3058.6953" />
-    <rect
        style="opacity:0;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.0143095"
        id="rect1582"
        width="302.46646"
@@ -1168,5 +1183,787 @@
        height="338.35995"
        x="-1157.1967"
        y="2339.3381" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5"
+       width="199.34177"
+       height="49.341774"
+       x="-2530.2244"
+       y="2915.7444"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2773.658"
+       y="2950.0513"
+       id="text12669"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2773.658"
+         y="2950.0513">0x7ffec372bbaf</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:52.9167px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2476.2256"
+       y="2957.9641"
+       id="text20737"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan20735"
+         style="font-size:52.9167px;stroke-width:0.264583"
+         x="-2476.2256"
+         y="2957.9641">100</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-8"
+       width="199.34177"
+       height="49.341774"
+       x="-2530.2244"
+       y="2637.9692"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2613.7986"
+       y="2672.2761"
+       id="text12669-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-73"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2613.7986"
+         y="2672.2761">hoge</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:52.9167px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2476.2256"
+       y="2680.189"
+       id="text20737-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan20735-1"
+         style="font-size:52.9167px;stroke-width:0.264583"
+         x="-2476.2256"
+         y="2680.189">100</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-1"
+       width="199.34177"
+       height="49.341774"
+       x="-2530.2244"
+       y="2965.0862"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2773.658"
+       y="2999.3931"
+       id="text12669-2"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-7"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2773.658"
+         y="2999.3931">0x7ffec372bbb0</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-3"
+       width="199.34177"
+       height="49.341774"
+       x="-2530.2244"
+       y="3014.428"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2773.658"
+       y="3048.7349"
+       id="text12669-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-0"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2773.658"
+         y="3048.7349">0x7ffec372bbb1</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-3-3"
+       width="199.34177"
+       height="49.341774"
+       x="-2530.2244"
+       y="2817.0608"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient138773);stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-3-3-5"
+       width="199.34177"
+       height="49.341774"
+       x="-2530.2244"
+       y="2767.719"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2773.658"
+       y="2851.3677"
+       id="text12669-6-7"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-0-5"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2773.658"
+         y="2851.3677">0x7ffec372bbad</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-1-6-9"
+       width="199.34177"
+       height="49.341774"
+       x="-2530.2244"
+       y="2866.4026"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2773.658"
+       y="2900.7095"
+       id="text12669-2-1-2"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-7-8-2"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2773.658"
+         y="2900.7095">0x7ffec372bbae</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2235.2629"
+       y="2651.343"
+       id="text59325"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan59323"
+         style="stroke-width:0.264583"
+         x="-2235.2629"
+         y="2651.343">代入</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2235.2012"
+       y="2702.2866"
+       id="text59325-3"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan59323-1"
+         style="stroke-width:0.264583"
+         x="-2235.2012"
+         y="2702.2866">使用</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker62905)"
+       d="m -2249.489,2649.9561 h -63.5002"
+       id="path62527"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker62905-9)"
+       d="m -2312.9892,2676.7027 h 63.5002"
+       id="path62527-7"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2235.2629"
+       y="2929.9866"
+       id="text59325-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan59323-10"
+         style="stroke-width:0.264583"
+         x="-2235.2629"
+         y="2929.9866">書き込み</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2235.2012"
+       y="2980.9302"
+       id="text59325-3-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan59323-1-3"
+         style="stroke-width:0.264583"
+         x="-2235.2012"
+         y="2980.9302">読み出し</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker62905-8)"
+       d="m -2249.489,2928.5997 h -63.5002"
+       id="path62527-2"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker62905-9-0)"
+       d="m -2312.9892,2955.3463 h 63.5002"
+       id="path62527-7-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:21.1667px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2622.7175"
+       y="2638.0911"
+       id="text93180"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan93178"
+         style="font-size:21.1667px;stroke-width:0.264583"
+         x="-2622.7175"
+         y="2638.0911">(変数名)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.1667px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2709.9761"
+       y="2812.8938"
+       id="text93180-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan93178-1"
+         style="font-size:21.1667px;stroke-width:0.264583"
+         x="-2709.9761"
+         y="2812.8938">(アドレス)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.1667px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2474.4263"
+       y="2784.2832"
+       id="text93180-6-3"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan93178-1-6"
+         style="font-size:21.1667px;stroke-width:0.264583"
+         x="-2474.4263"
+         y="2784.2832">(メモリ)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.22222222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2468.468"
+       y="2731.3638"
+       id="text104921"><tspan
+         sodipodi:role="line"
+         id="tspan104919"
+         style="stroke-width:0.264583;font-size:28.22222222px"
+         x="-2468.468"
+         y="2731.3638" /><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583;font-size:28.22222222px"
+         x="-2468.468"
+         y="2757.8223"
+         id="tspan109251" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2972.1633"
+       y="2676.6138"
+       id="text121615"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan121613"
+         style="stroke-width:0.264583"
+         x="-2972.1633"
+         y="2676.6138">ソースコード上･･･</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2972.1572"
+       y="2954.0989"
+       id="text121615-5"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan121613-69"
+         style="stroke-width:0.264583"
+         x="-2972.1572"
+         y="2954.0989">実行時･･･</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2962.4844"
+       y="2719.7251"
+       id="text121615-7"><tspan
+         sodipodi:role="line"
+         id="tspan121613-6"
+         style="stroke-width:0.264583"
+         x="-2962.4844"
+         y="2719.7251" /></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient139182);stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-3-3-5-4"
+       width="199.34177"
+       height="49.341774"
+       x="-2530.2244"
+       y="-3113.1116"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-31"
+       width="199.34177"
+       height="49.341774"
+       x="-2491.7126"
+       y="3923.8096"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2735.1462"
+       y="3962.7314"
+       id="text12669-4"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-9"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2735.1462"
+         y="3962.7314">0x7ffe23c4bd2d</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:52.9167px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2439.0254"
+       y="3990.4421"
+       id="text20737-2"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan20735-0"
+         style="font-size:52.9167px;stroke-width:0.264583"
+         x="-2439.0254"
+         y="3990.4421">100</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2580.3794"
+       y="3617.9851"
+       id="text12669-9-8"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-73-9"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2580.3794"
+         y="3617.9851">hoge</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-1-6"
+       width="199.34177"
+       height="49.341774"
+       x="-2491.7126"
+       y="3973.1514"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2735.1462"
+       y="4012.0732"
+       id="text12669-2-4"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-7-9"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2735.1462"
+         y="4012.0732">0x7ffe23c4bd2e</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-3-5"
+       width="199.34177"
+       height="49.341774"
+       x="-2491.7126"
+       y="4022.4932"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2735.1462"
+       y="4061.415"
+       id="text12669-6-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-0-4"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2735.1462"
+         y="4061.415">0x7ffe23c4bd2f</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-3-5-6"
+       width="199.34177"
+       height="49.341774"
+       x="-2491.7126"
+       y="4071.835"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2735.1462"
+       y="4110.7563"
+       id="text12669-6-0-7"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-0-4-3"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2735.1462"
+         y="4110.7563">0x7ffe23c4bd30</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-3-3-8"
+       width="199.34177"
+       height="49.341774"
+       x="-2491.7126"
+       y="3825.126"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2735.1462"
+       y="3850.542"
+       id="text12669-6-7-1"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-0-5-7"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2735.1462"
+         y="3850.542">0x7ffe23c4bd2b</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-1-6-9-2"
+       width="199.34177"
+       height="49.341774"
+       x="-2491.7126"
+       y="3874.4678"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-1-6-9-2-6"
+       width="199.34177"
+       height="197.3671"
+       x="-2491.7126"
+       y="3874.4678"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2735.1462"
+       y="3899.8838"
+       id="text12669-2-1-2-7"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan12667-7-8-2-2"
+         style="font-size:28.2222px;stroke-width:0.264583"
+         x="-2735.1462"
+         y="3899.8838">0x7ffe23c4bd2c</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2196.7512"
+       y="3962.5366"
+       id="text59325-6-5"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan59323-10-9"
+         style="stroke-width:0.264583"
+         x="-2196.7512"
+         y="3962.5366">書き込み</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2196.6895"
+       y="4013.4802"
+       id="text59325-3-6-4"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan59323-1-3-9"
+         style="stroke-width:0.264583"
+         x="-2196.6895"
+         y="4013.4802">読み出し</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker62905-8-6)"
+       d="m -2210.9772,3961.1496 h -63.5002"
+       id="path62527-2-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker62905-9-0-8)"
+       d="m -2274.4774,3987.8962 h 63.5002"
+       id="path62527-7-0-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2933.6516"
+       y="3622.3228"
+       id="text121615-1"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan121613-5"
+         style="stroke-width:0.264583"
+         x="-2933.6516"
+         y="3622.3228">ソースコード上･･･</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2933.6455"
+       y="3962.1641"
+       id="text121615-5-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan121613-69-7"
+         style="stroke-width:0.264583"
+         x="-2933.6455"
+         y="3962.1641">実行時･･･</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient139559);stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-3-3-5-4-7"
+       width="199.34177"
+       height="49.341774"
+       x="-2491.7126"
+       y="-4170.5186"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text158995"
+       style="line-height:1.25;font-family:'courier new';font-size:133.33333333px;-inkscape-font-specification:'courier new';letter-spacing:0px;white-space:pre;shape-inside:url(#rect158997)" />
+    <text
+       xml:space="preserve"
+       style="font-size:52.9167px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2439.0254"
+       y="3627.1816"
+       id="text20737-2-8"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan20735-0-1"
+         style="font-size:52.9167px;stroke-width:0.264583"
+         x="-2439.0254"
+         y="3627.1816">100</tspan></text>
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-1-6-9-2-6-9"
+       width="199.34177"
+       height="197.3671"
+       x="-2491.7126"
+       y="3511.2073"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2196.7512"
+       y="3599.2761"
+       id="text59325-6-5-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan59323-10-9-8"
+         style="stroke-width:0.264583"
+         x="-2196.7512"
+         y="3599.2761">代入</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2196.6895"
+       y="3650.2197"
+       id="text59325-3-6-4-8"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan59323-1-3-9-5"
+         style="stroke-width:0.264583"
+         x="-2196.6895"
+         y="3650.2197">使用</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker62905-8-6-5)"
+       d="m -2210.9773,3597.8889 h -63.5002"
+       id="path62527-2-0-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker62905-9-0-8-3)"
+       d="m -2274.4775,3624.6355 h 63.5002"
+       id="path62527-7-0-9-9"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.896026;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m -2734.4184,3906.9662 c 2.5358,-2.5357 5.0805,-2.2849 7.6163,0.2419 2.5447,2.5268 5.0804,1.7742 7.6251,-0.7078 2.5358,-2.491 5.0805,-1.2545 7.6163,1.1738 2.5447,2.4192 5.0804,0.7078 7.6251,-1.6308 2.5358,-2.3297 5.0805,-0.1523 7.6162,2.0698 2.5448,2.2222 5.0805,-0.4032 7.6252,-2.482 2.5358,-2.0877 5.0805,0.9409 7.6162,2.8673 2.5448,1.9265 5.0805,-1.4784 7.6252,-3.2346 2.5358,-1.7473 5.0805,2.0071 7.6162,3.5661 2.5448,1.5502 5.0805,-2.5088 7.6252,-3.8529 2.5358,-1.344 5.0805,2.9838 7.6162,4.1038 2.5447,1.1201 5.0805,-3.4317 7.6252,-4.3099 2.5358,-0.887 5.0805,3.835 7.6162,4.4712 2.5447,0.6362 5.0805,-4.2113 7.6252,-4.5966 2.5358,-0.3853 5.0805,4.5429 7.6162,4.6683 2.5447,0.1344 5.0805,-4.8206 7.6252,-4.6862 2.5358,0.1254 5.0805,5.0536 7.6162,4.6683 2.5447,-0.3853 5.0805,-5.2328 7.6252,-4.5966 2.5358,0.6361 5.0805,5.3582 7.6162,4.4711 2.5447,-0.8781 5.0805,-5.4299 7.6252,-4.3098 2.5357,1.12 5.0805,5.4478 7.6162,4.1037 2.5447,-1.344 5.0805,-5.403 7.6252,-3.8529 2.5357,1.5591 5.0805,5.3135 7.6162,3.5662 2.5447,-1.7562 5.0805,-5.1611 7.6252,-3.2346 2.5357,1.9264 5.0805,4.955 7.6162,2.8673 2.5447,-2.0788 5.0805,-4.7042 7.6252,-2.482 2.5357,2.2221 5.0804,4.3994 7.6162,2.0698 2.5447,-2.3386 5.0805,-4.059 7.6252,-1.6308 2.5357,2.4193 5.0715,3.6648 7.6162,1.1738 2.5357,-2.482 5.0805,-3.2346 7.6162,-0.7079 2.5447,2.5268 5.0805,2.7777 7.6252,0.233"
+       title="sin(x)"
+       id="path8167"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient9676);stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect3201-5-3-3-5-3"
+       width="199.34177"
+       height="49.341774"
+       x="-2491.7126"
+       y="3775.7842"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-size:21.1667px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2589.252"
+       y="3583.9526"
+       id="text93180-2"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan93178-7"
+         style="font-size:21.1667px;stroke-width:0.264583"
+         x="-2589.252"
+         y="3583.9526">(変数名)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.1667px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2671.4644"
+       y="3812.0681"
+       id="text93180-6-0"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan93178-1-62"
+         style="font-size:21.1667px;stroke-width:0.264583"
+         x="-2671.4644"
+         y="3812.0681">(アドレス)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.1667px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2435.9146"
+       y="3792.3484"
+       id="text93180-6-3-6"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan93178-1-6-1"
+         style="font-size:21.1667px;stroke-width:0.264583"
+         x="-2435.9146"
+         y="3792.3484">(メモリ)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.1667px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
+       x="-2625.5251"
+       y="3928.5146"
+       id="text31384"
+       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan31382"
+         style="font-size:21.1667px;stroke-width:0.264583"
+         x="-2625.5251"
+         y="3928.5146">= &amp;hoge</tspan></text>
   </g>
 </svg>

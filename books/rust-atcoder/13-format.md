@@ -119,7 +119,7 @@ error[E0277]: `(i32, i32, i32)` doesn't implement `std::fmt::Display`
   |                    ^^^^^ `(i32, i32, i32)` cannot be formatted with the default formatter
   |
 ```
-タプルや配列を出力したいときは，
+タプルや配列を出力したいときは，たとえば
 ```rust
 fn main() {
     let tuple = (10i32, 20i32, 30i32);
