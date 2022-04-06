@@ -3,7 +3,7 @@ title: "double の二分探索はループ 64 回で十分すぎる"
 emoji: "🔪"
 type: "tech"
 topics: ['二分探索', '競プロ']
-published: true
+published: false
 ---
 
 この記事では，「非 NaN 値」という言葉を「実数，正の無限大，負の無限大のうち，倍精度浮動小数点数で表せる数」という意味で使います．
