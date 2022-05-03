@@ -1,0 +1,44 @@
+title: "RustCoder 避難所"
+summary: "RustCoder ( https://zenn.dev/toga/books/rust-atcoder ) の改修が終わるまで，古い内容を一時的にこちらに移しています．"
+topics: ["rust", "競技プログラミング", "atcoder"]
+published: true
+price: 0
+chapters:
+  - 01-intro
+  - 02-environment-setup
+  - 03-hello-world
+  - 04-arithmetic
+  - 05-variable
+  - 06-literal
+  - 07-input
+  - 08-if
+  - 09-block
+  - 10-assert
+  - 11-tuple
+  - 12-array
+  - 13-format
+  - 14-reference
+  - 15-for
+  - 16-pattern
+  - 17-mutable
+  - 18-mutable-reference
+  - 19-vector
+  - 20-loop
+  - 21-slice
+  - 22-match
+  - 23-string
+  - 24-ownership
+  - 25-function
+  - 26-call-by-reference
+  - 27-boolean
+  - 28-recursion
+  - 29-bitwise-operation
+  - 30-time-complexity
+  - 31-generic-function
+  - 32-returning-reference
+  - 33-structure
+  - 34-enumerated-type
+  - 35-method
+  - 36-generic-structure
+  - 37-option
+  - 38-result
