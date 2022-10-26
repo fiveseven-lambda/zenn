@@ -3,7 +3,7 @@ title: "GitHub ActionsでLaTeX自動コンパイル"
 emoji: "📝"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["github", "latex"]
-published: false
+published: true
 ---
 
 # 目標
