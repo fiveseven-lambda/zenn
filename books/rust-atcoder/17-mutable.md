@@ -118,7 +118,7 @@ fn main() {
     assert_eq!(mutable, 30);
 }
 ```
-`mutable = mutable + 20` という式では，まず `mutable + 20` の部分が計算されて 30 となり，その結果が `mutable` に代入されます．
+`mutable = mutable + 20` という式では，まず `mutable + 20` の部分が計算されて 30 となり，次にその結果が `mutable` に代入されます．
 
 実は， `+=` 演算子というものを使うと同じことが次のように書けます．
 ```rust
