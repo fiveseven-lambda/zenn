@@ -3,28 +3,3 @@ summary: "これから競技プログラミングを始める人や，既に他�
 topics: ["rust", "競技プログラミング", "atcoder"]
 published: true
 price: 0
-chapters:
-  - 01-intro
-  - 02-setup
-  - 03-hello-world
-  - 04-arithmetic
-  - 05-variable
-  - 06-literal
-  - 07-input
-  - 08-if
-  - 09-block
-  - 10-assert
-  - 11-tuple
-  - 12-array
-  - 13-format
-  - 14-reference
-  - 15-for
-  - 16-pattern
-  - 17-mutable
-  - 18-mutable-reference
-  - 19-loop
-  - 20-label
-  - 21-function
-  - 22-recursion
-  - 23-vector
-  - 24-ownership
