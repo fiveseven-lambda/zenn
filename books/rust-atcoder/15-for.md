@@ -21,7 +21,7 @@ fn main() {
 
 また， `&primes` はこの領域全体の先頭のアドレスなので， `&primes[0]` と同じ値になっているでしょう．
 
-![](https://storage.googleapis.com/zenn-user-upload/06mhncj0v2i510yl1170n1jz8x03)
+![](/images/array_reference.png)
 
 コード上でそのまま書けるわけではありませんが， `&primes` の値が分かっていれば，そのアドレスに 4 を順次加えていくことによって， `&primes[0]` `&primes[1]` ……の値が得られるわけです．
 # `for` 式

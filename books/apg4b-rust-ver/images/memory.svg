@@ -5,7 +5,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="memory.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -304,18 +304,20 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.175"
-     inkscape:cx="-9591.4286"
-     inkscape:cy="14177.143"
+     inkscape:cx="-9760"
+     inkscape:cy="13608.571"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1918"
-     inkscape:window-height="1053"
+     inkscape:window-height="1030"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:pagecheckerboard="0" />
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -486,7 +488,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41568">（未使用）</tspan></text>
+         id="tspan13358">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10.5833px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
@@ -509,7 +511,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41570">（未使用）</tspan></text>
+         id="tspan13360">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -521,7 +523,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41572">（未使用）</tspan></text>
+         id="tspan13362">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -533,7 +535,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41574">（未使用）</tspan></text>
+         id="tspan13364">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -545,7 +547,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41576">hoge</tspan></text>
+         id="tspan13366">hoge</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:209.811;stroke-width:0.264583"
@@ -556,7 +558,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-844.57477"
          y="236.0089"
-         id="tspan41578">100</tspan></text>
+         id="tspan13368">100</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.806273;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1071-6"
@@ -623,7 +625,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41580">（未使用）</tspan></text>
+         id="tspan13370">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -635,7 +637,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41582">（未使用）</tspan></text>
+         id="tspan13372">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -647,7 +649,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41584">（未使用）</tspan></text>
+         id="tspan13374">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -659,7 +661,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41586">（未使用）</tspan></text>
+         id="tspan13376">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -671,7 +673,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41588">hoge</tspan></text>
+         id="tspan13378">hoge</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:209.811;stroke-width:0.264583"
@@ -683,7 +685,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-844.57477"
          y="236.0089"
-         id="tspan41590">100</tspan></text>
+         id="tspan13380">100</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m -1451.695,1293.011 210.362,-44.421 0.03,-165.0502 h -210 z"
@@ -870,7 +872,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41592">（未使用）</tspan></text>
+         id="tspan13382">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -882,7 +884,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41594">（未使用）</tspan></text>
+         id="tspan13384">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:997.701;stroke-width:0.264583"
@@ -894,7 +896,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41596">hoge</tspan></text>
+         id="tspan13386">hoge</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m -1841.2568,1974.6862 210.362,-44.421 0.03,-165.0502 h -210 z"
@@ -1058,7 +1060,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41598">（未使用）</tspan></text>
+         id="tspan13388">（未使用）</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:42.3333px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';text-align:center;letter-spacing:0px;text-anchor:middle;white-space:pre;inline-size:314.188;stroke-width:0.264583"
@@ -1070,7 +1072,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1111.54"
          y="121.18592"
-         id="tspan41600">（未使用）</tspan></text>
+         id="tspan13390">（未使用）</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m -507.47224,1974.6862 210.36203,-44.421 0.03,-165.0502 h -210.00002 z"
@@ -1190,7 +1192,7 @@
        height="49.341774"
        x="-2530.2244"
        y="2915.7444"
-       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_1byte.png"
+       inkscape:export-filename="../../../images/reference_memory_1byte.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <text
@@ -1282,7 +1284,7 @@
          id="tspan12667-7"
          style="font-size:28.2222px;stroke-width:0.264583"
          x="-2773.658"
-         y="2999.3931">0x7ffec372bbb0</tspan></text>
+         y="2999.3931">0x7ffec372bbae</tspan></text>
     <rect
        style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
        id="rect3201-5-3"
@@ -1306,7 +1308,7 @@
          id="tspan12667-0"
          style="font-size:28.2222px;stroke-width:0.264583"
          x="-2773.658"
-         y="3048.7349">0x7ffec372bbb1</tspan></text>
+         y="3048.7349">0x7ffec372bbad</tspan></text>
     <rect
        style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
        id="rect3201-5-3-3"
@@ -1340,7 +1342,7 @@
          id="tspan12667-0-5"
          style="font-size:28.2222px;stroke-width:0.264583"
          x="-2773.658"
-         y="2851.3677">0x7ffec372bbad</tspan></text>
+         y="2851.3677">0x7ffec372bbb1</tspan></text>
     <rect
        style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
        id="rect3201-5-1-6-9"
@@ -1364,7 +1366,7 @@
          id="tspan12667-7-8-2"
          style="font-size:28.2222px;stroke-width:0.264583"
          x="-2773.658"
-         y="2900.7095">0x7ffec372bbae</tspan></text>
+         y="2900.7095">0x7ffec372bbb0</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
@@ -1564,14 +1566,14 @@
        height="49.341774"
        x="-2491.7126"
        y="3923.8096"
-       inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
+       inkscape:export-filename="../../../images/reference_memory_4byte.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
        style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
-       x="-2735.1462"
-       y="3962.7314"
+       x="-2733.1873"
+       y="4002.2874"
        id="text12669-4"
        inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
        inkscape:export-xdpi="96"
@@ -1579,8 +1581,8 @@
          sodipodi:role="line"
          id="tspan12667-9"
          style="font-size:28.2222px;stroke-width:0.264583"
-         x="-2735.1462"
-         y="3962.7314">0x7ffe23c4bd2d</tspan></text>
+         x="-2733.1873"
+         y="4002.2874">0x7ffe23c4bd2d</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:52.9167px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
@@ -1622,8 +1624,8 @@
     <text
        xml:space="preserve"
        style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
-       x="-2735.1462"
-       y="4012.0732"
+       x="-2733.1873"
+       y="3952.9456"
        id="text12669-2-4"
        inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
        inkscape:export-xdpi="96"
@@ -1631,8 +1633,8 @@
          sodipodi:role="line"
          id="tspan12667-7-9"
          style="font-size:28.2222px;stroke-width:0.264583"
-         x="-2735.1462"
-         y="4012.0732">0x7ffe23c4bd2e</tspan></text>
+         x="-2733.1873"
+         y="3952.9456">0x7ffe23c4bd2e</tspan></text>
     <rect
        style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
        id="rect3201-5-3-5"
@@ -1646,8 +1648,8 @@
     <text
        xml:space="preserve"
        style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
-       x="-2735.1462"
-       y="4061.415"
+       x="-2733.1873"
+       y="3903.6038"
        id="text12669-6-0"
        inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
        inkscape:export-xdpi="96"
@@ -1655,8 +1657,8 @@
          sodipodi:role="line"
          id="tspan12667-0-4"
          style="font-size:28.2222px;stroke-width:0.264583"
-         x="-2735.1462"
-         y="4061.415">0x7ffe23c4bd2f</tspan></text>
+         x="-2733.1873"
+         y="3903.6038">0x7ffe23c4bd2f</tspan></text>
     <rect
        style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
        id="rect3201-5-3-5-6"
@@ -1670,8 +1672,8 @@
     <text
        xml:space="preserve"
        style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
-       x="-2735.1462"
-       y="4110.7563"
+       x="-2733.1873"
+       y="3854.262"
        id="text12669-6-0-7"
        inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
        inkscape:export-xdpi="96"
@@ -1679,8 +1681,8 @@
          sodipodi:role="line"
          id="tspan12667-0-4-3"
          style="font-size:28.2222px;stroke-width:0.264583"
-         x="-2735.1462"
-         y="4110.7563">0x7ffe23c4bd30</tspan></text>
+         x="-2733.1873"
+         y="3854.262">0x7ffe23c4bd30</tspan></text>
     <rect
        style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
        id="rect3201-5-3-3-8"
@@ -1694,8 +1696,8 @@
     <text
        xml:space="preserve"
        style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
-       x="-2735.1462"
-       y="3850.542"
+       x="-2733.1873"
+       y="4110.6729"
        id="text12669-6-7-1"
        inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
        inkscape:export-xdpi="96"
@@ -1703,8 +1705,8 @@
          sodipodi:role="line"
          id="tspan12667-0-5-7"
          style="font-size:28.2222px;stroke-width:0.264583"
-         x="-2735.1462"
-         y="3850.542">0x7ffe23c4bd2b</tspan></text>
+         x="-2733.1873"
+         y="4110.6729">0x7ffe23c4bd2b</tspan></text>
     <rect
        style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
        id="rect3201-5-1-6-9-2"
@@ -1728,8 +1730,8 @@
     <text
        xml:space="preserve"
        style="font-size:28.2222px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
-       x="-2735.1462"
-       y="3899.8838"
+       x="-2733.1873"
+       y="4051.6292"
        id="text12669-2-1-2-7"
        inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
        inkscape:export-xdpi="96"
@@ -1737,8 +1739,8 @@
          sodipodi:role="line"
          id="tspan12667-7-8-2-2"
          style="font-size:28.2222px;stroke-width:0.264583"
-         x="-2735.1462"
-         y="3899.8838">0x7ffe23c4bd2c</tspan></text>
+         x="-2733.1873"
+         y="4051.6292">0x7ffe23c4bd2c</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:35.2777px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
@@ -1893,7 +1895,7 @@
        inkscape:export-ydpi="96" />
     <path
        style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.896026;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       d="m -2734.4184,3906.9662 c 2.5358,-2.5357 5.0805,-2.2849 7.6163,0.2419 2.5447,2.5268 5.0804,1.7742 7.6251,-0.7078 2.5358,-2.491 5.0805,-1.2545 7.6163,1.1738 2.5447,2.4192 5.0804,0.7078 7.6251,-1.6308 2.5358,-2.3297 5.0805,-0.1523 7.6162,2.0698 2.5448,2.2222 5.0805,-0.4032 7.6252,-2.482 2.5358,-2.0877 5.0805,0.9409 7.6162,2.8673 2.5448,1.9265 5.0805,-1.4784 7.6252,-3.2346 2.5358,-1.7473 5.0805,2.0071 7.6162,3.5661 2.5448,1.5502 5.0805,-2.5088 7.6252,-3.8529 2.5358,-1.344 5.0805,2.9838 7.6162,4.1038 2.5447,1.1201 5.0805,-3.4317 7.6252,-4.3099 2.5358,-0.887 5.0805,3.835 7.6162,4.4712 2.5447,0.6362 5.0805,-4.2113 7.6252,-4.5966 2.5358,-0.3853 5.0805,4.5429 7.6162,4.6683 2.5447,0.1344 5.0805,-4.8206 7.6252,-4.6862 2.5358,0.1254 5.0805,5.0536 7.6162,4.6683 2.5447,-0.3853 5.0805,-5.2328 7.6252,-4.5966 2.5358,0.6361 5.0805,5.3582 7.6162,4.4711 2.5447,-0.8781 5.0805,-5.4299 7.6252,-4.3098 2.5357,1.12 5.0805,5.4478 7.6162,4.1037 2.5447,-1.344 5.0805,-5.403 7.6252,-3.8529 2.5357,1.5591 5.0805,5.3135 7.6162,3.5662 2.5447,-1.7562 5.0805,-5.1611 7.6252,-3.2346 2.5357,1.9264 5.0805,4.955 7.6162,2.8673 2.5447,-2.0788 5.0805,-4.7042 7.6252,-2.482 2.5357,2.2221 5.0804,4.3994 7.6162,2.0698 2.5447,-2.3386 5.0805,-4.059 7.6252,-1.6308 2.5357,2.4193 5.0715,3.6648 7.6162,1.1738 2.5357,-2.482 5.0805,-3.2346 7.6162,-0.7079 2.5447,2.5268 5.0805,2.7777 7.6252,0.233"
+       d="m -2732.4595,4058.7116 c 2.5358,-2.5357 5.0805,-2.2849 7.6163,0.2419 2.5447,2.5268 5.0804,1.7742 7.6251,-0.7078 2.5358,-2.491 5.0805,-1.2545 7.6163,1.1738 2.5447,2.4192 5.0804,0.7078 7.6251,-1.6308 2.5358,-2.3297 5.0805,-0.1523 7.6162,2.0698 2.5448,2.2222 5.0805,-0.4032 7.6252,-2.482 2.5358,-2.0877 5.0805,0.9409 7.6162,2.8673 2.5448,1.9265 5.0805,-1.4784 7.6252,-3.2346 2.5358,-1.7473 5.0805,2.0071 7.6162,3.5661 2.5448,1.5502 5.0805,-2.5088 7.6252,-3.8529 2.5358,-1.344 5.0805,2.9838 7.6162,4.1038 2.5447,1.1201 5.0805,-3.4317 7.6252,-4.3099 2.5358,-0.887 5.0805,3.835 7.6162,4.4712 2.5447,0.6362 5.0805,-4.2113 7.6252,-4.5966 2.5358,-0.3853 5.0805,4.5429 7.6162,4.6683 2.5447,0.1344 5.0805,-4.8206 7.6252,-4.6862 2.5358,0.1254 5.0805,5.0536 7.6162,4.6683 2.5447,-0.3853 5.0805,-5.2328 7.6252,-4.5966 2.5358,0.6361 5.0805,5.3582 7.6162,4.4711 2.5447,-0.8781 5.0805,-5.4299 7.6252,-4.3098 2.5357,1.12 5.0805,5.4478 7.6162,4.1037 2.5447,-1.344 5.0805,-5.403 7.6252,-3.8529 2.5357,1.5591 5.0805,5.3135 7.6162,3.5662 2.5447,-1.7562 5.0805,-5.1611 7.6252,-3.2346 2.5357,1.9264 5.0805,4.955 7.6162,2.8673 2.5447,-2.0788 5.0805,-4.7042 7.6252,-2.482 2.5357,2.2221 5.0804,4.3994 7.6162,2.0698 2.5447,-2.3386 5.0805,-4.059 7.6252,-1.6308 2.5357,2.4193 5.0715,3.6648 7.6162,1.1738 2.5357,-2.482 5.0805,-3.2346 7.6162,-0.7079 2.5447,2.5268 5.0805,2.7777 7.6252,0.233"
        title="sin(x)"
        id="path8167"
        inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
@@ -1954,8 +1956,8 @@
     <text
        xml:space="preserve"
        style="font-size:21.1667px;line-height:1.25;font-family:'courier new';-inkscape-font-specification:'courier new';letter-spacing:0px;stroke-width:0.264583"
-       x="-2625.5251"
-       y="3928.5146"
+       x="-2623.5662"
+       y="4080.26"
        id="text31384"
        inkscape:export-filename="/home/toga/work/zenn/images/reference_memory_4byte.png"
        inkscape:export-xdpi="96"
@@ -1963,7 +1965,7 @@
          sodipodi:role="line"
          id="tspan31382"
          style="font-size:21.1667px;stroke-width:0.264583"
-         x="-2625.5251"
-         y="3928.5146">= &amp;hoge</tspan></text>
+         x="-2623.5662"
+         y="4080.26">= &amp;hoge</tspan></text>
   </g>
 </svg>
