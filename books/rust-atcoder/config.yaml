@@ -27,3 +27,4 @@ chapters:
   - 21-function
   - 22-recursion
   - 23-vector
+  - 24-ownership
