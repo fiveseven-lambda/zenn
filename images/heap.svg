@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="heap-allocate.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="heap.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.56504558"
+     inkscape:cx="1629.957"
+     inkscape:cy="412.35612"
+     inkscape:window-width="1918"
+     inkscape:window-height="1053"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Dot"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="5.6666665"
+       markerHeight="5.6666665"
+       viewBox="0 0 5.6666667 5.6666667"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="Dot1"
+         sodipodi:nodetypes="sssss" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1L"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1L"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="arrow1L"
+         transform="scale(-0.5)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker10014"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606599"
+       markerHeight="6.7071061"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path10012"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2725">
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0.05117368"
+         id="stop2721" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0.10068689"
+         id="stop2729" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0.89739329"
+         id="stop2731" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0.95442551"
+         id="stop2723" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2725"
+       id="linearGradient8840"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.18699,0,0,1.522373,278.50754,-105.70306)"
+       x1="110.77802"
+       y1="134.79156"
+       x2="110.77802"
+       y2="69.761559" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2725"
+       id="linearGradient8927"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.18699,0,0,1.522373,478.50752,-105.70305)"
+       x1="110.77802"
+       y1="134.79156"
+       x2="110.77802"
+       y2="69.761559" />
+    <marker
+       style="overflow:visible"
+       id="marker10014-2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606599"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path10012-9"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2725"
+       id="linearGradient13651"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.18699,0,0,1.522373,30.576757,-16.243033)"
+       x1="110.77802"
+       y1="134.79156"
+       x2="110.77802"
+       y2="69.761559" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1L-2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1L"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="arrow1L-7"
+         transform="scale(-0.5)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker10014-22"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606599"
+       markerHeight="6.7071061"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path10012-6"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker10014-2-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606599"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path10012-9-0"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2725"
+       id="linearGradient14334"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.18699,0,0,1.522373,278.50754,61.791938)"
+       x1="110.77802"
+       y1="134.79156"
+       x2="110.77802"
+       y2="69.761559" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2725"
+       id="linearGradient14336"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.18699,0,0,1.522373,478.50752,61.791948)"
+       x1="110.77802"
+       y1="134.79156"
+       x2="110.77802"
+       y2="69.761559" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path111-3"
+       cx="360.5"
+       cy="35.5"
+       r="10"
+       inkscape:export-filename="heap-allocate.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient8840);stroke-width:1.00009;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-6"
+       width="18.99991"
+       height="98.999901"
+       x="400.50003"
+       y="0.500045" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-0"
+       width="19"
+       height="14"
+       x="400.5"
+       y="13.716109" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-6-6"
+       width="19"
+       height="29"
+       x="400.5"
+       y="34.388062" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-5-2"
+       width="19"
+       height="11"
+       x="400.5"
+       y="72.981522" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="350.23273"
+       y="41.553101"
+       id="text5777-6"><tspan
+         sodipodi:role="line"
+         id="tspan5775-18"
+         style="stroke-width:0.264583"
+         x="350.23273"
+         y="41.553101">´A`</tspan></text>
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path111-2-7"
+       cx="310.5"
+       cy="35.5"
+       r="10" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="303.38235"
+       y="40.949146"
+       id="text5777-9-9"><tspan
+         sodipodi:role="line"
+         id="tspan5775-1-2"
+         style="stroke-width:0.264583"
+         x="303.38235"
+         y="40.949146">°v°</tspan></text>
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path111-3-5"
+       cx="560.5"
+       cy="36.496231"
+       r="10" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient8927);stroke-width:1.00009;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-6-9"
+       width="18.99991"
+       height="98.999901"
+       x="600.5"
+       y="0.500045" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-0-2"
+       width="19"
+       height="14"
+       x="600.5"
+       y="13.716109" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-6-6-2"
+       width="19"
+       height="7.8202605"
+       x="600.5"
+       y="34.388062" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-5-2-8"
+       width="19"
+       height="11"
+       x="600.5"
+       y="72.981522" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="550.23273"
+       y="42.549332"
+       id="text5777-6-9"><tspan
+         sodipodi:role="line"
+         id="tspan5775-18-7"
+         style="stroke-width:0.264583"
+         x="550.23273"
+         y="42.549332">´A`</tspan></text>
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path111-2-7-3"
+       cx="510.5"
+       cy="37.003464"
+       r="10" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="503.38235"
+       y="42.549332"
+       id="text5777-9-9-6"><tspan
+         sodipodi:role="line"
+         id="tspan5775-1-2-1"
+         style="stroke-width:0.264583"
+         x="503.38235"
+         y="42.549332">°v°</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L)"
+       d="m 434.33066,38.231327 h 32.58867"
+       id="path8993" />
+    <path
+       id="path9222"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.500001"
+       d="m 366.46869,-10.815477 c 0,10.90732077 -15.73995,19.7494497 -35.15616,19.7494503 -0.69614,0 -1.38755,-0.011366 -2.07367,-0.033786 -1.88459,-0.061581 -13.70387,10.08691 -15.49724,9.865013 -2.29021,-0.283373 5.47789,-10.9856592 3.37921,-11.5064484 -12.34742,-3.0640283 -20.96446,-10.0038207 -20.96446,-18.0742286 0,-10.907321 15.73995,-19.749452 35.15616,-19.749451 19.41621,-1e-6 35.15616,8.84213 35.15616,19.749451 z"
+       sodipodi:nodetypes="ssssssss" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="309.50238"
+       y="-13.648991"
+       id="text9964"><tspan
+         sodipodi:role="line"
+         id="tspan9962"
+         style="font-style:italic;stroke-width:0.264583"
+         x="309.50238"
+         y="-13.648991">○バイト</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;stroke-width:0.264583"
+         x="309.50238"
+         y="0.46213448"
+         id="tspan9966">欲しい！</tspan></text>
+    <path
+       id="path9222-2"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.500001"
+       d="m 578.23714,-10.815476 c 0,7.5215663 -8.61132,14.061628 -21.28525,17.4004155 -2.71056,0.7140635 2.16488,12.9214685 -0.87283,13.3209645 -2.33347,0.306879 -12.52216,-11.125225 -15.00224,-11.026621 -1.09918,0.043702 -2.21079,0.065981 -3.33305,0.065981 -22.36387,-1.1e-6 -40.49336,-8.84718574 -40.49336,-19.7607399 0,-10.913555 18.12949,-19.760739 40.49336,-19.760741 22.36387,-1e-6 40.49337,8.847185 40.49337,19.760741 z"
+       sodipodi:nodetypes="ssssssss" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="538.44366"
+       y="-15.44547"
+       id="text9964-0"><tspan
+         sodipodi:role="line"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="538.44366"
+         y="-15.44547"
+         id="tspan10918">ここから</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="538.44366"
+         y="-1.3343444"
+         id="tspan10920">使っていいよ</tspan></text>
+    <ellipse
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.500001;stroke-opacity:1"
+       id="path9222-3"
+       cx="342.05255"
+       cy="80.000542"
+       rx="35.156158"
+       ry="19.749451" />
+    <ellipse
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.500002;stroke-opacity:1"
+       id="path9222-3-6"
+       cx="354.44025"
+       cy="56.386913"
+       rx="4.9995394"
+       ry="2.7152438" />
+    <ellipse
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+       id="path9222-3-6-3"
+       cx="358.34348"
+       cy="50.811481"
+       rx="2.4669466"
+       ry="1.2846886" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="342.09772"
+       y="75.323334"
+       id="text9964-6"><tspan
+         sodipodi:role="line"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="342.09772"
+         y="75.323334"
+         id="tspan9966-0">ここが</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="342.09772"
+         y="89.434456"
+         id="tspan10403">空いてるな</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker10014)"
+       d="m 325.81376,35.5 h 18.41538"
+       id="path9974" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker10014-2)"
+       d="M 545.18624,37.627371 H 526.77086"
+       id="path9974-3" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="401.75629"
+       y="22.85253"
+       id="text10254"><tspan
+         sodipodi:role="line"
+         id="tspan10252"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="401.75629"
+         y="22.85253">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="601.75629"
+       y="22.85253"
+       id="text10254-8"><tspan
+         sodipodi:role="line"
+         id="tspan10252-4"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="601.75629"
+         y="22.85253">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="601.75629"
+       y="40.434612"
+       id="text10254-8-55"><tspan
+         sodipodi:role="line"
+         id="tspan10252-4-4"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="601.75629"
+         y="40.434612">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="601.75629"
+       y="80.617943"
+       id="text10254-8-5"><tspan
+         sodipodi:role="line"
+         id="tspan10252-4-0"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="601.75629"
+         y="80.617943">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="401.75629"
+       y="51.024483"
+       id="text10254-1"><tspan
+         sodipodi:role="line"
+         id="tspan10252-9"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="401.75629"
+         y="51.024483">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="401.75629"
+       y="80.617943"
+       id="text10254-1-4"><tspan
+         sodipodi:role="line"
+         id="tspan10252-9-7"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="401.75629"
+         y="80.617943">未使用</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Dot)"
+       d="m 364.32617,68.738853 c 9.46647,-12.35194 32.48565,-12.571914 40.33923,-12.35194"
+       id="path10453"
+       sodipodi:nodetypes="cc" />
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path111-3-4"
+       cx="112.56923"
+       cy="124.96002"
+       r="10"
+       inkscape:export-filename="heap-allocator.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient13651);stroke-width:1.00009;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-6-5"
+       width="18.99991"
+       height="98.999901"
+       x="152.56926"
+       y="89.960068" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-0-25"
+       width="19"
+       height="14"
+       x="152.56923"
+       y="103.17613" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-6-6-4"
+       width="19"
+       height="29"
+       x="152.56923"
+       y="123.84808" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-5-2-7"
+       width="19"
+       height="11"
+       x="152.56923"
+       y="162.44154" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="102.30196"
+       y="131.01312"
+       id="text5777-6-4"><tspan
+         sodipodi:role="line"
+         id="tspan5775-18-4"
+         style="stroke-width:0.264583"
+         x="102.30196"
+         y="131.01312">´A`</tspan></text>
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path111-2-7-30"
+       cx="62.56921"
+       cy="124.96002"
+       r="10" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="55.451553"
+       y="130.40916"
+       id="text5777-9-9-7"><tspan
+         sodipodi:role="line"
+         id="tspan5775-1-2-8"
+         style="stroke-width:0.264583"
+         x="55.451553"
+         y="130.40916">°v°</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="153.82552"
+       y="112.31255"
+       id="text10254-89"><tspan
+         sodipodi:role="line"
+         id="tspan10252-2"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="153.82552"
+         y="112.31255">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="153.82552"
+       y="140.48451"
+       id="text10254-1-6"><tspan
+         sodipodi:role="line"
+         id="tspan10252-9-6"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="153.82552"
+         y="140.48451">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="153.82552"
+       y="170.07797"
+       id="text10254-1-4-4"><tspan
+         sodipodi:role="line"
+         id="tspan10252-9-7-9"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="153.82552"
+         y="170.07797">未使用</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker10014-2)"
+       d="M 572.9964,-1.0925972 C 591.20786,19.641282 583.25109,63.215467 599.11152,63.388062"
+       id="path10975"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="503.58551"
+       y="56.216606"
+       id="text13394"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="503.58551"
+         y="56.216606"
+         id="tspan13396" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="500.09869"
+       y="54.323555"
+       id="text13402"><tspan
+         sodipodi:role="line"
+         id="tspan13400"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="500.09869"
+         y="54.323555">ありがとう</tspan></text>
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path111-3-6"
+       cx="360.5"
+       cy="202.995"
+       r="10"
+       inkscape:export-filename="heap-deallocate.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient14334);stroke-width:1.00009;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-6-1"
+       width="18.99991"
+       height="98.999901"
+       x="400.50003"
+       y="167.99504" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-0-5"
+       width="19"
+       height="14"
+       x="400.5"
+       y="181.21111" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-6-6-9"
+       width="19"
+       height="29"
+       x="600.5"
+       y="201.88306" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-5-2-4"
+       width="19"
+       height="11"
+       x="400.5"
+       y="240.47652" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="350.23273"
+       y="209.0481"
+       id="text5777-6-90"><tspan
+         sodipodi:role="line"
+         id="tspan5775-18-9"
+         style="stroke-width:0.264583"
+         x="350.23273"
+         y="209.0481">´A`</tspan></text>
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path111-2-7-1"
+       cx="310.5"
+       cy="202.995"
+       r="10" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="303.38235"
+       y="208.44415"
+       id="text5777-9-9-77"><tspan
+         sodipodi:role="line"
+         id="tspan5775-1-2-11"
+         style="stroke-width:0.264583"
+         x="303.38235"
+         y="208.44415">°v°</tspan></text>
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path111-3-5-5"
+       cx="560.5"
+       cy="203.99123"
+       r="10" />
+    <rect
+       style="font-variation-settings:normal;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient14336);stroke-width:1.00009;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-6-9-9"
+       width="18.99991"
+       height="98.999901"
+       x="600.5"
+       y="167.99504" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-0-2-7"
+       width="19"
+       height="14"
+       x="600.5"
+       y="181.21111" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-6-6-2-7"
+       width="19"
+       height="7.8202605"
+       x="400.5"
+       y="201.88306" />
+    <rect
+       style="font-variation-settings:normal;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect2696-3-5-2-8-6"
+       width="19"
+       height="11"
+       x="600.5"
+       y="240.47652" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="550.23273"
+       y="210.04433"
+       id="text5777-6-9-7"><tspan
+         sodipodi:role="line"
+         id="tspan5775-18-7-3"
+         style="stroke-width:0.264583"
+         x="550.23273"
+         y="210.04433">´A`</tspan></text>
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       id="path111-2-7-3-6"
+       cx="510.5"
+       cy="204.49846"
+       r="10" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="503.38235"
+       y="210.04433"
+       id="text5777-9-9-6-5"><tspan
+         sodipodi:role="line"
+         id="tspan5775-1-2-1-6"
+         style="stroke-width:0.264583"
+         x="503.38235"
+         y="210.04433">°v°</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L-2)"
+       d="m 434.33066,205.72633 h 32.58867"
+       id="path8993-3" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';text-align:center;letter-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="335.85461"
+       y="155.31357"
+       id="text9964-4"><tspan
+         sodipodi:role="line"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="335.85461"
+         y="155.31357"
+         id="tspan14465">ここもう</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="335.85461"
+         y="169.4247"
+         id="tspan14469">使い終わった</tspan></text>
+    <path
+       id="path9222-2-2-4"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.500001"
+       d="m 294.96048,159.84881 c 0,7.52156 8.61132,14.06162 21.28525,17.40041 2.71056,0.71406 -2.16488,12.92147 0.87283,13.32096 2.33347,0.30688 12.52216,-11.12522 15.00224,-11.02662 1.09918,0.0437 2.21079,0.066 3.33305,0.066 22.36387,0 40.49336,-8.84718 40.49336,-19.76073 0,-10.91356 -18.12949,-19.76074 -40.49336,-19.76075 -22.36387,0 -40.49337,8.84719 -40.49337,19.76075 z"
+       sodipodi:nodetypes="ssssssss" />
+    <ellipse
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.500002;stroke-opacity:1"
+       id="path9222-3-6-8"
+       cx="550.85815"
+       cy="224.47186"
+       rx="4.9995394"
+       ry="2.7152438" />
+    <ellipse
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+       id="path9222-3-6-3-8"
+       cx="554.76135"
+       cy="218.89645"
+       rx="2.4669466"
+       ry="1.2846886" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="538.51562"
+       y="243.40829"
+       id="text9964-6-5"><tspan
+         sodipodi:role="line"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="538.51562"
+         y="243.40829"
+         id="tspan10403-9">未使用に</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="538.51562"
+         y="257.51941"
+         id="tspan14499">戻しておこう</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker10014-22)"
+       d="m 325.81376,202.995 h 18.41538"
+       id="path9974-6" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="401.75629"
+       y="190.34753"
+       id="text10254-85"><tspan
+         sodipodi:role="line"
+         id="tspan10252-6"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="401.75629"
+         y="190.34753">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="601.75629"
+       y="190.34753"
+       id="text10254-8-1"><tspan
+         sodipodi:role="line"
+         id="tspan10252-4-1"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="601.75629"
+         y="190.34753">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="601.75629"
+       y="218.51947"
+       id="text10254-8-55-5"><tspan
+         sodipodi:role="line"
+         id="tspan10252-4-4-9"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="601.75629"
+         y="218.51947">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="601.75629"
+       y="248.11295"
+       id="text10254-8-5-8"><tspan
+         sodipodi:role="line"
+         id="tspan10252-4-0-4"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="601.75629"
+         y="248.11295">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="401.75629"
+       y="207.92961"
+       id="text10254-1-8"><tspan
+         sodipodi:role="line"
+         id="tspan10252-9-1"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="401.75629"
+         y="207.92961">未使用</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="401.75629"
+       y="248.11295"
+       id="text10254-1-4-0"><tspan
+         sodipodi:role="line"
+         id="tspan10252-9-7-3"
+         style="font-size:5.64444px;stroke-width:0.264583"
+         x="401.75629"
+         y="248.11295">未使用</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker10014-2-1)"
+       d="m 372.98978,167.27593 c 18.21146,20.73388 10.43798,63.43454 26.29841,63.60713"
+       id="path10975-4"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="46.279331"
+       y="107.92817"
+       id="text13763"><tspan
+         sodipodi:role="line"
+         id="tspan13761"
+         style="stroke-width:0.264583"
+         x="46.279331"
+         y="107.92817">ベクタ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="84.363907"
+       y="150.15346"
+       id="text13767"><tspan
+         sodipodi:role="line"
+         id="tspan13765"
+         style="stroke-width:0.264583"
+         x="84.363907"
+         y="150.15346">アロケータ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;stroke-width:0.264583"
+       x="145.09225"
+       y="88.332291"
+       id="text13767-0"><tspan
+         sodipodi:role="line"
+         id="tspan13765-4"
+         style="stroke-width:0.264583"
+         x="145.09225"
+         y="88.332291">ヒープ</tspan></text>
+    <ellipse
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+       id="path14501"
+       cx="536.67645"
+       cy="248.28221"
+       rx="39.157578"
+       ry="18.239885" />
+  </g>
+</svg>
