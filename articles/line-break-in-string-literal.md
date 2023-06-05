@@ -11,6 +11,7 @@ published: true
 | 言語 | 文字列リテラル中での改行 |
 | -- | -- |
 | Perl | 可 |
+| PHP | 可 |
 | Ruby | 可 |
 | D | 可 |
 | Rust | 可 |
