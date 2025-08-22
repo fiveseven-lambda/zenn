@@ -179,6 +179,11 @@ $T_{\rm left}$ と $T_{\rm right}$ の片方だけが型変数の場合も、同
 
 if let の右辺で `left_var.borrow()` を呼んで [Ref](https://doc.rust-lang.org/stable/std/cell/struct.Ref.html) を得ていますが、パターンマッチが失敗すると、else 節が始まる前に捨てられるようです。でないと、`left_var.borrow_mut()` でエラーになります。実際、Edition 2024 では動きますが、Edition 2021 に変えると `RefCell already borrowed` と言われて panic します。
 
+:::message
+追記：Edition 2024 で入った変更でした↓
+https://doc.rust-lang.org/edition-guide/rust-2024/temporary-if-let-scope.html
+:::
+
 何はともあれ、unify は実装できました。
 
 # 計算量の改善
