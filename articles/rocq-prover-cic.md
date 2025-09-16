@@ -6,7 +6,7 @@ topics: ["Rocq", "Coq"]
 published: true
 ---
 
-プログラミング言語 Rocq（旧 Coq）の型システムについての勉強メモ。ただし途中で力尽きた。
+プログラミング言語 Rocq（旧 Coq）の型システムについての勉強メモ。
 
 # 項の定義
 
@@ -47,7 +47,7 @@ $\text{let}~ x \coloneqq t_1 : t_2 ~\text{in}~ t_3$ は $(\lambda x : t_2\mathpu
 # 型付け規則
 ここからは、資料を読まずにできるだけ自力で型付け規則を考えていく。
 
-ラムダ抽象 $\lambda x : t_1\mathpunct{.} t_2$ には型 $\forall x : t_1, t_3$ を付けたい。つまり、$E[\Gamma] \vdash \lambda x : t_1\mathpunct{.} t_2 : \forall x : t_1, t_3$ を導くような規則 Lam が欲しい。前提として、ローカル文脈 $\Gamma$ に変数 $x : t_1$ を追加した $\Gamma \dblcolon x : t_1$ の下で項 $t_2$ に型 $t_3$ がつく必要がありそう。
+ラムダ抽象 $\lambda x : t_1\mathpunct{.} t_2$ には型 $\forall x : t_1, t_3$ を付けたい。つまり、$E[\Gamma] \vdash \lambda x : t_1\mathpunct{.} t_2 : \forall x : t_1, t_3$ を導くような規則 Lam が欲しい。前提として、$E[\Gamma]$ に変数 $x : t_1$ を追加した well-formed な $E[\Gamma \dblcolon x : t_1]$ の下で項 $t_2$ に型 $t_3$ がつく必要がありそう。
 
 関数適用 $t_1 ~ t_2$ に型がつくには、項 $t_1$ の型が $\forall x: t_{1, 2}, t_{1, 1}$ の形をしている必要がありそうなので、$t_1 ~ t_2$ の型付け規則 App の前提の 1 つは
 
@@ -74,6 +74,22 @@ E[\Gamma] \vdash t_{1, 3} \{x / t_2\} : t_{1, 1} \{x / t_2\}
 \end{equation}$$
 
 も導出できそうに思える。よって、規則 App は前提 $(1)$, $(2)$ から結論 $E[\Gamma] \vdash t_1 ~ t_2 : t_{1, 1} \{x / t_2\}$ を導くのだろうと予想できる。
+
+あとは well-formed な $E[\Gamma]$ に対して
+
+- $E$ が $c : t$ か $c \coloneqq t' : t$ を含んでいれば $E[\Gamma] \vdash c : t$
+- $\Gamma$ が $x : t$ か $x \coloneqq t' : t$ を含んでいれば $E[\Gamma] \vdash x : t$
+
+という規則 Var, Const も必要だ。
+
+さて、ここまでで残る懸念点は：
+
+- 任意の項 $t$ に対して $c : t$ や $x : t$ を仮定できてしまう。
+- 項 $\forall x : t_1 \mathpunct{.} t_2$ を好きに作れてしまう。
+
+あたりだろうか。具体的に何がまずいのかまだよく分からないけれど、Rocq の型規則を眺めるとこの辺を避けていそうなので、おそらく証明を試みるとどこかで破綻するんだろう。というのを念頭に置きながら、手を動かしてみる。
+
+（分かったら続きを書きます）
 
 # 参考文献
 
