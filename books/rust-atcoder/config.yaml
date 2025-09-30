@@ -1,5 +1,5 @@
 title: "RustCoder ―― AtCoder と Rust で始める競技プログラミング入門"
-summary: "AtCoder のジャッジシステムを利用しながらプログラミング言語 Rust について解説します．C++ や python のような他の言語に触れたことのないプログラミング初心者でも読めるよう努めています．更新履歴は github ( https://github.com/fiveseven-lambda/zenn/commits/main/books/rust-atcoder ) から見られます．内容に関するご意見やご指摘などは，プルリクエストか twitter ( https://twitter.com/57tggx ) で遠慮なくお願いします．カバー画像： GRAPHY 筧様"
+summary: "流行りの Rust で、プログラミングを始めてみませんか？未経験でも大丈夫！重要なのは公式ドキュメントを読むことです。"
 topics: ["rust", "競技プログラミング", "atcoder"]
 published: true
 price: 0
