@@ -3,7 +3,7 @@ title: "Rocq（旧 Coq）の型付け規則を読む"
 emoji: "📌"
 type: "tech"
 topics: ["Rocq", "Coq"]
-published: true
+published: false
 ---
 
 プログラミング言語 Rocq（旧 Coq）の型システムについての勉強メモ。
