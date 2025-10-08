@@ -62,8 +62,8 @@ int main() {
     std::vector a { 1, 2, 3 };
     auto b = a, c = a; // コピー
     
-    b.push_back(4); // 注意：線形時間！
-    c.push_back(5); // 注意：線形時間！
+    b.push_back(4); // 追加
+    c.push_back(5); // 追加
     
     for (int &i : b) std::cout << i << std::endl;
     // 1
