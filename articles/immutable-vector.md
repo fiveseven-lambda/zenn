@@ -174,12 +174,66 @@ Scala の Vector は immutable です。つまり、`a` に直接要素を追加
 
 「誰でも書けるスクリプト言語」は、この immutable な配列を用意すればよかったんですね。
 
-:::details でもランダムアクセスが O(1) じゃないって？
+# 頂いたコメントをもとに追記
 
-**Effectively** constant time です。
+色々な方から他の言語についても教えていただきました。
 
-事実上の $O(1)$ であり、Python のような「誰でも書けるスクリプト言語」に求められる速度としては十分では？
-:::
+## Swift
+
+Swift は copy on write なのだそうです。
+
+```swift
+let a = [1, 2, 3]
+
+var b = a
+var c = a
+
+b.append(4) // copy on write
+c.append(5) // copy on write
+
+print(b) // [1, 2, 3, 4]
+print(c) // [1, 2, 3, 5]
+```
+書き換えない限りコピーは起こりません。
+```swift
+// O(log n)
+func binarySearch(array: [Int], target: Int) -> Int {
+    // array を書き換えなければ、コピーされない
+}
+```
+
+## R
+
+存じませんでした……。
+
+```r
+a <- c(1, 2, 3)
+
+b <- c(a, 4)
+c <- c(a, 5)
+
+print(b) # [1] 1 2 3 4
+print(c) # [1] 1 2 3 5
+```
+
+## PHP
+
+これも copy on write らしいです
+
+```php
+$a = [1, 2, 3];
+
+$b = $a;
+$c = $a;
+
+$b[] = 4;
+$c[] = 5;
+
+foreach ($b as $i) echo "$i<br>";
+// 1<br>2<br>3<br>4<br>
+foreach ($c as $i) echo "$i<br>";
+// 1<br>2<br>3<br>5<br>
+```
 
 # 結論
 
